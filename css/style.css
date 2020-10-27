@@ -116,6 +116,7 @@ a:active {
   position: relative;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  transition: 0.5s all ease;
 }
 @media (max-width: 991.98px) {
   .site-navbar .navbar-nav > li > a {
