@@ -173,16 +173,16 @@ a:active {
   color: rgba(0, 0, 0, 0.4);
 }
 .site-navbar.scrolled .navbar-nav > li > a {
-  color: rgba(0, 0, 0, 0.7) !important;
+  color: rgba(0, 0, 0, 0.7);
 }
 .site-navbar.scrolled .navbar-nav > li > a:hover {
-  color: #bac964 !important;
+  color: firebrick;
 }
 .site-navbar.scrolled .navbar-nav > li > a.active {
-  color: #bac964 !important;
+  color: firebrick;
 }
 .site-navbar.scrolled .navbar-nav > li.active > a {
-  color: #bac964 !important;
+  color: firebrick;
 }
 
 .site-hero {
