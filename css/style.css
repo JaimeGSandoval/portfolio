@@ -809,6 +809,7 @@ a {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
+/* My custom styles */
 .site-navbar .navbar-nav > li > a:hover {
   color: firebrick;
 }
@@ -819,4 +820,8 @@ li.nav-link:hover {
 
 .strong-text {
   color: firebrick;
+}
+
+.profile-img-box {
+  text-align: center;
 }
