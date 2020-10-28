@@ -864,6 +864,10 @@ li.nav-link:hover {
   width: 7rem;
 }
 
+.linkedin {
+  width: 5rem;
+}
+
 .httpie {
   width: 7.5rem;
 }
@@ -881,10 +885,37 @@ li.nav-link:hover {
   padding: 4rem 0;
 }
 
+.contact-hover {
+  border-bottom: 3px solid transparent;
+  transition: 0.3s all ease;
+}
+
+.contact-hover p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 1rem;
+}
+
+.contact-hover:hover {
+  border-color: firebrick;
+}
+
+.copy {
+  color: #444;
+}
+
+.contact-heading {
+  padding: 2rem 0;
+}
+
 @media screen and (min-width: 992px) {
   .site-hero,
   .site-hero .row {
     min-height: 860px;
+  }
+
+  .contact-heading {
+    padding: 4rem 0;
   }
 
   .portfolio-heading-padding {
