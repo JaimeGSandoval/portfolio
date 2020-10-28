@@ -236,7 +236,7 @@ a {
 }
 
 .site-section {
-  padding: 5em 0;
+  /* padding: 5em 0; */
 }
 
 .section-heading {
@@ -248,7 +248,7 @@ a {
   font-weight: 200;
   padding-top: 20px;
   font-size: 30px;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
 }
 .section-heading h2 strong {
   font-weight: 800;
@@ -811,12 +811,6 @@ a {
 
 /* My custom styles */
 
-@media screen and (min-width: 992px) {
-  .site-hero,
-  .site-hero .row {
-    min-height: 860px;
-  }
-}
 .site-navbar .navbar-nav > li > a:hover {
   color: firebrick;
 }
@@ -841,4 +835,63 @@ li.nav-link:hover {
 
 .about-heading h2 strong {
   font-weight: 800;
+}
+
+.skills-img {
+  object-fit: contain;
+  background-size: contain;
+  width: 4.75rem;
+}
+
+.skills-section {
+  /* padding: 3rem 0; */
+}
+
+.skills-text {
+  text-align: center;
+}
+
+.relative-text {
+  position: relative;
+  top: 0.9rem;
+}
+
+.postman {
+  width: 11rem;
+}
+
+.meister {
+  width: 7rem;
+}
+
+.httpie {
+  width: 7.5rem;
+}
+
+.http {
+  background-color: #fff;
+  width: 5rem;
+}
+
+.section-heading-padding {
+  padding: 2rem 0;
+}
+
+.portfolio-heading-padding {
+  padding: 4rem 0;
+}
+
+@media screen and (min-width: 992px) {
+  .site-hero,
+  .site-hero .row {
+    min-height: 860px;
+  }
+
+  .portfolio-heading-padding {
+    padding: 4rem 0;
+  }
+
+  .about-section {
+    padding: 4rem 0;
+  }
 }
