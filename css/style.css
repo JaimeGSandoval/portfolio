@@ -98,6 +98,12 @@ a {
     color: #000;
   }
 }
+
+.top-nav-item {
+  border-bottom: 3px solid transparent;
+  transition: 0.5s all ease;
+}
+
 .site-navbar .navbar-nav > li > a {
   color: #fff;
   font-size: 14px;
@@ -173,6 +179,10 @@ a {
 }
 .site-navbar.scrolled .navbar-nav > li.active > a {
   color: firebrick;
+}
+
+.top-nav-item:hover {
+  border-color: firebrick;
 }
 
 .site-hero {
@@ -442,9 +452,7 @@ a {
 }
 
 .portfolio-btn:hover {
-  background-color: #fff;
-  color: firebrick;
-  border-color: firebrick;
+  border-color: #fff;
 }
 
 .portfolio-btn-box {
@@ -802,7 +810,7 @@ a {
 }
 
 .site-navbar .navbar-nav > li > a:hover {
-  color: red;
+  color: firebrick;
 }
 
 li.nav-link:hover {
