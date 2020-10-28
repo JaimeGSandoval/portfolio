@@ -54,14 +54,7 @@ a {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
-  /* color: #bac964; */
 }
-/* a:hover,
-a:focus,
-a:active {
-  color: #b2c251;
-  text-decoration: none;
-} */
 
 .parent-nav-link-padding,
 .site-navbar .navbar-nav > li > a {
@@ -85,13 +78,10 @@ a:active {
   display: inline-block;
   border: 2px solid #fff;
   padding: 5px 20px;
-  /* color: #fff; */
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
-.site-navbar .navbar-brand:hover {
-  /* color: #fff; */
-}
+
 .site-navbar.bg-light {
   background: transparent !important;
 }
@@ -108,6 +98,12 @@ a:active {
     color: #000;
   }
 }
+
+.top-nav-item {
+  border-bottom: 3px solid transparent;
+  transition: 0.5s all ease;
+}
+
 .site-navbar .navbar-nav > li > a {
   color: #fff;
   font-size: 14px;
@@ -183,6 +179,10 @@ a:active {
 }
 .site-navbar.scrolled .navbar-nav > li.active > a {
   color: firebrick;
+}
+
+.top-nav-item:hover {
+  border-color: firebrick;
 }
 
 .site-hero {
@@ -347,9 +347,7 @@ a:active {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
-.btn.btn-primary {
-  /* color: #fff; */
-}
+
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
@@ -424,19 +422,44 @@ a:active {
 .single-portfolio .relative {
   margin-bottom: 20px;
 }
+
+.thumb {
+  height: 18.75rem;
+  width: auto;
+}
 .single-portfolio .p-inner {
-  text-align: center;
+  text-align: left;
 }
 .single-portfolio .p-inner h4 {
   font-size: 20px;
 }
 .single-portfolio .p-inner .cat {
-  font-size: 12px;
-  text-transform: uppercase;
+  font-size: 1rem;
   color: #cccccc;
+  text-align: justify;
 }
 
 /*--------- Start Portfolio Area -------------*/
+
+.portfolio-btn {
+  background-color: firebrick;
+  color: #fff;
+  text-transform: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  transition: 0.3s all ease;
+  border: 3px solid transparent;
+}
+
+.portfolio-btn:hover {
+  border-color: #fff;
+}
+
+.portfolio-btn-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .portfolio-area .primary-btn {
   color: #fff;
   background-color: #bac964;
@@ -545,6 +568,7 @@ a:active {
   transition: 0.5s ease;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  object-fit: cover;
 }
 
 .middle {
@@ -786,9 +810,13 @@ a:active {
 }
 
 .site-navbar .navbar-nav > li > a:hover {
-  color: red;
+  color: firebrick;
 }
 
 li.nav-link:hover {
   color: orange;
+}
+
+.strong-text {
+  color: firebrick;
 }
