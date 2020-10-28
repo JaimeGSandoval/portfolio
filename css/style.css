@@ -107,7 +107,7 @@ a {
 .site-navbar .navbar-nav > li > a {
   color: #fff;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.1em;
   position: relative;
   text-transform: uppercase;
@@ -196,7 +196,7 @@ a {
 .site-hero,
 .site-hero .row {
   height: 100vh;
-  min-height: 800px;
+  /* min-height: 800px; */
 }
 .site-hero:before {
   content: "";
@@ -240,7 +240,6 @@ a {
 }
 
 .section-heading {
-  margin-bottom: 30px;
   position: relative;
   z-index: 10;
 }
@@ -249,6 +248,7 @@ a {
   font-weight: 200;
   padding-top: 20px;
   font-size: 30px;
+  padding-bottom: 5rem;
 }
 .section-heading h2 strong {
   font-weight: 800;
@@ -809,6 +809,14 @@ a {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
+/* My custom styles */
+
+@media screen and (min-width: 992px) {
+  .site-hero,
+  .site-hero .row {
+    min-height: 860px;
+  }
+}
 .site-navbar .navbar-nav > li > a:hover {
   color: firebrick;
 }
@@ -819,4 +827,18 @@ li.nav-link:hover {
 
 .strong-text {
   color: firebrick;
+}
+
+.profile-img-box {
+  text-align: center;
+}
+
+.about-heading {
+  position: relative;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.about-heading h2 strong {
+  font-weight: 800;
 }
