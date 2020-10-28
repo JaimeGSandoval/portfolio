@@ -424,20 +424,38 @@ a:active {
 .single-portfolio .relative {
   margin-bottom: 20px;
 }
+
+.thumb {
+  height: 18.75rem;
+  width: auto;
+}
 .single-portfolio .p-inner {
-  text-align: center;
+  text-align: left;
 }
 .single-portfolio .p-inner h4 {
   font-size: 20px;
 }
 .single-portfolio .p-inner .cat {
-  font-size: 12px;
-  text-transform: uppercase;
+  font-size: 1rem;
   color: #cccccc;
   text-align: justify;
 }
 
 /*--------- Start Portfolio Area -------------*/
+
+.portfolio-btn {
+  background-color: firebrick;
+  color: #fff;
+  text-transform: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.portfolio-btn-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .portfolio-area .primary-btn {
   color: #fff;
   background-color: #bac964;
@@ -546,6 +564,7 @@ a:active {
   transition: 0.5s ease;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  object-fit: cover;
 }
 
 .middle {
