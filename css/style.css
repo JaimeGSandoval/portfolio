@@ -434,6 +434,7 @@ a:active {
   font-size: 12px;
   text-transform: uppercase;
   color: #cccccc;
+  text-align: justify;
 }
 
 /*--------- Start Portfolio Area -------------*/
@@ -791,4 +792,8 @@ a:active {
 
 li.nav-link:hover {
   color: orange;
+}
+
+.strong-text {
+  color: firebrick;
 }
