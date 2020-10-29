@@ -835,7 +835,7 @@ li.nav-link:hover {
 .skills-img {
   object-fit: contain;
   background-size: contain;
-  width: 4.75rem;
+  width: 3rem;
 }
 
 .skills-text {
@@ -853,10 +853,6 @@ li.nav-link:hover {
 
 .meister {
   width: 7rem;
-}
-
-.linkedin {
-  width: 5rem;
 }
 
 .httpie {
@@ -888,7 +884,7 @@ li.nav-link:hover {
 }
 
 .contact-hover:hover {
-  border-color: firebrick;
+  border-color: red;
 }
 
 .copy {
@@ -901,10 +897,42 @@ li.nav-link:hover {
 
 .hover-shadow {
   transition: 0.3s all ease;
+  box-shadow: 5px 5px 20px red;
 }
 
 .hover-shadow:hover {
-  box-shadow: 5px 5px 20px red !important;
+  box-shadow: 5px 5px 20px #fff;
+}
+
+.pgweb {
+  width: 5rem;
+}
+
+.vscode {
+  width: 4.5rem;
+}
+
+.express,
+.figma {
+  width: 6rem;
+}
+
+.footer-box {
+  margin-top: 3rem;
+}
+
+.button-box {
+  margin-top: 3rem;
+}
+
+.banner-btn {
+  transition: 0.3s all ease;
+  border: 3px solid transparent;
+}
+
+.banner-btn:hover {
+  border-color: firebrick;
+  color: firebrick;
 }
 
 @media screen and (min-width: 992px) {
