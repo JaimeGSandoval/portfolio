@@ -5,7 +5,7 @@ body {
   font-size: 1.8rem;
   font-family: "Monoton", cursive;
   text-align: center;
-  text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
+  text-shadow: 0 0 100px red, 0 0 50px FireBrick, 0 0 26px DarkRed;
   color: red;
   position: relative;
 }
@@ -20,7 +20,7 @@ body {
 }
 #error {
   color: #fff;
-  text-shadow: 0 0 80px #ffffff, 0 0 30px #008000, 0 0 6px #0000ff;
+  text-shadow: 0 0 100px #ffffff, 0 0 50px #008000, 0 0 26px #0000ff;
 }
 #error span {
   animation: upper 11s linear infinite;
@@ -77,7 +77,7 @@ body {
   96%,
   100% {
     opacity: 0.99;
-    text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
+    /* text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed; */
   }
   19%,
   22.99%,

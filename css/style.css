@@ -235,10 +235,6 @@ a {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.site-section {
-  /* padding: 5em 0; */
-}
-
 .section-heading {
   position: relative;
   z-index: 10;
@@ -248,7 +244,6 @@ a {
   font-weight: 200;
   padding-top: 20px;
   font-size: 30px;
-  /* padding-bottom: 5rem; */
 }
 .section-heading h2 strong {
   font-weight: 800;
@@ -843,10 +838,6 @@ li.nav-link:hover {
   width: 4.75rem;
 }
 
-.skills-section {
-  /* padding: 3rem 0; */
-}
-
 .skills-text {
   text-align: center;
 }
@@ -906,6 +897,14 @@ li.nav-link:hover {
 
 .contact-heading {
   padding: 2rem 0;
+}
+
+.hover-shadow {
+  transition: 0.3s all ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: 5px 5px 20px red !important;
 }
 
 @media screen and (min-width: 992px) {
