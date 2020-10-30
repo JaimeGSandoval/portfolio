@@ -834,7 +834,7 @@ li.nav-link:hover {
 .skills-img {
   object-fit: contain;
   background-size: contain;
-  width: 3rem;
+  width: 4rem;
 }
 
 .skills-text {
@@ -944,11 +944,6 @@ li.nav-link:hover {
 .banner-btn:hover {
   border-color: firebrick;
   color: firebrick;
-}
-
-.react-dev,
-.chrome {
-  min-width: 10rem;
 }
 
 @media screen and (min-width: 992px) {
