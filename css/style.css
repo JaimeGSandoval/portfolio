@@ -196,7 +196,6 @@ a {
 .site-hero,
 .site-hero .row {
   height: 100vh;
-  /* min-height: 800px; */
 }
 .site-hero:before {
   content: "";
@@ -844,7 +843,6 @@ li.nav-link:hover {
 
 .relative-text {
   position: relative;
-  top: 0.9rem;
 }
 
 .postman {
@@ -852,16 +850,16 @@ li.nav-link:hover {
 }
 
 .meister {
-  width: 7rem;
+  width: 5.7rem;
 }
 
 .httpie {
-  width: 7.5rem;
+  width: 6.3rem;
 }
 
 .http {
   background-color: #fff;
-  width: 5rem;
+  width: 4.49rem;
 }
 
 .section-heading-padding {
@@ -904,17 +902,35 @@ li.nav-link:hover {
   box-shadow: 5px 5px 20px #fff;
 }
 
-.pgweb {
-  width: 5rem;
+.meister,
+.httpie,
+.express {
+  border-radius: 10px;
+}
+
+/* .chrome {
+  position: relative;
+  top: 0.8rem;
+} */
+
+.express {
+  width: 5.5rem;
 }
 
 .vscode {
-  width: 4.5rem;
+  width: 4.3rem;
 }
 
-.express,
-.figma {
-  width: 6rem;
+.figma,
+.pgweb {
+  width: 4rem;
+}
+
+.figma,
+.pgweb,
+.http,
+.ajax {
+  border-radius: 50%;
 }
 
 .footer-box {
@@ -933,6 +949,11 @@ li.nav-link:hover {
 .banner-btn:hover {
   border-color: firebrick;
   color: firebrick;
+}
+
+.react-dev,
+.chrome {
+  min-width: 10rem;
 }
 
 @media screen and (min-width: 992px) {
