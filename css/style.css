@@ -933,6 +933,8 @@ li.nav-link:hover {
 }
 
 .button-box {
+  display: flex;
+  justify-content: center;
   margin-top: 3rem;
 }
 
@@ -944,6 +946,16 @@ li.nav-link:hover {
 .banner-btn:hover {
   border-color: firebrick;
   color: firebrick;
+}
+
+@media screen and (min-device-width: 568px) and (orientation: landscape) {
+  .banner-box {
+    margin: 3.5rem 0;
+  }
+
+  .site-hero {
+    height: 32rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
