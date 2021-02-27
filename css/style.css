@@ -447,6 +447,7 @@ a {
 
 .portfolio-btn:hover {
   border-color: #fff;
+  color: #fff;
 }
 
 .portfolio-btn-box {
@@ -928,6 +929,10 @@ li.nav-link:hover {
   border-radius: 50%;
 }
 
+footer {
+  margin-bottom: 4rem;
+}
+
 .footer-box {
   margin-top: 3rem;
 }
@@ -941,11 +946,21 @@ li.nav-link:hover {
 .banner-btn {
   transition: 0.3s all ease;
   border: 3px solid transparent;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .banner-btn:hover {
   border-color: firebrick;
   color: firebrick;
+}
+
+.contact-links {
+   color: #fff;
+}
+
+.contact-links:hover {
+   text-decoration: none;
+   color: #fff;
 }
 
 @media screen and (min-device-width: 568px) and (orientation: landscape) {
@@ -973,6 +988,25 @@ li.nav-link:hover {
   }
 
   .about-section {
-    padding: 4rem 0;
+    padding: 4rem 0 2rem 0;
   }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+  color: #fff;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fff;
 }
