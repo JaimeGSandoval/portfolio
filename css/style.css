@@ -36,7 +36,7 @@ h5 {
   top: 20px;
   width: 100%;
   z-index: 200;
-  background: #fff;
+  /* background: #fff; */
 }
 
 .site-navbar .navbar-brand {
@@ -47,13 +47,13 @@ h5 {
   letter-spacing: 0.2em;
 }
 
-.site-navbar.bg-light {
-  background: transparent !important;
+.site-navbar {
+  background: transparent;
 }
 
 @media (max-width: 991.98px) {
-  .site-navbar.bg-light {
-    background: #fff !important;
+  .site-navbar {
+    background: white;
     top: 0;
   }
 
@@ -493,12 +493,12 @@ footer {
   color: #fff;
 }
 
-.navbar-light .navbar-nav .show > .nav-link,
+/* .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #fff;
-}
+  color: firebrick;
+} */
 
 
 .sticky {
@@ -510,6 +510,6 @@ footer {
     border-top: 0;
 }
 
-.white {
-  background-color: '#fff';
+ .white {
+  background-color: white;
 }
