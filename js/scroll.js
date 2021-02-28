@@ -34,13 +34,15 @@ $("#pb-navbar ul li a[href^='#']").on('click', function (e) {
 
 $(document).ready(function() {
 
-  const stickyNav = function(){
+  const stickyNav = function() {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300 ) {
       $('.navbar').addClass('sticky');
       $('.site-navbar').addClass('white');
+      $('.nav-link').css('color', 'firebrick');
     } else {
       $('.navbar').removeClass('sticky');
       $('.site-navbar').removeClass('white');
+      $('.nav-link').css('color', 'white');
     }
   };
 

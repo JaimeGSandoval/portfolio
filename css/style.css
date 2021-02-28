@@ -130,7 +130,7 @@ h5 {
 
 
 .site-navbar.scrolled .navbar-nav > li > a {
-  color: rgba(0, 0, 0, 0.7);
+  color: firebrick;
 }
 
 .site-navbar.scrolled .navbar-nav > li > a:hover {
@@ -489,16 +489,12 @@ footer {
   color: #fff;
 }
 
-.navbar-light .navbar-nav .nav-link.disabled {
-  color: #fff;
-}
-
-/* .navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: firebrick;
-} */
+  color: #fff;
+}
 
 
 .sticky {
