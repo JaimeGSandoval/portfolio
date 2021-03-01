@@ -13,7 +13,7 @@ $(document).ready(function() {
 });
 
 var navToggler = $('.navbar-toggler');
-$("#pb-navbar ul li a[href^='#']").on('click', function (e) {
+$("#pb-navbar ul li a[href^='#']").on('click', function () {
     if (navToggler.is(':visible')) {
         navToggler.click();
     }
