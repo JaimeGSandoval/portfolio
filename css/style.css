@@ -36,7 +36,7 @@ h5 {
   top: 20px;
   width: 100%;
   z-index: 200;
-  background: #fff;
+  /* background: #fff; */
 }
 
 .site-navbar .navbar-brand {
@@ -47,13 +47,13 @@ h5 {
   letter-spacing: 0.2em;
 }
 
-.site-navbar.bg-light {
-  background: transparent !important;
+.site-navbar {
+  background: transparent;
 }
 
 @media (max-width: 991.98px) {
-  .site-navbar.bg-light {
-    background: #fff !important;
+  .site-navbar {
+    background: white;
     top: 0;
   }
 
@@ -130,7 +130,7 @@ h5 {
 
 
 .site-navbar.scrolled .navbar-nav > li > a {
-  color: rgba(0, 0, 0, 0.7);
+  color: firebrick;
 }
 
 .site-navbar.scrolled .navbar-nav > li > a:hover {
@@ -489,13 +489,23 @@ footer {
   color: #fff;
 }
 
-.navbar-light .navbar-nav .nav-link.disabled {
-  color: #fff;
-}
-
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
   color: #fff;
+}
+
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+ .white {
+  background-color: white;
 }
