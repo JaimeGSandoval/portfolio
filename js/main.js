@@ -8,17 +8,17 @@ if (typeof ($.fn.modal) === 'undefined'){
 const bootCdnTest = document.createElement("div");
 bootCdnTest.className = "hidden d-none";
 document.head.appendChild(bootCdnTest);
-const neonTextLink = document.getElementById('neon-text');
 
 const bootStrapLoaded = window.getComputedStyle(bootCdnTest).display === "none";
 document.head.removeChild(bootCdnTest);
 
 if (!bootStrapLoaded) {
+  const neonTextLink = document.getElementById('neon-text');
   const bootLink = document.createElement("link");
   bootLink.type = "text/css";
   bootLink.rel = "stylesheet";
   bootLink.href = "./css/bootstrap/bootstrap.css";
-  document.head.insertBefore(bootLink, neonTextLink);
+  neonTextLink.parentNode.insertBefore(bootLink, neonTextLink);
 }
 
 $(document).ready(function() {
