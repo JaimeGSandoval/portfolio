@@ -1,3 +1,26 @@
+if (typeof ($.fn.modal) === 'undefined'){
+    const mainScript = document.getElementById('main-script');
+    const bootJsScript = document.createElement("script");
+    bootJsScript.src = "./js/bootstrap/bootstrap.min.js"
+    mainScript.parentNode.insertBefore(bootJsScript, mainScript);
+}
+
+const bootCdnTest = document.createElement("div");
+bootCdnTest.className = "hidden d-none";
+document.head.appendChild(bootCdnTest);
+const neonTextLink = document.getElementById('neon-text');
+
+const bootStrapLoaded = window.getComputedStyle(bootCdnTest).display === "none";
+document.head.removeChild(bootCdnTest);
+
+if (!bootStrapLoaded) {
+  const bootLink = document.createElement("link");
+  bootLink.type = "text/css";
+  bootLink.rel = "stylesheet";
+  bootLink.href = "./css/bootstrap/bootstrap.css";
+  document.head.insertBefore(bootLink, neonTextLink);
+}
+
 $(document).ready(function() {
   $("a").on('click', function(event) {
     if (this.hash !== "") {
@@ -11,6 +34,8 @@ $(document).ready(function() {
     }
   });
 });
+
+
 
 var navToggler = $('.navbar-toggler');
 $("#pb-navbar ul li a[href^='#']").on('click', function () {
