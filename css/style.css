@@ -289,12 +289,9 @@ h5 {
   object-fit: cover;
 }
 
-
 .single-portfolio {
   border-radius: 5px;
 }
-
-/* My custom styles */
 
 .site-navbar .navbar-nav > li > a:hover {
   color: firebrick;
