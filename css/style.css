@@ -148,6 +148,7 @@ h5 {
 }
 
 .site-hero {
+  background-image: url("../images/night-traffic-4.jpg");
   background-color: #ccc;
   background-size: cover;
   background-position: center center;
@@ -313,8 +314,9 @@ li.nav-link:hover {
 
 .about-heading {
   position: relative;
-  padding-top: 20px;
+  padding: 20px 0;
   font-size: 30px;
+  text-align: center;
 }
 
 .about-heading h2 strong {
@@ -478,6 +480,10 @@ footer {
 
   .about-section {
     padding: 4rem 0 2rem 0;
+  }
+
+  .about-heading {
+    text-align: left;
   }
 }
 
