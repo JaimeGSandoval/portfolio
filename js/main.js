@@ -1,17 +1,25 @@
 if (!window.jQuery) {
   var jqueryFallback = document.createElement('script');
   jqueryFallback.src = './js/jquery/jquery.min.js';
-  document.head.append(jqueryFallback);
-}
+  document.head.appendChild(jqueryFallback);
 
-setTimeout(function () {
+  setTimeout(function () {
+    bootstrapJsFallback();
+    bootStrapCdnTest();
+    scrollEffect();
+    navToggleBtn();
+    stickyNav();
+}, 400);
+} else {
   bootstrapJsFallback();
   bootStrapCdnTest();
   scrollEffect();
   navToggleBtn();
   stickyNav();
-}, 400);
-// typeof $.fn.modal === 'undefined'
+}
+
+
+
 function bootstrapJsFallback() {
   if (!$.fn.modal) {
     var mainScript = document.getElementById('main-script');
