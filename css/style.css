@@ -324,6 +324,7 @@ li.nav-link:hover {
 
 .relative-text {
   position: relative;
+  top: 0.4rem;
 }
 
 .postman {
