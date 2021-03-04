@@ -88,7 +88,6 @@ h5 {
   }
 }
 
-
 .site-navbar.scrolled {
   background: #fff;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
@@ -128,7 +127,6 @@ h5 {
   background: #fff !important;
 }
 
-
 .site-navbar.scrolled .navbar-nav > li > a {
   color: firebrick;
 }
@@ -148,7 +146,7 @@ h5 {
 }
 
 .site-hero {
-  background-image: url("../images/night-traffic-4.jpg");
+  background-image: url('../images/night-traffic-4.jpg');
   background-color: #ccc;
   background-size: cover;
   background-position: center center;
@@ -163,7 +161,7 @@ h5 {
 }
 
 .site-hero::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   top: 0;
@@ -178,7 +176,6 @@ h5 {
   margin-bottom: 20px;
   display: block;
 }
-
 
 .site-hero h1,
 .site-hero .lead {
@@ -253,7 +250,6 @@ h5 {
   text-align: justify;
 }
 
-
 .portfolio-btn {
   background-color: firebrick;
   color: #fff;
@@ -273,8 +269,6 @@ h5 {
   display: flex;
   justify-content: flex-start;
 }
-
-
 
 .image {
   opacity: 1;
@@ -443,12 +437,12 @@ footer {
 }
 
 .contact-links {
-   color: #fff;
+  color: #fff;
 }
 
 .contact-links:hover {
-   text-decoration: none;
-   color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 @media screen and (min-device-width: 568px) and (orientation: landscape) {
@@ -488,7 +482,8 @@ footer {
   color: #fff;
 }
 
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
   color: #fff;
 }
 
@@ -499,16 +494,46 @@ footer {
   color: #fff;
 }
 
-
 .sticky {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    border-top: 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
 }
 
- .white {
+.white {
   background-color: white;
+}
+
+#IE-styles-skills-section {
+  display: none;
+  overflow: hidden;
+  margin: 30px 0;
+}
+
+.IE-skills-header {
+  text-decoration: underline;
+  color: #fff;
+}
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #IE-styles-skills-section {
+    display: block;
+  }
+}
+
+@media all and (max-width: 768px) and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+  .skills-section {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+  #IE-styles-skills-section {
+    display: none;
+  }
 }
