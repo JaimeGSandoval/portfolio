@@ -1,5 +1,5 @@
 if (!window.jQuery) {
-  var jqueryFallback = document.createElement('script');
+  const jqueryFallback = document.createElement('script');
   jqueryFallback.src = './js/jquery/jquery.min.js';
   document.head.appendChild(jqueryFallback);
 
@@ -9,6 +9,7 @@ if (!window.jQuery) {
     scrollEffect();
     navToggleBtn();
     stickyNav();
+    dateMaker();
 }, 400);
 } else {
   bootstrapJsFallback();
@@ -16,30 +17,29 @@ if (!window.jQuery) {
   scrollEffect();
   navToggleBtn();
   stickyNav();
+  dateMaker();
 }
-
-
 
 function bootstrapJsFallback() {
   if (!$.fn.modal) {
-    var mainScript = document.getElementById('main-script');
-    var bootJsScript = document.createElement('script');
+    const mainScript = document.getElementById('main-script');
+    const bootJsScript = document.createElement('script');
     bootJsScript.src = './js/bootstrap/bootstrap.min.js';
     mainScript.parentNode.insertBefore(bootJsScript, mainScript);
   }
 }
 
 function bootStrapCdnTest() {
-  var bootCdnTest = document.createElement('div');
+  const bootCdnTest = document.createElement('div');
   bootCdnTest.className = 'hidden d-none';
   document.head.appendChild(bootCdnTest);
 
-  var bootStrapLoaded = window.getComputedStyle(bootCdnTest).display === 'none';
+  const bootStrapLoaded = window.getComputedStyle(bootCdnTest).display === 'none';
   document.head.removeChild(bootCdnTest);
 
   if (!bootStrapLoaded) {
-    var neonTextLink = document.getElementById('neon-text');
-    var bootLink = document.createElement('link');
+    const neonTextLink = document.getElementById('neon-text');
+    const bootLink = document.createElement('link');
     bootLink.type = 'text/css';
     bootLink.rel = 'stylesheet';
     bootLink.href = './css/bootstrap/bootstrap.css';
@@ -52,7 +52,7 @@ function scrollEffect() {
     $('a').on('click', function (event) {
       if (this.hash !== '') {
         event.preventDefault();
-        var hash = this.hash;
+        const hash = this.hash;
         $('html, body').animate(
           {
             scrollTop: $(hash).offset().top,
@@ -68,7 +68,7 @@ function scrollEffect() {
 }
 
 function navToggleBtn() {
-  var navToggler = $('.navbar-toggler');
+  const navToggler = $('.navbar-toggler');
   $("#pb-navbar ul li a[href^='#']").on('click', function () {
     if (navToggler.is(':visible')) {
       navToggler.click();
@@ -78,7 +78,7 @@ function navToggleBtn() {
 
 function stickyNav() {
   $(document).ready(function () {
-    var stickyNav = function () {
+    const stickyNav = function () {
       if (
         document.body.scrollTop > 300 ||
         document.documentElement.scrollTop > 300
@@ -97,4 +97,14 @@ function stickyNav() {
       stickyNav();
     });
   });
+}
+
+function dateMaker(){
+  const date = new Date();
+  const monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  const today = monthNames[date.getMonth()] + " " + date.getDay() + " " + date.getFullYear();
+  const dateText = document.querySelector('.date');
+  dateText.textContent = today;
 }

@@ -7,13 +7,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<meta property="og:url" content="https://jaimesandoval.net/">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Jaime Sandoval | Full Stack Developer">
 	<meta property="og:description" content="Portfolio | Jaime Sandoval | Full Stack Developer">
 	<meta property="og:image" content="https://jaimesandoval.net/images/portfolio-demo.png">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link id="neon-text" rel="stylesheet" href="css/neon-text.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -53,12 +53,23 @@
 					<h4>Welcome to my Portfolio</h4>
 					<div class="button-box">
 						<a href="https://github.com/JaimeGSandoval" target="_blank"
-							class="btn bg-white mr-1 mr-md-2 banner-btn">GitHub</a>
+							class="mx-md-3 banner-btn p-2 rounded bg-white d-flex align-items-center justify-content-center">
+							<img class="contact-icons-hero" src="images/github-contact.png" alt="GitHub logo">
+						</a>
+						<a href="https://twitter.com/jskodes"
+							class="mx-md-3 banner-btn p-2 rounded bg-white d-flex align-items-center justify-content-center"
+							target="_blank">
+							<img class="contact-icons-hero rounded email-btn-icon" src="images/twitter.png" alt="Twitter logo">
+						</a>
 						<a href="https://www.linkedin.com/in/jaime-sandoval-dev/" target="_blank"
-							class="btn bg-white ml-1 ml-md-2 banner-btn">Linkedin</a>
-						<a href="	https://drive.google.com/file/d/1jU37SJuagmmVhYHQgWDwqpQfn8vpjtHd/view?usp=sharing"
-							target="_blank" class="btn bg-white ml-1 ml-md-2 banner-btn">Resume</a>
-
+							class="banner-btn p-2 bg-white rounded mx-md-3 d-flex align-items-center justify-content-center">
+							<img class="contact-icons-hero" src="images/linkedin.png" alt="Linkedin logo">
+						</a>
+						<a href="mailto:jaime.devs@gmail.com"
+							class="mx-md-3 banner-btn p-2 bg-white rounded d-flex align-items-center justify-content-center"
+							title="Email">
+							<img class="contact-icons-hero email-btn-icon" src="images/envelope.png" alt="Email logo">
+						</a>
 					</div>
 				</div>
 			</div>
@@ -69,7 +80,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-heading text-center col-md-12 portfolio-heading-padding">
-					<h2>Featured <strong class="strong-text">Portfolio</strong></h2>
+					<h2>Featured <strong class="strong-text">Projects</strong></h2>
 				</div>
 			</div>
 
@@ -78,8 +89,10 @@
 					<div class="single-portfolio col-md-4">
 						<div class="relative">
 							<div class="thumb hover-shadow">
-								<a href="https://bonsaidepot.jaimesandoval.net/" target="_blank" aria-label="Discover what Bonsai Depot has to offer by following this link">
-									<img class="image img-fluid" src="images/bonsai-mobile.gif" alt="Demonstration gif of Bonsai Depot" data-object-fit="cover">
+								<a href="https://bonsaidepot.jaimesandoval.net/" target="_blank"
+									aria-label="Discover what Bonsai Depot has to offer by following this link">
+									<img class="image img-fluid" src="images/bonsai-mobile.gif" alt="Demonstration gif of Bonsai Depot"
+										data-object-fit="cover">
 								</a>
 							</div>
 						</div>
@@ -100,8 +113,10 @@
 					<div class="single-portfolio col-md-4">
 						<div class="relative">
 							<div class="thumb hover-shadow">
-								<a href="https://borkfrens.jaimesandoval.net/" target="_blank" aria-label="Discover what BorkFrens has to offer by following this link">
-									<img class="image img-fluid" src="images/bork-frens.gif" alt="Demonstration gif of BorkFrens" data-object-fit="cover">
+								<a href="https://borkfrens.jaimesandoval.net/" target="_blank"
+									aria-label="Discover what BorkFrens has to offer by following this link">
+									<img class="image img-fluid" src="images/bork-frens.gif" alt="Demonstration gif of BorkFrens"
+										data-object-fit="cover">
 								</a>
 							</div>
 						</div>
@@ -123,8 +138,10 @@
 					<div class="single-portfolio col-md-4 packaging">
 						<div class="relative">
 							<div class="thumb hover-shadow">
-								<a href="https://jaimegsandoval.github.io/today-in-science/" target="_blank" aria-label="Discover what Today in Science has to offer by following this link">
-									<img class="image img-fluid" src="images/today.gif" alt="Demonstration gif of Today in Science" data-object-fit="cover">
+								<a href="https://jaimegsandoval.github.io/today-in-science/" target="_blank"
+									aria-label="Discover what Today in Science has to offer by following this link">
+									<img class="image img-fluid" src="images/today.gif" alt="Demonstration gif of Today in Science"
+										data-object-fit="cover">
 								</a>
 							</div>
 						</div>
@@ -210,8 +227,8 @@
 							<p>HTML5</p>
 						</div>
 						<div class="col skills-text">
-							<img class="skills-img" src="images/npm.png" alt="npm logo">
-							<p>npm</p>
+							<img class="skills-img" src="images/sql.png" alt="SQL logo">
+							<p>SQL</p>
 						</div>
 						<div class="col skills-text">
 							<img class="skills-img" src="images/aws.png" alt="aws logo">
@@ -248,91 +265,114 @@
 							<img class="http" src="images/http.png" alt="HTTP logo">
 							<p>HTTP</p>
 						</div>
+						<div class="col skills-text">
+							<img class="skills-img" src="images/npm.png" alt="npm logo">
+							<p>npm</p>
+						</div>
+					</div>
+
+					<div class="row align-items-center py-5">
+						<div class="col skills-text">
+							<img class="babel" src="images/babel-yellow2.jpg" alt="Babel logo">
+							<p>Babel</p>
+						</div>
+						<div class="col skills-text">
+							<img class="skills-img" src="images/webpack.png" alt="Webpack logo">
+							<p>Webpack</p>
+						</div>
+						<div class="col skills-text">
+							<img class="skills-img" src="images/parcel.png" alt="Parcel logo">
+							<p>PARCEL</p>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="IE-styles-skills-section">
+		<div class="conatiner">
+			<div class="row">
+				<div class="col-md-12 mb-5">
+					<div class="section-heading text-center section-heading-padding">
+						<h2>My <strong class="strong-text">Skills</strong></h2>
+					</div>
+					<div class="row justify-content-around">
+						<div>
+							<h5 class="text-right IE-skills-header">Front End</h5>
+							<ul>
+								<li>JavaScript</li>
+								<li>React.js</li>
+								<li>jQuery</li>
+								<li>Ajax</li>
+								<li>HTTP</li>
+								<li>Bootstrap</li>
+								<li>CSS3</li>
+								<li>HTML5</li>
+								<li>Webpack</li>
+								<li>Babel</li>
+								<li>PARCEL</li>
+							</ul>
+						</div>
+
+						<div>
+							<h5 class="text-center IE-skills-header">Back End</h5>
+							<ul>
+								<li>Node.js</li>
+								<li>Express.js</li>
+								<li>SQL</li>
+								<li>PostgreSQL</li>
+								<li>AWS EC2</li>
+							</ul>
+						</div>
+
+						<div>
+							<h5 class="text-center IE-skills-header">Tools</h5>
+							<ul>
+								<li>Git</li>
+								<li>Github</li>
+								<li>npm</li>
+								<li>Chrome Dev Tools</li>
+								<li>React Dev Tools</li>
+								<li>VScode</li>
+								<li>HTTPie</li>
+								<li>Pgweb</li>
+								<li>Figma</li>
+								<li>Meistertask</li>
+								<li>Babel</li>
+								<li>Webpack</li>
+								<li>PARCEL</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
- <section id="IE-styles-skills-section">
-    <div class="conatiner">
-			<div class="row">
-				 <div class="col-md-12 mb-5">
-					 	<div class="section-heading text-center section-heading-padding">
-						<h2>My <strong class="strong-text">Skills</strong></h2>
-					</div>
-					 <div class="row justify-content-around">
-						 <div>
-							 <h5 class="text-right IE-skills-header">Front End</h5>
-							 <ul>
-								 <li>JavaScript</li>
-								 <li>React.js</li>
-								 <li>jQuery</li>
-								 <li>Ajax</li>
-								 <li>HTTP</li>
-								 <li>Bootstrap</li>
-								 <li>CSS3</li>
-								 <li>HTML5</li>
-							 </ul>
-							</div>
-
-							<div>
-								<h5 class="text-center IE-skills-header">Back End</h5>
-								<ul>
-								<li>Node.js</li>
-								<li>Express.js</li>
-								<li>SQL</li>
-								<li>PostgreSQL</li>
-								<li>Bootstrap</li>
-								<li>AWS EC2</li>
-							</ul>
-						</div>
-
-						<div>
-              <h5 class="text-center IE-skills-header">Tools</h5>
-							<ul>
-								 <li>Git</li>
-								 <li>Github</li>
-								 <li>npm</li>
-								 <li>Chrome Dev Tools</li>
-								 <li>React Dev Tools</li>
-								 <li>VScode</li>
-								 <li>HTTPie</li>
-								 <li>Pgweb</li>
-								 <li>Figma</li>
-								 <li>Meistertask</li>
-							 </ul>
-						</div>
-					 </div>
-				 </div>
-			</div>
-		</div>
- </section>
-
- <section class="site-section about-section" id="section-about">
+	<section class="site-section about-section" id="section-about">
 		<div class="container">
 			<div class="row mb-5">
-				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0 profile-img-box">
+				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0 profile-img-box align-items-center d-flex justify-content-center">
 					<img src="images/profile-6.png" alt="Image placeholder" class="img-fluid profile-img">
 				</div>
 				<div class="col-lg-5 pl-lg-5">
 					<div class="about-heading">
 						<h2>About <strong class="strong-text">Me</strong></h2>
 					</div>
-					<p class="lead">Coding has become my life. If I go a day without coding it feels odd, and that's mainly
-						because it's such a big part of me.</p>
+					<p class="lead">Hello There! Thank you for visiting! My Name is Jaime Sandoval and I'm a Full Stack Web Developer.</p>
 					<p>I truly enjoy using the combination of my imagination and logic to create something new and useful for
-						people, or to use the skills I've acquired to find a solution to a problem, whether it's debugging or
-						solving an algorithm. I wasn't
-						always involved with tech, but I took the plunge at the suggestion of a softball teammate, to whom I'm
-						forever grateful towards for introducing me to this field. Ever since I took his suggestion, I've never
-						looked back.
+						people, or to use my skills to find a solution to a problem. Whether it's debugging or
+						solving an algorithm, I'm game.
 					</p>
-					<p>When I'm not coding like the wind, I like to spend my time doing outdoor activities such as snowboarding,
-						surfing, hiking or just a playing pick up game of basketball with friends. I always try to stay active and
-						have fun in the sun.</p>
-					<p>I'd love to bring my skills to a company and look forward to being part of a dev team. Let's collaborate
-						and make something incredible.</p>
+
+					<p class="date d-inline-block"></p>
+					<h2>Currently Working on:</h2>
+					<p>- Refactoring Today in Science with TypeScript and adding a bundler.</p>
+
+					<p>Staying up to date with current dev trends is another passion of mine. I do that in a variety of ways, such as attending tech meetups, listening to dev podcasts and finding interesting Software Engineers to follow on Twitter.</p>
+					<p>I'd love to bring my skills to a company and I look forward to being part of a Dev Team. Let's collaborate and make something incredible with code.</p>
 				</div>
 			</div>
 
@@ -345,26 +385,28 @@
 			<div class="row">
 				<div class="col-md-12 mb-5">
 					<div class="section-heading text-center contact-heading">
-						<h2>Get <strong class="strong-text">In Touch</strong></h2>
+						<h2>Get <strong class="strong-text"> In Touch</strong></h2>
 					</div>
-					<div class="row justify-content-around footer-box">
-						<a class="contact-links" href="https://github.com/JaimeGSandoval" target="_blank">
-						<div class="skills-text contact-hover">
-								<img class="skills-img" src="images/github.png" alt="GitHub logo">
-								<p>GitHub</p>
+					<div class="row justify-content-center footer-box">
+						<a class="contact-footer mx-3 mx-md-4" href="https://github.com/JaimeGSandoval" target="_blank">
+							<div class="skills-text contact-hover bg-white p-2 rounded">
+								<img class="contact-icons-footer" src="images/github-contact.png" alt="GitHub logo">
 							</div>
 						</a>
-						<a class="contact-links" href="https://www.linkedin.com/in/jaime-sandoval-dev/" target="_blank">
-						<div class="skills-text contact-hover">
-								<img class="bg-color skills-img linkedin" src="images/linkedin.png" alt="Linkedin logo">
-								<p>Linkedin</p>
-							</div>
-						</a>
-						<a class="contact-links" href="	https://drive.google.com/file/d/1jU37SJuagmmVhYHQgWDwqpQfn8vpjtHd/view?usp=sharing"
+						<a class="contact-footer mx-3 mx-md-4 rounded" href="https://www.linkedin.com/in/jaime-sandoval-dev/"
 							target="_blank">
-						<div class="skills-text contact-hover">
-								<img class="skills-img linkedin bg-white" src="images/resume.png" alt="Resume logo">
-								<p>Resume</p>
+							<div class="skills-text contact-hover bg-white p-2 rounded">
+								<img class="contact-icons-footer" src="images/linkedin.png" alt="Linkedin logo">
+							</div>
+						</a>
+						<a class="contact-footer mx-3 mx-md-4 rounded" href="https://twitter.com/jskodes" target="_blank">
+							<div class="skills-text contact-hover bg-white p-2 rounded">
+								<img class="contact-icons-footer" src="images/twitter.png" alt="Twitter logo">
+							</div>
+						</a>
+						<a class="contact-footer mx-3 mx-md-4 rounded" href="mailto:jaime.devs@gmail.com" target="_blank">
+							<div class="skills-text contact-hover bg-white p-2 rounded">
+								<img class="contact-icons-footer" src="images/envelope.png" alt="Email logo">
 							</div>
 						</a>
 					</div>
@@ -373,10 +415,10 @@
 		</div>
 	</footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="./js/object-fit-polyfill.js"></script>
-<script id="main-script" src="./js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="./js/object-fit-polyfill.js"></script>
+	<script id="main-script" src="./js/main.js"></script>
 </body>
 
 </html>

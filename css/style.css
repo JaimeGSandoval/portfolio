@@ -1,6 +1,5 @@
 body {
-  background: #fff;
-  color: rgba(255, 255, 255, 0.4);
+  color: #fff;
   background: #222;
   line-height: 1.7;
   font-size: 16px;
@@ -36,7 +35,6 @@ h5 {
   top: 20px;
   width: 100%;
   z-index: 200;
-  /* background: #fff; */
 }
 
 .site-navbar .navbar-brand {
@@ -212,13 +210,6 @@ h5 {
   line-height: 1.5;
 }
 
-.btn {
-  border-radius: 100px;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 0.2rem;
-}
-
 .btn:active,
 .btn:focus {
   outline: none;
@@ -303,6 +294,10 @@ li.nav-link:hover {
   text-align: center;
 }
 
+/* .profile-img {
+  object-fit: cover;
+} */
+
 .about-heading {
   position: relative;
   padding: 20px 0;
@@ -320,12 +315,74 @@ li.nav-link:hover {
   width: 4rem;
 }
 
+.contact-icons-hero {
+  object-fit: contain;
+  background-size: contain;
+  width: 1.2rem;
+}
+
+@media screen and (min-width: 375px) {
+  .contact-icons-hero {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .contact-icons-hero {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-icons-hero {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contact-icons-hero {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.contact-icons-footer {
+  object-fit: contain;
+  background-size: contain;
+  width: 1.5rem;
+}
+
+@media screen and (min-width: 375px) {
+  .contact-icons-footer {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .contact-icons-footer {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .contact-icons-footer {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
 .skills-text {
   text-align: center;
 }
 
 .relative-text {
   position: relative;
+  top: 0.4rem;
 }
 
 .postman {
@@ -340,7 +397,8 @@ li.nav-link:hover {
   width: 6.3rem;
 }
 
-.http {
+.http,
+.babel {
   background-color: #fff;
   width: 4.49rem;
 }
@@ -354,22 +412,18 @@ li.nav-link:hover {
 }
 
 .contact-hover {
-  border-bottom: 3px solid transparent;
   transition: 0.3s all ease;
+  box-shadow: 0px 0px 10px red;
 }
 
 .contact-hover p {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 400;
   padding-top: 1rem;
 }
 
 .contact-hover:hover {
-  border-color: red;
-}
-
-.copy {
-  color: #444;
+  box-shadow: 0px 0px 15px white;
 }
 
 .contact-heading {
@@ -416,22 +470,33 @@ footer {
 }
 
 .footer-box {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .button-box {
   display: flex;
   justify-content: center;
+  margin: auto;
   margin-top: 3rem;
+}
+
+.button-box a {
+  margin-bottom: 1rem;
 }
 
 .banner-btn {
   transition: 0.3s all ease;
-  border: 3px solid transparent;
-  color: rgba(0, 0, 0, 0.7);
+  margin: 0 0.5rem;
+}
+
+@media screen and (min-width: 414px) {
+  .banner-btn {
+    margin: 0 0.8rem;
+  }
 }
 
 .banner-btn:hover {
+  box-shadow: 0px 0px 15px white;
   border-color: firebrick;
   color: firebrick;
 }
@@ -462,7 +527,7 @@ footer {
   }
 
   .contact-heading {
-    padding: 4rem 0;
+    padding-bottom: 1rem;
   }
 
   .portfolio-heading-padding {
@@ -535,5 +600,12 @@ footer {
   (-ms-high-contrast: active) {
   #IE-styles-skills-section {
     display: none;
+  }
+}
+
+@media all and (max-width: 500px) and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+  .profile-img {
+    width: 60%;
   }
 }
