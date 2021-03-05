@@ -393,7 +393,8 @@ li.nav-link:hover {
   width: 6.3rem;
 }
 
-.http {
+.http,
+.babel {
   background-color: #fff;
   width: 4.49rem;
 }
