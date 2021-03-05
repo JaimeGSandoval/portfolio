@@ -294,6 +294,10 @@ li.nav-link:hover {
   text-align: center;
 }
 
+/* .profile-img {
+  object-fit: cover;
+} */
+
 .about-heading {
   position: relative;
   padding: 20px 0;
@@ -596,5 +600,12 @@ footer {
   (-ms-high-contrast: active) {
   #IE-styles-skills-section {
     display: none;
+  }
+}
+
+@media all and (max-width: 500px) and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+  .profile-img {
+    width: 60%;
   }
 }

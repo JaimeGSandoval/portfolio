@@ -1,19 +1,3 @@
-(() => {
-
-  const date = new Date();
-
-  const monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
-
-  const today = `${monthNames[date.getMonth()]} ${date.getDay()} ${date.getFullYear()}`;
-
-  const dateText = document.querySelector('.date');
-  dateText.textContent = today;
-})();
-
-
-
 if (!window.jQuery) {
   var jqueryFallback = document.createElement('script');
   jqueryFallback.src = './js/jquery/jquery.min.js';
@@ -25,7 +9,7 @@ if (!window.jQuery) {
     scrollEffect();
     navToggleBtn();
     stickyNav();
-    // dateMaker();
+    dateMaker();
 }, 400);
 } else {
   bootstrapJsFallback();
@@ -33,10 +17,8 @@ if (!window.jQuery) {
   scrollEffect();
   navToggleBtn();
   stickyNav();
-  // dateMaker();
+  dateMaker();
 }
-
-
 
 function bootstrapJsFallback() {
   if (!$.fn.modal) {
@@ -117,17 +99,12 @@ function stickyNav() {
   });
 }
 
-
-// function dateMaker() {
-
-//   const date = new Date();
-
-//   const monthNames = ["January", "February", "March", "April", "May", "June",
-//     "July", "August", "September", "October", "November", "December"
-//   ];
-
-//   const today = `${monthNames[date.getMonth()]} ${date.getDay()} ${date.getFullYear()}`;
-
-//   const dateText = document.querySelector('.date');
-//   dateText.textContent = today;
-// }
+function dateMaker(){
+  var date = new Date();
+  var monthNames = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+  var today = monthNames[date.getMonth()] + " " + date.getDay() + " " + date.getFullYear();
+  var dateText = document.querySelector('.date');
+  dateText.textContent = today;
+}
