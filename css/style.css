@@ -282,10 +282,6 @@ h5 {
   color: firebrick;
 }
 
-li.nav-link:hover {
-  color: orange;
-}
-
 .strong-text {
   color: firebrick;
 }
@@ -294,9 +290,10 @@ li.nav-link:hover {
   text-align: center;
 }
 
-/* .profile-img {
-  object-fit: cover;
-} */
+.profile-img {
+  width: 80%;
+  height: 100%;
+}
 
 .about-heading {
   position: relative;
@@ -312,7 +309,8 @@ li.nav-link:hover {
 .skills-img {
   object-fit: contain;
   background-size: contain;
-  width: 4rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .contact-icons-hero {
@@ -397,10 +395,13 @@ li.nav-link:hover {
   width: 6.3rem;
 }
 
-.http,
+.http {
+  border-radius: 50%;
+}
+
 .babel {
-  background-color: #fff;
   width: 4.49rem;
+  height: 3rem;
 }
 
 .section-heading-padding {
@@ -453,10 +454,10 @@ li.nav-link:hover {
   width: 4.3rem;
 }
 
-.figma,
+/* .figma,
 .pgweb {
   width: 4rem;
-}
+} */
 
 .figma,
 .pgweb,
