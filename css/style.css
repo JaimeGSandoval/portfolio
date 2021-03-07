@@ -144,8 +144,15 @@ h5 {
   border-color: firebrick;
 }
 
+.webp .site-hero {
+  background-image: url('../images/hero/night-traffic-4.min.webp');
+}
+
+.no-webp .site-hero {
+  background-image: url('../images/hero/night-traffic-4.min.jpg');
+}
+
 .site-hero {
-  background-image: url('../images/night-traffic-4.jpg');
   background-color: #ccc;
   background-size: cover;
   background-position: center center;
@@ -319,6 +326,7 @@ h5 {
   object-fit: contain;
   background-size: contain;
   width: 1.2rem;
+  height: 100%;
 }
 
 @media screen and (min-width: 375px) {
@@ -353,6 +361,7 @@ h5 {
   object-fit: contain;
   background-size: contain;
   width: 1.5rem;
+  height: 100%;
 }
 
 @media screen and (min-width: 375px) {
@@ -445,7 +454,6 @@ h5 {
 
 .contact-hover {
   transition: 0.3s all ease;
-  box-shadow: 0px 0px 10px red;
 }
 
 .contact-hover p {
