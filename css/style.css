@@ -4,6 +4,7 @@ body {
   line-height: 1.7;
   font-size: 16px;
   font-weight: 300;
+  font-family: 'Nunito Sans';
 }
 
 h2 {
@@ -293,6 +294,14 @@ h5 {
 .profile-img {
   width: 80%;
   height: 100%;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .about-heading {
@@ -304,13 +313,6 @@ h5 {
 
 .about-heading h2 strong {
   font-weight: 800;
-}
-
-.skills-img {
-  object-fit: contain;
-  background-size: contain;
-  width: 3rem;
-  height: 3rem;
 }
 
 .contact-icons-hero {
@@ -383,8 +385,11 @@ h5 {
   top: 0.4rem;
 }
 
-.postman {
-  width: 11rem;
+.skills-img {
+  object-fit: contain;
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
 }
 
 .meister {
@@ -399,9 +404,35 @@ h5 {
   border-radius: 50%;
 }
 
+.parcel {
+  width: 4rem;
+  height: 3rem;
+}
+
 .babel {
   width: 4.49rem;
   height: 3rem;
+}
+
+.meister,
+.httpie,
+.express {
+  border-radius: 10px;
+}
+
+.express {
+  width: 5.5rem;
+}
+
+.vscode {
+  width: 4.3rem;
+}
+
+.figma,
+.pgweb,
+.http,
+.ajax {
+  border-radius: 50%;
 }
 
 .section-heading-padding {
@@ -438,32 +469,6 @@ h5 {
 
 .hover-shadow:hover {
   box-shadow: 5px 5px 20px #fff;
-}
-
-.meister,
-.httpie,
-.express {
-  border-radius: 10px;
-}
-
-.express {
-  width: 5.5rem;
-}
-
-.vscode {
-  width: 4.3rem;
-}
-
-/* .figma,
-.pgweb {
-  width: 4rem;
-} */
-
-.figma,
-.pgweb,
-.http,
-.ajax {
-  border-radius: 50%;
 }
 
 footer {
