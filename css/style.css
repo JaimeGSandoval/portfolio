@@ -623,3 +623,125 @@ footer {
     width: 60%;
   }
 }
+
+.neon-box {
+  font-size: 1.8rem;
+  font-family: 'Monoton', sans-serif;
+  text-align: center;
+  text-shadow: 0 0 100px red, 0 0 50px FireBrick, 0 0 26px DarkRed;
+  color: red;
+  position: relative;
+}
+.neon-box p {
+  margin: 0;
+}
+#error:hover {
+  text-shadow: 0 0 200px #ffffff, 0 0 80px #ffffff, 0 0 26px #ffffff;
+}
+.code:hover {
+  text-shadow: 0 0 100px red, 0 0 40px FireBrick, 0 0 8px DarkRed;
+}
+#error {
+  color: #fff;
+  text-shadow: 0 0 100px #ffffff, 0 0 50px #ffffff, 0 0 26px #ffffff;
+}
+#error span {
+  animation: upper 11s linear infinite;
+}
+.code span:nth-of-type(2) {
+  animation: lower 10s linear infinite;
+}
+
+.code-2 span:nth-of-type(1) {
+  animation: lower 8s linear infinite;
+}
+.code span:nth-of-type(1) {
+  text-shadow: none;
+  opacity: 0.4;
+}
+@keyframes upper {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: 0.99;
+    text-shadow: 0 0 100px #ffffff, 0 0 50px #fff, 0 0 26px #fff;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+@keyframes lower {
+  0%,
+  12%,
+  18.999%,
+  23%,
+  31.999%,
+  37%,
+  44.999%,
+  46%,
+  49.999%,
+  51%,
+  58.999%,
+  61%,
+  68.999%,
+  71%,
+  85.999%,
+  96%,
+  100% {
+    opacity: 0.99;
+    text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
+  }
+  19%,
+  22.99%,
+  32%,
+  36.999%,
+  45%,
+  45.999%,
+  50%,
+  50.99%,
+  59%,
+  60.999%,
+  69%,
+  70.999%,
+  86%,
+  95.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .neon-box {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .neon-box {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .neon-box {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner-box {
+    position: relative;
+    bottom: 4rem;
+  }
+}
