@@ -1,9 +1,31 @@
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url('../fonts/monoton-latin/monoton-v10-latin-regular.woff2')
+      format('woff2'),
+    url('../fonts/monoton-latin/monoton-v10-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url('../fonts/nunito-sans-latin/nunito-sans-v6-latin-regular.woff2')
+      format('woff2'),
+    url('../fonts/nunito-sans-latin/nunito-sans-v6-latin-regular.woff')
+      format('woff');
+}
+
 body {
   color: #fff;
   background: #222;
   line-height: 1.7;
   font-size: 16px;
   font-weight: 300;
+  font-family: 'Nunito Sans';
 }
 
 h2 {
@@ -143,8 +165,15 @@ h5 {
   border-color: firebrick;
 }
 
+.webp .site-hero {
+  background-image: url('../images/hero/night-traffic-4.min.webp');
+}
+
+.no-webp .site-hero {
+  background-image: url('../images/hero/night-traffic-4.min.jpg');
+}
+
 .site-hero {
-  background-image: url('../images/night-traffic-4.jpg');
   background-color: #ccc;
   background-size: cover;
   background-position: center center;
@@ -282,10 +311,6 @@ h5 {
   color: firebrick;
 }
 
-li.nav-link:hover {
-  color: orange;
-}
-
 .strong-text {
   color: firebrick;
 }
@@ -294,9 +319,18 @@ li.nav-link:hover {
   text-align: center;
 }
 
-/* .profile-img {
-  object-fit: cover;
-} */
+.profile-img {
+  width: 80%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-img {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .about-heading {
   position: relative;
@@ -309,16 +343,11 @@ li.nav-link:hover {
   font-weight: 800;
 }
 
-.skills-img {
-  object-fit: contain;
-  background-size: contain;
-  width: 4rem;
-}
-
 .contact-icons-hero {
   object-fit: contain;
   background-size: contain;
   width: 1.2rem;
+  height: 100%;
 }
 
 @media screen and (min-width: 375px) {
@@ -353,6 +382,7 @@ li.nav-link:hover {
   object-fit: contain;
   background-size: contain;
   width: 1.5rem;
+  height: 100%;
 }
 
 @media screen and (min-width: 375px) {
@@ -385,8 +415,11 @@ li.nav-link:hover {
   top: 0.4rem;
 }
 
-.postman {
-  width: 11rem;
+.skills-img {
+  object-fit: contain;
+  background-size: contain;
+  width: 3rem;
+  height: 3rem;
 }
 
 .meister {
@@ -397,10 +430,39 @@ li.nav-link:hover {
   width: 6.3rem;
 }
 
-.http,
+.http {
+  border-radius: 50%;
+}
+
+.parcel {
+  width: 4rem;
+  height: 3rem;
+}
+
 .babel {
-  background-color: #fff;
   width: 4.49rem;
+  height: 3rem;
+}
+
+.meister,
+.httpie,
+.express {
+  border-radius: 10px;
+}
+
+.express {
+  width: 5.5rem;
+}
+
+.vscode {
+  width: 4.3rem;
+}
+
+.figma,
+.pgweb,
+.http,
+.ajax {
+  border-radius: 50%;
 }
 
 .section-heading-padding {
@@ -413,7 +475,6 @@ li.nav-link:hover {
 
 .contact-hover {
   transition: 0.3s all ease;
-  box-shadow: 0px 0px 10px red;
 }
 
 .contact-hover p {
@@ -437,32 +498,6 @@ li.nav-link:hover {
 
 .hover-shadow:hover {
   box-shadow: 5px 5px 20px #fff;
-}
-
-.meister,
-.httpie,
-.express {
-  border-radius: 10px;
-}
-
-.express {
-  width: 5.5rem;
-}
-
-.vscode {
-  width: 4.3rem;
-}
-
-.figma,
-.pgweb {
-  width: 4rem;
-}
-
-.figma,
-.pgweb,
-.http,
-.ajax {
-  border-radius: 50%;
 }
 
 footer {
@@ -607,5 +642,127 @@ footer {
   (-ms-high-contrast: active) {
   .profile-img {
     width: 60%;
+  }
+}
+
+.neon-box {
+  font-size: 1.8rem;
+  font-family: 'Monoton', sans-serif;
+  text-align: center;
+  text-shadow: 0 0 100px red, 0 0 50px FireBrick, 0 0 26px DarkRed;
+  color: red;
+  position: relative;
+}
+.neon-box p {
+  margin: 0;
+}
+#error:hover {
+  text-shadow: 0 0 200px #ffffff, 0 0 80px #ffffff, 0 0 26px #ffffff;
+}
+.code:hover {
+  text-shadow: 0 0 100px red, 0 0 40px FireBrick, 0 0 8px DarkRed;
+}
+#error {
+  color: #fff;
+  text-shadow: 0 0 100px #ffffff, 0 0 50px #ffffff, 0 0 26px #ffffff;
+}
+#error span {
+  animation: upper 11s linear infinite;
+}
+.code span:nth-of-type(2) {
+  animation: lower 10s linear infinite;
+}
+
+.code-2 span:nth-of-type(1) {
+  animation: lower 8s linear infinite;
+}
+.code span:nth-of-type(1) {
+  text-shadow: none;
+  opacity: 0.4;
+}
+@keyframes upper {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: 0.99;
+    text-shadow: 0 0 100px #ffffff, 0 0 50px #fff, 0 0 26px #fff;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+@keyframes lower {
+  0%,
+  12%,
+  18.999%,
+  23%,
+  31.999%,
+  37%,
+  44.999%,
+  46%,
+  49.999%,
+  51%,
+  58.999%,
+  61%,
+  68.999%,
+  71%,
+  85.999%,
+  96%,
+  100% {
+    opacity: 0.99;
+    text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
+  }
+  19%,
+  22.99%,
+  32%,
+  36.999%,
+  45%,
+  45.999%,
+  50%,
+  50.99%,
+  59%,
+  60.999%,
+  69%,
+  70.999%,
+  86%,
+  95.999% {
+    opacity: 0.4;
+    text-shadow: none;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .neon-box {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .neon-box {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .neon-box {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner-box {
+    position: relative;
+    bottom: 4rem;
   }
 }

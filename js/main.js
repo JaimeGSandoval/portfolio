@@ -42,7 +42,7 @@ function bootStrapCdnTest() {
     const bootLink = document.createElement('link');
     bootLink.type = 'text/css';
     bootLink.rel = 'stylesheet';
-    bootLink.href = './css/bootstrap/bootstrap.css';
+    bootLink.href = './css/bootstrap/bootstrap.min.css';
     neonTextLink.parentNode.insertBefore(bootLink, neonTextLink);
   }
 }

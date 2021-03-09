@@ -5,17 +5,19 @@
 	<title>Jaime Sandoval | Full Stack Developer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="preload" as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<meta property="og:url" content="https://jaimesandoval.net/">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Jaime Sandoval | Full Stack Developer">
 	<meta property="og:description" content="Portfolio | Jaime Sandoval | Full Stack Developer">
 	<meta property="og:image" content="https://jaimesandoval.net/images/portfolio-demo.png">
-	<link id="neon-text" rel="stylesheet" href="css/neon-text.css">
-	<link rel="stylesheet" href="css/style.css">
+	<!-- <link id="neon-text" rel="stylesheet" href="css/neon-text.css"> -->
+	<link rel="preload" as="font" href="/fonts/monoton-latin/monoton-v10-latin-regular.woff2" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" as="font" href="/fonts/monoton-latin/monoton-v10-latin-regular.woff" type="font/woff" crossorigin="anonymous">
+	<link rel="preload" as="font" href="/fonts/nunito-sans-latin/nunito-sans-v6-latin-regular.woff2" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" as="font" href="/fonts/nunito-sans-latin/nunito-sans-v6-latin-regular.woff" type="font/woff" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
@@ -39,7 +41,7 @@
 		</div>
 	</nav>
 
-	<section class="site-hero" id="section-home">
+	<section id="section-home" class="site-hero hero-img">
 		<div class="container">
 			<div class="row intro-text align-items-center justify-content-center">
 				<div class="col-md-10 text-center pt-5 banner-box">
@@ -63,7 +65,7 @@
 						</a>
 						<a href="https://www.linkedin.com/in/jaime-sandoval-dev/" target="_blank"
 							class="banner-btn p-2 bg-white rounded mx-md-3 d-flex align-items-center justify-content-center">
-							<img class="contact-icons-hero" src="images/linkedin.png" alt="Linkedin logo">
+							<img class="contact-icons-hero" src="images/linkedin-150.png" alt="Linkedin logo">
 						</a>
 						<a href="mailto:jaime.devs@gmail.com"
 							class="mx-md-3 banner-btn p-2 bg-white rounded d-flex align-items-center justify-content-center"
@@ -91,8 +93,11 @@
 							<div class="thumb hover-shadow">
 								<a href="https://bonsaidepot.jaimesandoval.net/" target="_blank"
 									aria-label="Discover what Bonsai Depot has to offer by following this link">
-									<img class="image img-fluid" src="images/bonsai-mobile.gif" alt="Demonstration gif of Bonsai Depot"
-										data-object-fit="cover">
+									<picture>
+										<source srcset="images/bonsai/bonsai.static.min.webp" class="profile-img" type="image/webp">
+										<img class="image img-fluid" src="images/bonsai/bonsai.static.min.png"
+											alt="Demonstration gif of Bonsai Depot" data-object-fit="cover">
+									</picture>
 								</a>
 							</div>
 						</div>
@@ -115,8 +120,11 @@
 							<div class="thumb hover-shadow">
 								<a href="https://borkfrens.jaimesandoval.net/" target="_blank"
 									aria-label="Discover what BorkFrens has to offer by following this link">
-									<img class="image img-fluid" src="images/bork-frens.gif" alt="Demonstration gif of BorkFrens"
-										data-object-fit="cover">
+									<picture>
+										<source srcset="images/bork/bork.static.min.webp" class="profile-img" type="image/webp">
+										<img class="image img-fluid" src="images/bork/bork.static.min.png"
+											alt="Demonstration gif of Bonsai Depot" data-object-fit="cover">
+									</picture>
 								</a>
 							</div>
 						</div>
@@ -140,8 +148,11 @@
 							<div class="thumb hover-shadow">
 								<a href="https://jaimegsandoval.github.io/today-in-science/" target="_blank"
 									aria-label="Discover what Today in Science has to offer by following this link">
-									<img class="image img-fluid" src="images/today.gif" alt="Demonstration gif of Today in Science"
-										data-object-fit="cover">
+									<picture>
+										<source srcset="images/today/today.static.min.webp" class="profile-img" type="image/webp">
+										<img class="image img-fluid" src="images/today/today.static.min.png"
+											alt="Demonstration gif of Bonsai Depot" data-object-fit="cover">
+									</picture>
 								</a>
 							</div>
 						</div>
@@ -207,11 +218,11 @@
 
 					<div class="row align-items-center py-5">
 						<div class="col skills-text">
-							<img class="skills-img ajax" src="images/ajax.jpg" alt="Ajax logo">
+							<img class="skills-img ajax" src="images/ajax-150.png" alt="Ajax logo">
 							<p>Ajax</p>
 						</div>
 						<div class="col skills-text">
-							<img class="skills-img" src="images/jquery.png" alt="jQuery logo">
+							<img class="skills-img" src="images/jquery-150.png" alt="jQuery logo">
 							<p>jQuery</p>
 						</div>
 						<div class="col skills-text">
@@ -246,15 +257,15 @@
 							<p>Meistertask</p>
 						</div>
 						<div class="col skills-text">
-							<img class="skills-img httpie" src="images/httpie.jpg" alt="HTTPie logo">
+							<img class="skills-img httpie" src="images/httpie-150.png" alt="HTTPie logo">
 							<p>HTTPie</p>
 						</div>
 						<div class="col skills-text">
-							<img class="skills-img pgweb" src="images/pgweb.jpg" alt="pgweb logo">
+							<img class="skills-img pgweb" src="images/pgweb-100.png" alt="pgweb logo">
 							<p>Pgweb</p>
 						</div>
 						<div class="col skills-text">
-							<img class="skills-img vscode" src="images/vscode.png" alt="vscode logo">
+							<img class="skills-img vscode" src="images/vscode-150.png" alt="vscode logo">
 							<p>VScode</p>
 						</div>
 						<div class="col skills-text">
@@ -262,7 +273,7 @@
 							<p>Figma</p>
 						</div>
 						<div class="col skills-text">
-							<img class="http" src="images/http.png" alt="HTTP logo">
+							<img class="skills-img http bg-white" src="images/http.png" alt="HTTP logo">
 							<p>HTTP</p>
 						</div>
 						<div class="col skills-text">
@@ -273,7 +284,7 @@
 
 					<div class="row align-items-center py-5">
 						<div class="col skills-text">
-							<img class="babel" src="images/babel-yellow2.jpg" alt="Babel logo">
+							<img class="babel" src="images/babel-150.png" alt="Babel logo">
 							<p>Babel</p>
 						</div>
 						<div class="col skills-text">
@@ -281,14 +292,14 @@
 							<p>Webpack</p>
 						</div>
 						<div class="col skills-text">
-							<img class="skills-img" src="images/parcel.png" alt="Parcel logo">
-							<p>PARCEL</p>
+							<img class="skills-img parcel" src="images/parcel-200.png" alt="Parcel logo">
+							<p>Parcel</p>
+						</div>
+
+
 					</div>
-
-
 				</div>
 			</div>
-		</div>
 	</section>
 
 	<section id="IE-styles-skills-section">
@@ -355,13 +366,17 @@
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0 profile-img-box align-items-center d-flex justify-content-center">
-					<img src="images/profile-6.png" alt="Image placeholder" class="img-fluid profile-img">
+					<picture>
+						<source srcset="images/profile-6.webp" class="profile-img" type="image/webp">
+						<img src="images/profile-6.png" alt="Profile image" class="profile-img">
+					</picture>
 				</div>
 				<div class="col-lg-5 pl-lg-5">
 					<div class="about-heading">
 						<h2>About <strong class="strong-text">Me</strong></h2>
 					</div>
-					<p class="lead">Hello There! Thank you for visiting! My Name is Jaime Sandoval and I'm a Full Stack Web Developer.</p>
+					<p class="lead">Hello There! Thank you for visiting! My Name is Jaime Sandoval and I'm a Full Stack Web
+						Developer.</p>
 					<p>I truly enjoy using the combination of my imagination and logic to create something new and useful for
 						people, or to use my skills to find a solution to a problem. Whether it's debugging or
 						solving an algorithm, I'm game.
@@ -371,8 +386,11 @@
 					<h2>Currently Working on:</h2>
 					<p>- Refactoring Today in Science with TypeScript and adding a bundler.</p>
 
-					<p>Staying up to date with current dev trends is another passion of mine. I do that in a variety of ways, such as attending tech meetups, listening to dev podcasts and finding interesting Software Engineers to follow on Twitter.</p>
-					<p>I'd love to bring my skills to a company and I look forward to being part of a Dev Team. Let's collaborate and make something incredible with code.</p>
+					<p>Staying up to date with current dev trends is another passion of mine. I do that in a variety of ways, such
+						as attending tech meetups, listening to dev podcasts and finding interesting Software Engineers to follow on
+						Twitter.</p>
+					<p>I'd love to bring my skills to a company and I look forward to being part of a Dev Team. Let's collaborate
+						and make something incredible with code.</p>
 				</div>
 			</div>
 
@@ -396,7 +414,7 @@
 						<a class="contact-footer mx-3 mx-md-4 rounded" href="https://www.linkedin.com/in/jaime-sandoval-dev/"
 							target="_blank">
 							<div class="skills-text contact-hover bg-white p-2 rounded">
-								<img class="contact-icons-footer" src="images/linkedin.png" alt="Linkedin logo">
+								<img class="contact-icons-footer" src="images/linkedin-150.png" alt="Linkedin logo">
 							</div>
 						</a>
 						<a class="contact-footer mx-3 mx-md-4 rounded" href="https://twitter.com/jskodes" target="_blank">
@@ -415,10 +433,11 @@
 		</div>
 	</footer>
 
+	<script src="js/modernizr-custom.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	<script src="./js/object-fit-polyfill.js"></script>
-	<script id="main-script" src="./js/main.js"></script>
+	<script id="main-script" src="./js/main.min.js"></script>
 </body>
 
 </html>
