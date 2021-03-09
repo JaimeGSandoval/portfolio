@@ -766,3 +766,205 @@ footer {
     bottom: 4rem;
   }
 }
+
+.bg-javascript {
+  /* width: 48px;
+  height: 48px; */
+  background: url('../images/css_sprites.png') -782px -514px;
+  margin: auto;
+}
+
+.bg-react {
+  /* width: 48px;
+    height: 48px; */
+  background: url('../images/css_sprites.png') -540px -350px;
+  margin: auto;
+}
+
+.bg-nodejs {
+  /* width: 48px; height: 48px; */
+  background: url('../images/css_sprites.png') -608px -350px;
+  margin: auto;
+}
+
+.bg-postgresql {
+  /* width: 48px;
+  height: 48px; */
+  background: url('../images/css_sprites.png') -550px -588px;
+  margin: auto;
+}
+
+.bg-express_logo {
+  /* width: 48px;
+  height: 48px; */
+  background: url('../images/css_sprites.png') -10px -10px;
+  margin: auto;
+}
+
+.bg-git {
+  /* width: 96px;
+  height: 96px; */
+  background: url('../images/css_sprites.png') -710px -398px;
+  margin: auto;
+}
+
+.bg-github {
+  width: 48px;
+  height: 48px;
+  background: url('../images/css_sprites.png') -618px -588px;
+  margin: auto;
+}
+
+.bg-chrome {
+  /* width: 96px;
+  height: 96px; */
+  background: url('../images/css_sprites.png') -350px -588px;
+  margin: auto;
+}
+
+.bg-ajax_150 {
+  /* width: 150px;
+  height: 150px; */
+  background: url('../images/css_sprites.png') -540px -10px;
+  margin: auto;
+}
+
+.bg-jquery_150 {
+  /* width: 150px;
+  height: 150px; */
+  background: url('../images/css_sprites.png') -540px -180px;
+  margin: auto;
+}
+
+.bg-bootstrap {
+  /* width: 48px;
+  height: 48px; */
+  background: url('../images/css_sprites.png') -686px -588px;
+  margin: auto;
+}
+
+.bg-css {
+  /* width: 48px;
+  height: 48px; */
+  background: url('../images/css_sprites.png') -754px -588px;
+  margin: auto;
+}
+
+.bg-html {
+  /* width: 48px;
+  height: 48px; */
+  background: url('../images/css_sprites.png') -10px -712px;
+  margin: auto;
+}
+
+.bg-sql {
+  /* width: 52px;
+  height: 52px; */
+  background: url('../images/css_sprites.png') -710px -514px;
+  margin: auto;
+}
+
+.bg-aws {
+  /* width: 48px;
+  height: 48px; */
+  background: url('../images/css_sprites.png') -78px -712px;
+  margin: auto;
+}
+
+.bg-meister {
+  /* width: 260px;
+  height: 194px; */
+  background: url('../images/css_sprites.png') -10px -204px;
+  margin: auto;
+}
+
+.bg-httpie_150 {
+  /* width: 150px;
+  height: 104px; */
+  background: url('../images/css_sprites.png') -10px -588px;
+  margin: auto;
+}
+
+.bg-pgweb_100 {
+  /* width: 100px;
+  height: 100px; */
+  background: url('../images/css_sprites.png') -710px -158px;
+  margin: auto;
+}
+
+.bg-vscode_150 {
+  /* width: 150px;
+  height: 149px; */
+  background: url('../images/css_sprites.png') -180px -418px;
+  margin: auto;
+}
+
+.bg-figma {
+  /* width: 170px;
+  height: 170px; */
+  background: url('../images/css_sprites.png') -320px -193px;
+  margin: auto;
+}
+
+.bg-http {
+  /* width: 100px;
+  height: 100px; */
+  background: url('../images/css_sprites.png') -710px -278px;
+  margin: auto;
+}
+
+.bg-npm {
+  /* width: 48px;
+  height: 48px; */
+  background: url('../images/css_sprites.png') -146px -712px;
+  margin: auto;
+}
+
+.bg-babel_150 {
+  /* width: 150px;
+  height: 104px; */
+  background: url('../images/css_sprites.png') -180px -588px;
+  margin: auto;
+}
+
+.bg-webpack {
+  /* width: 64px;
+  height: 64px; */
+  background: url('../images/css_sprites.png') -466px -588px;
+  margin: auto;
+}
+
+.bg-parcel_200 {
+  /* width: 200px;
+  height: 163px; */
+  background: url('../images/css_sprites.png') -320px -10px;
+  margin: auto;
+}
+
+.bg-twitter {
+  /* width: 128px;
+  height: 128px; */
+  background: url('../images/css_sprites.png') -350px -418px;
+  margin: auto;
+}
+
+.bg-linkedin_150 {
+  /* width: 150px;
+  height: 150px; */
+  background: url('../images/css_sprites.png') -10px -418px;
+  margin: auto;
+}
+
+.bg-envelope {
+  /* width: 128px;
+  height: 128px; */
+  background: url('../images/css_sprites.png') -498px -418px;
+  margin: auto;
+}
+
+.bg-github_contact {
+  /* width: 128px;
+  height: 128px; */
+  background: url('../images/css_sprites.png') -710px -10px;
+  margin: auto;
+}
