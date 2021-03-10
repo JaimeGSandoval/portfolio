@@ -1093,3 +1093,62 @@ footer {
   height: 48px;
   background: url('../images/css_sprites.png') -10px -292px;
 }
+
+.skills-header {
+  border-bottom: 1px solid white;
+  color: #fff;
+  padding: 2rem 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-with: 998px) {
+  .profile-img-parent {
+    align-items: flex-start;
+  }
+}
+
+.skills-box {
+  width: 90%;
+}
+
+.front-end-skills {
+  width: 90%;
+}
+
+@media screen and (min-width: 375px) {
+  .frontend-skills {
+    width: 80%;
+  }
+}
+
+.backend-skills {
+  width: 98%;
+}
+
+@media screen and (min-width: 375px) {
+  .backend-skills {
+    width: 84%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .tools-skills-1 {
+    width: 84%;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .tools-skills-1 {
+    width: 79%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .frontend-skills,
+  .backend-skills,
+  .tools-skills-1 {
+    width: 98%;
+  }
+}
