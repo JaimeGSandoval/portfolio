@@ -766,3 +766,389 @@ footer {
     bottom: 4rem;
   }
 }
+
+/* .bg-javascript {
+  background: url('../images/css_sprites.png') -782px -514px;
+  margin: auto;
+}
+
+.bg-react {
+  background: url('../images/css_sprites.png') -540px -350px;
+  margin: auto;
+}
+
+.bg-nodejs {
+  background: url('../images/css_sprites.png') -608px -350px;
+  margin: auto;
+}
+
+.bg-postgresql {
+  background: url('../images/css_sprites.png') -550px -588px;
+  margin: auto;
+}
+
+.bg-express_logo {
+  background: url('../images/css_sprites.png') -10px -10px;
+  margin: auto;
+}
+
+.bg-git {
+  background: url('../images/css_sprites.png') -710px -398px;
+  margin: auto;
+}
+
+.bg-github {
+  width: 48px;
+  height: 48px;
+  background: url('../images/css_sprites.png') -618px -588px;
+  margin: auto;
+}
+
+.bg-chrome {
+  background: url('../images/css_sprites.png') -350px -588px;
+  margin: auto;
+}
+
+.bg-ajax_150 {
+  background: url('../images/css_sprites.png') -540px -10px;
+  margin: auto;
+}
+
+.bg-jquery_150 {
+  background: url('../images/css_sprites.png') -540px -180px;
+  margin: auto;
+}
+
+.bg-bootstrap {
+  background: url('../images/css_sprites.png') -686px -588px;
+  margin: auto;
+}
+
+.bg-css {
+  background: url('../images/css_sprites.png') -754px -588px;
+  margin: auto;
+}
+
+.bg-html {
+  background: url('../images/css_sprites.png') -10px -712px;
+  margin: auto;
+}
+
+.bg-sql {
+  background: url('../images/css_sprites.png') -710px -514px;
+  margin: auto;
+}
+
+.bg-aws {
+  background: url('../images/css_sprites.png') -78px -712px;
+  margin: auto;
+}
+
+.bg-meister {
+  background: url('../images/css_sprites.png') -10px -204px;
+  margin: auto;
+}
+
+.bg-httpie_150 {
+  background: url('../images/css_sprites.png') -10px -588px;
+  margin: auto;
+}
+
+.bg-pgweb_100 {
+  background: url('../images/css_sprites.png') -710px -158px;
+  margin: auto;
+}
+
+.bg-vscode_150 {
+  background: url('../images/css_sprites.png') -180px -418px;
+  margin: auto;
+}
+
+.bg-figma {
+  background: url('../images/css_sprites.png') -320px -193px;
+  margin: auto;
+}
+
+.bg-http {
+  background: url('../images/css_sprites.png') -710px -278px;
+  margin: auto;
+}
+
+.bg-npm {
+  background: url('../images/css_sprites.png') -146px -712px;
+  margin: auto;
+}
+
+.bg-babel_150 {
+  background: url('../images/css_sprites.png') -180px -588px;
+  margin: auto;
+}
+
+.bg-webpack {
+  background: url('../images/css_sprites.png') -466px -588px;
+  margin: auto;
+}
+
+.bg-parcel_200 {
+  background: url('../images/css_sprites.png') -320px -10px;
+  margin: auto;
+}
+
+.bg-twitter {
+  background: url('../images/css_sprites.png') -350px -418px;
+  margin: auto;
+}
+
+.bg-linkedin_150 {
+  background: url('../images/css_sprites.png') -10px -418px;
+  margin: auto;
+}
+
+.bg-envelope {
+  background: url('../images/css_sprites.png') -498px -418px;
+  margin: auto;
+}
+
+.bg-github_contact {
+  background: url('../images/css_sprites.png') -710px -10px;
+  margin: auto;
+} */
+
+.bg-envelope_sm {
+  /* width: 39px;
+  height: 32px; */
+  background: url('../images/css_sprites.png') -420px -250px;
+}
+
+.bg-sql_sm {
+  width: 50px;
+  height: 50px;
+  background: url('../images/css_sprites.png') -201px -80px;
+}
+
+.bg-meister_sm {
+  width: 67px;
+  height: 50px;
+  background: url('../images/css_sprites.png') -111px -79px;
+}
+
+.bg-httpie_sm {
+  width: 70px;
+  height: 49px;
+  background: url('../images/css_sprites.png') -111px -10px;
+}
+
+.bg-figma_sm {
+  /* width: 50px;
+  height: 50px; */
+  background: url('../images/css_sprites.png') -282px -10px;
+}
+
+.bg-http_sm {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url('../images/css_sprites.png') -282px -80px;
+}
+
+.bg-babel_sm {
+  width: 73px;
+  height: 51px;
+  background: url('../images/css_sprites.png') -10px -80px;
+}
+
+.bg-webpack_sm {
+  width: 41px;
+  height: 45px;
+  background: url('../images/css_sprites.png') -420px -10px;
+}
+
+.bg-parcel_sm {
+  width: 61px;
+  height: 50px;
+  background: url('../images/css_sprites.png') -201px -10px;
+}
+
+.bg-linkedin_sm {
+  /* width: 38px;
+  height: 38px; */
+  background: url('../images/css_sprites.png') -420px -134px;
+}
+
+.bg-express_logo_sm {
+  width: 81px;
+  height: 50px;
+  background: url('../images/css_sprites.png') -10px -10px;
+  /* width: 4.9rem; */
+}
+
+.bg-git_sm {
+  width: 43px;
+  height: 43px;
+  background: url('../images/css_sprites.png') -142px -292px;
+}
+
+.bg-chrome_sm {
+  width: 44px;
+  height: 44px;
+  background: url('../images/css_sprites.png') -78px -292px;
+}
+
+.bg-twitter_sm {
+  /* width: 38px;
+  height: 38px; */
+  background: url('../images/css_sprites.png') -420px -192px;
+}
+
+.bg-pgweb_sm {
+  width: 53px;
+  height: 53px;
+  background: url('../images/css_sprites.png') -87px -151px;
+  border-radius: 50%;
+}
+
+.bg-jquery_sm {
+  width: 49px;
+  height: 49px;
+  background: url('../images/css_sprites.png') -282px -150px;
+}
+
+.bg-github_contact_sm {
+  width: 39px;
+  height: 39px;
+  background: url('../images/css_sprites.png') -420px -75px;
+}
+
+.bg-vscode_sm {
+  width: 57px;
+  height: 53px;
+  background: url('../images/css_sprites.png') -10px -151px;
+}
+
+.bg-ajax_sm {
+  width: 52px;
+  height: 52px;
+  background: url('../images/css_sprites.png') -160px -151px;
+  border-radius: 50%;
+  /* width: 4rem;
+  height: 3.2rem; */
+}
+
+.bg-aws_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/css_sprites.png') -10px -224px;
+}
+
+.bg-bootstrap_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/css_sprites.png') -78px -224px;
+}
+
+.bg-css_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/css_sprites.png') -146px -224px;
+}
+
+.bg-github_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/css_sprites.png') -214px -224px;
+}
+
+.bg-html_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/css_sprites.png') -282px -224px;
+}
+
+.bg-javascript_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/css_sprites.png') -352px -10px;
+}
+
+.bg-nodejs_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/css_sprites.png') -352px -78px;
+}
+
+.bg-npm_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/css_sprites.png') -352px -146px;
+}
+
+.bg-postgresql_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/css_sprites.png') -352px -214px;
+}
+
+.bg-react_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/css_sprites.png') -10px -292px;
+}
+
+.skills-header {
+  border-bottom: 1px solid white;
+  color: #fff;
+  padding: 2rem 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-with: 998px) {
+  .profile-img-parent {
+    align-items: flex-start;
+  }
+}
+
+.skills-box {
+  width: 90%;
+}
+
+.front-end-skills {
+  width: 90%;
+}
+
+@media screen and (min-width: 375px) {
+  .frontend-skills {
+    width: 80%;
+  }
+}
+
+.backend-skills {
+  width: 98%;
+}
+
+@media screen and (min-width: 375px) {
+  .backend-skills {
+    width: 84%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .tools-skills-1 {
+    width: 84%;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .tools-skills-1 {
+    width: 79%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .frontend-skills,
+  .backend-skills,
+  .tools-skills-1 {
+    width: 98%;
+  }
+}
