@@ -1107,10 +1107,18 @@ footer {
 .skills-header {
   border-bottom: 1px solid white;
   color: #fff;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
   display: inline-block;
   text-align: center;
   width: 100%;
+}
+
+.date {
+  font-size: 1.3rem;
+}
+
+.custom-padding {
+  padding-top: 1rem;
 }
 
 @media screen and (min-with: 998px) {
@@ -1147,12 +1155,13 @@ footer {
   .tools-skills-1 {
     width: 84%;
   }
+  .tools-skills-2 {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 414px) {
-  .tools-skills-1 {
-    width: 79%;
-  }
+  .tools-skills-1,
   .tools-skills-2 {
     width: 79%;
   }
