@@ -1175,6 +1175,11 @@ footer {
   .frontend-skills,
   .backend-skills,
   .tools-skills-1 {
-    width: 98%;
+    width: 84%;
   }
+}
+
+.current-text-box {
+  width: 84%;
+  margin: auto;
 }
