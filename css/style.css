@@ -1121,6 +1121,10 @@ footer {
   padding-top: 1rem;
 }
 
+.custom-margin {
+  margin-bottom: 0;
+}
+
 @media screen and (min-with: 998px) {
   .profile-img-parent {
     align-items: flex-start;
