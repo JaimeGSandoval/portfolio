@@ -34,7 +34,7 @@ h2 {
 
 .parent-nav-link-padding,
 .site-navbar .navbar-nav > li > a {
-  padding: 15px 20px !important;
+  padding: 21px 20px !important;
 }
 
 h1,
@@ -87,7 +87,7 @@ h5 {
 }
 
 .top-nav-item {
-  border-bottom: 3px solid transparent;
+  border-bottom: 4px solid transparent;
   transition: 0.5s all ease;
 }
 
@@ -590,6 +590,7 @@ footer {
 
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
+  padding: 5px 0;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
