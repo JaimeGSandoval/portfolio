@@ -104,7 +104,7 @@ function dateMaker(){
   const monthNames = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
   ];
-  const today = monthNames[date.getMonth()] + " " + date.getDay() + " " + date.getFullYear();
+  const today = monthNames[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
   const dateText = document.querySelector('.date');
   dateText.textContent = today;
 }
