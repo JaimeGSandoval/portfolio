@@ -86,10 +86,12 @@ function stickyNav() {
         $('.navbar').addClass('sticky');
         $('.site-navbar').addClass('white');
         $('.nav-link').css('color', 'firebrick');
+        $('.nav-link').css('font-weight', '600');
       } else {
         $('.navbar').removeClass('sticky');
         $('.site-navbar').removeClass('white');
         $('.nav-link').css('color', 'white');
+        $('.nav-link').css('font-weight', '500');
       }
     };
     stickyNav();
