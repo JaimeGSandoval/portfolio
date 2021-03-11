@@ -20,7 +20,7 @@
 }
 
 body {
-  color: #fff;
+  color: #ccc;
   background: #222;
   line-height: 1.7;
   font-size: 16px;
@@ -42,7 +42,7 @@ h2,
 h3,
 h4,
 h5 {
-  color: #fff;
+  color: #ccc;
   font-weight: 200;
 }
 
@@ -271,7 +271,7 @@ h5 {
 }
 .single-portfolio .p-inner .cat {
   font-size: 1rem;
-  color: #cccccc;
+  /* color: #cccccc; */
   hyphens: auto;
   width: 100%;
 }
