@@ -975,7 +975,7 @@ footer {
 }
 
 .backend-skills {
-  width: 98%;
+  width: 100%;
 }
 
 .current-text-box {
@@ -983,12 +983,63 @@ footer {
   margin: auto;
 }
 
+.custom-sql {
+  position: relative;
+  bottom: 2px;
+}
+
+.custom-node-text {
+  position: relative;
+  top: 6px;
+}
+
+.custom-postgre {
+  position: relative;
+  top: 2px;
+}
+
+.custom-figma-text {
+  position: relative;
+  top: 2px;
+}
+
+.custom-express-text {
+  position: relative;
+  top: 6px;
+}
+.custom-httpie-text {
+  position: relative;
+  top: 3px;
+}
+
+.custom-postgre-text {
+  position: relative;
+  top: 5px;
+}
+
+.custom-webpack-text {
+  position: relative;
+  top: 2px;
+}
+
+.custom-git-text {
+  position: relative;
+  top: 2px;
+}
+
+.custom-devTools-text {
+  position: relative;
+  top: 2px;
+}
+
+.custom-padding-aws {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @media screen and (min-width: 375px) {
   .frontend-skills {
     width: 80%;
-  }
-  .backend-skills {
-    width: 84%;
   }
 
   .tools-skills-1 {
@@ -1012,13 +1063,69 @@ footer {
   .current-text-box {
     width: 97%;
   }
+
+  .backend-skills {
+    width: 94%;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .frontend-skills,
   .backend-skills,
-  .tools-skills-1 {
-    width: 84%;
+  .tools-skills-1,
+  .tools-skills-2 {
+    width: 100%;
+  }
+
+  .current-text-box {
+    width: 100%;
+  }
+
+  .relative-text,
+  .custom-node-text {
+    position: relative;
+    top: 4px;
+  }
+
+  .custom-react-dev {
+    position: relative;
+    bottom: 4px;
+  }
+
+  .custom-js,
+  .custom-react {
+    position: relative;
+    top: 8px;
+  }
+
+  .custom-ajax {
+    position: relative;
+    top: 7px;
+  }
+
+  .custom-css {
+    position: relative;
+    top: 9px;
+  }
+
+  .custom-babel {
+    position: relative;
+    top: 2px;
+  }
+
+  .custom-meister {
+    position: relative;
+    bottom: 4px;
+  }
+
+  .custom-postgre {
+    right: 11px;
+  }
+
+  .custom-figma,
+  .custom-pgweb {
+    position: relative;
+    top: 1px;
   }
 }
 
