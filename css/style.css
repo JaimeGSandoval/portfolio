@@ -32,6 +32,14 @@ h2 {
   font-size: 25px;
 }
 
+.hello-text {
+  font-size: 25px;
+}
+
+.welcome-text {
+  font-size: 1.5rem;
+}
+
 .parent-nav-link-padding,
 .site-navbar .navbar-nav > li > a {
   padding: 21px 20px !important;
@@ -227,6 +235,7 @@ h5 {
   font-weight: 200;
   padding-top: 20px;
   font-size: 30px;
+  color: #fff;
 }
 
 .section-heading h2 strong {
@@ -261,6 +270,7 @@ h5 {
 .thumb {
   height: 18.75rem;
   width: auto;
+  background: #262629;
 }
 .single-portfolio .p-inner {
   text-align: left;
@@ -297,7 +307,8 @@ h5 {
 .image {
   opacity: 1;
   display: block;
-  width: 100%;
+  /* width: 100%; */
+  width: initial;
   height: 100%;
   -webkit-transition: 0.5s ease;
   -o-transition: 0.5s ease;
@@ -305,6 +316,7 @@ h5 {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   object-fit: cover;
+  margin: auto;
 }
 
 .single-portfolio {
@@ -347,8 +359,8 @@ h5 {
   text-align: center;
 }
 
-.about-heading h2 strong {
-  font-weight: 800;
+.about-heading h2 {
+  color: white;
 }
 
 .contact-icons-hero {
@@ -559,7 +571,7 @@ footer {
   }
 
   .site-hero {
-    height: 32rem;
+    height: 52rem;
   }
 }
 
@@ -759,7 +771,7 @@ footer {
 
 @media screen and (min-width: 414px) {
   .neon-box {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -772,7 +784,7 @@ footer {
 @media screen and (min-width: 992px) {
   .banner-box {
     position: relative;
-    bottom: 4rem;
+    /* bottom: 4rem; */
   }
 }
 
@@ -971,7 +983,7 @@ footer {
 }
 
 .front-end-skills {
-  width: 90%;
+  width: 100%;
 }
 
 .backend-skills {
@@ -1039,14 +1051,14 @@ footer {
 
 @media screen and (min-width: 375px) {
   .frontend-skills {
-    width: 80%;
+    width: 90%;
   }
 
   .tools-skills-1 {
-    width: 84%;
+    width: 87%;
   }
   .tools-skills-2 {
-    width: 80%;
+    width: 87%;
   }
 
   .current-text-box {
@@ -1064,8 +1076,12 @@ footer {
     width: 97%;
   }
 
+  .frontend-skills {
+    width: 82%;
+  }
+
   .backend-skills {
-    width: 94%;
+    width: 90%;
   }
 }
 
@@ -1127,10 +1143,102 @@ footer {
     position: relative;
     top: 1px;
   }
+
+  .custom-today-text-margin {
+    margin-bottom: 43px;
+  }
+}
+
+@media screen and (min-width: 768) {
+  .single-portfolio {
+    align-items: center !important;
+    margin: auto !important;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .navbar {
     padding: 0;
+  }
+
+  .custom-today-text-margin {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .banner-box {
+    /* bottom: 11rem; */
+  }
+
+  .site-navbar .navbar-nav > li > a {
+    font-size: 22px;
+  }
+
+  .neon-box {
+    font-size: 5rem;
+  }
+
+  .hello-text {
+    font-size: 2.3rem;
+  }
+
+  .site-hero {
+    height: 79rem;
+  }
+
+  .welcome-text {
+    font-size: 2.5rem;
+  }
+
+  .contact-icons-hero,
+  .contact-icons-footer {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .container {
+    max-width: 1400px;
+  }
+
+  .navbar .navbar-nav > li > a {
+    padding: 32px !important;
+  }
+
+  .section-heading h2,
+  .about-heading h2,
+  .current-work {
+    font-size: 3rem;
+  }
+
+  .p-inner p,
+  .current-text-box ul li,
+  .about-section-text,
+  .single-portfolio .p-inner .cat {
+    font-size: 1.5rem;
+  }
+
+  .date,
+  .skills-header,
+  .p-inner h3 {
+    font-size: 2.2rem;
+  }
+
+  .portfolio-btn {
+    font-size: 1.3rem;
+  }
+
+  .lead {
+    font-size: 2rem;
+  }
+
+  .skills-text p {
+    font-size: 1.6rem;
+  }
+
+  .profile-img {
+    width: 158%;
+    position: relative;
+    right: 10rem;
   }
 }
