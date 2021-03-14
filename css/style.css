@@ -79,21 +79,6 @@ h5 {
   background: transparent;
 }
 
-@media (max-width: 991.98px) {
-  .site-navbar {
-    background: white;
-    top: 0;
-  }
-
-  .site-navbar.bg-light .navbar-brand {
-    display: inline-block;
-    font-size: 18px;
-    border: 2px solid #000;
-    padding: 2px 10px;
-    color: #000;
-  }
-}
-
 .top-nav-item {
   border-bottom: 4px solid transparent;
   transition: 0.5s all ease;
@@ -112,6 +97,11 @@ h5 {
 @media (max-width: 991.98px) {
   .site-navbar .navbar-nav > li > a {
     color: rgba(0, 0, 0, 0.7) !important;
+  }
+
+  .site-navbar {
+    background: white;
+    top: 0;
   }
 }
 
@@ -307,7 +297,6 @@ h5 {
 .image {
   opacity: 1;
   display: block;
-  /* width: 100%; */
   width: initial;
   height: 100%;
   -webkit-transition: 0.5s ease;
@@ -341,17 +330,6 @@ h5 {
   border-radius: 50%;
 }
 
-@media screen and (min-width: 768px) {
-  .profile-img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .about-section-text {
-    hyphens: none;
-  }
-}
-
 .about-heading {
   position: relative;
   padding: 20px 0;
@@ -370,60 +348,11 @@ h5 {
   height: 100%;
 }
 
-@media screen and (min-width: 375px) {
-  .contact-icons-hero {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 414px) {
-  .contact-icons-hero {
-    width: 1.8rem;
-    height: 1.8rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contact-icons-hero {
-    width: 2rem;
-    height: 2rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .contact-icons-hero {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
-
 .contact-icons-footer {
   object-fit: contain;
   background-size: contain;
   width: 1.5rem;
   height: 100%;
-}
-
-@media screen and (min-width: 375px) {
-  .contact-icons-footer {
-    width: 1.8rem;
-    height: 1.8rem;
-  }
-}
-
-@media screen and (min-width: 414px) {
-  .contact-icons-footer {
-    width: 2.2rem;
-    height: 2.2rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .contact-icons-footer {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
 }
 
 .skills-text {
@@ -544,12 +473,6 @@ footer {
   margin: 0 0.5rem;
 }
 
-@media screen and (min-width: 414px) {
-  .banner-btn {
-    margin: 0 0.8rem;
-  }
-}
-
 .banner-btn:hover {
   box-shadow: 0px 0px 15px white;
   border-color: firebrick;
@@ -572,29 +495,6 @@ footer {
 
   .site-hero {
     height: 52rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .site-hero,
-  .site-hero .row {
-    min-height: 860px;
-  }
-
-  .contact-heading {
-    padding-bottom: 1rem;
-  }
-
-  .portfolio-heading-padding {
-    padding: 4rem 0;
-  }
-
-  .about-section {
-    padding: 4rem 0 2rem 0;
-  }
-
-  .about-heading {
-    text-align: left;
   }
 }
 
@@ -763,31 +663,6 @@ footer {
   }
 }
 
-@media screen and (min-width: 375px) {
-  .neon-box {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (min-width: 414px) {
-  .neon-box {
-    font-size: 2.3rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .neon-box {
-    font-size: 3.5rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .banner-box {
-    position: relative;
-    /* bottom: 4rem; */
-  }
-}
-
 .bg-sql_sm {
   width: 50px;
   height: 50px;
@@ -807,8 +682,8 @@ footer {
 }
 
 .bg-figma_sm {
-  /* width: 50px;
-  height: 50px; */
+  width: 50px;
+  height: 50px;
   background: url('../images/css_sprites.png') -282px -10px;
 }
 
@@ -1064,6 +939,20 @@ footer {
   .current-text-box {
     width: 88%;
   }
+
+  .contact-icons-hero {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .contact-icons-footer {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .neon-box {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 414px) {
@@ -1082,6 +971,31 @@ footer {
 
   .backend-skills {
     width: 90%;
+  }
+
+  .contact-icons-hero {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .contact-icons-footer {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .banner-btn {
+    margin: 0 0.8rem;
+  }
+
+  .neon-box {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .contact-icons-footer {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
@@ -1147,9 +1061,25 @@ footer {
   .custom-today-text-margin {
     margin-bottom: 43px;
   }
-}
 
-@media screen and (min-width: 768) {
+  .contact-icons-hero {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .profile-img {
+    width: 90%;
+    height: 100%;
+  }
+
+  .about-section-text {
+    hyphens: none;
+  }
+
+  .neon-box {
+    font-size: 3.5rem;
+  }
+
   .single-portfolio {
     align-items: center !important;
     margin: auto !important;
@@ -1163,6 +1093,36 @@ footer {
 
   .custom-today-text-margin {
     margin-bottom: 0;
+  }
+
+  .contact-icons-hero {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .site-hero,
+  .site-hero .row {
+    min-height: 860px;
+  }
+
+  .contact-heading {
+    padding-bottom: 1rem;
+  }
+
+  .portfolio-heading-padding {
+    padding: 4rem 0;
+  }
+
+  .about-section {
+    padding: 4rem 0 2rem 0;
+  }
+
+  .about-heading {
+    text-align: left;
+  }
+
+  .banner-box {
+    position: relative;
   }
 }
 

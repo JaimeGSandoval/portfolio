@@ -38,12 +38,12 @@ function bootStrapCdnTest() {
   document.head.removeChild(bootCdnTest);
 
   if (!bootStrapLoaded) {
-    const neonTextLink = document.getElementById('neon-text');
+    const mainStylesLink = document.getElementById('main-styles');
     const bootLink = document.createElement('link');
     bootLink.type = 'text/css';
     bootLink.rel = 'stylesheet';
     bootLink.href = './css/bootstrap/bootstrap.min.css';
-    neonTextLink.parentNode.insertBefore(bootLink, neonTextLink);
+    mainStylesLink.parentNode.insertBefore(bootLink, mainStylesLink);
   }
 }
 
