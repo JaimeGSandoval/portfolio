@@ -457,6 +457,11 @@ footer {
   margin-top: 1.5rem;
 }
 
+.copyright {
+  color: #999;
+  font-size: 0.5rem;
+}
+
 .button-box {
   display: flex;
   justify-content: center;
@@ -839,6 +844,8 @@ footer {
   display: inline-block;
   text-align: center;
   width: 100%;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
 .date {
@@ -1082,7 +1089,7 @@ footer {
 
   .single-portfolio {
     align-items: center !important;
-    margin: auto !important;
+    margin: auto;
   }
 }
 
@@ -1123,6 +1130,20 @@ footer {
 
   .banner-box {
     position: relative;
+  }
+
+  .copyright {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+  .site-navbar .navbar-nav > li > a {
+    font-size: 1.2rem;
+  }
+
+  .neon-box {
+    font-size: 4.5rem;
   }
 }
 
@@ -1210,5 +1231,9 @@ footer {
     width: 158%;
     position: relative;
     right: 10rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
   }
 }
