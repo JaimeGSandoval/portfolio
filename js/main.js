@@ -10,7 +10,7 @@ if (!window.jQuery) {
     navToggleBtn();
     stickyNav();
     dateMaker();
-}, 400);
+}, 500);
 } else {
   bootstrapJsFallback();
   bootStrapCdnTest();
