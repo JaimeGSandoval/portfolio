@@ -57,7 +57,8 @@ function scrollEffect() {
           {
             scrollTop: $(hash).offset().top,
           },
-          800,
+          'slow',
+          'swing',
           function () {
             window.location.hash = hash;
           }
