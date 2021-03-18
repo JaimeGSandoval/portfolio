@@ -5,33 +5,39 @@
 	<title>Jaime Sandoval | Full Stack Developer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
 	<meta property="og:url" content="https://jaimesandoval.net/">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Jaime Sandoval | Full Stack Developer">
 	<meta property="og:description" content="Portfolio | Jaime Sandoval | Full Stack Developer">
 	<meta property="og:image" content="https://jaimesandoval.net/images/portfolio-demo.png">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/neon-text.css">
-	<link rel="stylesheet" href="css/style.css">
+	<meta name="description"
+		content="A portfolio to showcase the projects and skills for Jaime Sandoval, a Full Stack Web Developer. JavaScript, React, Node.js, SQL, PostgreSQL.">
+	<link rel="preload" as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="preload" as="font" href="/fonts/monoton-latin/monoton-v10-latin-regular.woff2" type="font/woff2"
+		crossorigin="anonymous">
+	<link rel="preload" as="font" href="/fonts/monoton-latin/monoton-v10-latin-regular.woff" type="font/woff"
+		crossorigin="anonymous">
+	<link rel="preload" as="font" href="/fonts/nunito-sans-latin/nunito-sans-v6-latin-regular.woff2" type="font/woff2"
+		crossorigin="anonymous">
+	<link rel="preload" as="font" href="/fonts/nunito-sans-latin/nunito-sans-v6-latin-regular.woff" type="font/woff"
+		crossorigin="anonymous">
+	<link id="main-styles" rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
-	<nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
-
+	<nav class="navbar navbar-expand-lg site-navbar navbar-light" id="pb-navbar">
 		<div class="container">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
 				aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
 			<div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
 				<ul class="navbar-nav">
 					<li class="nav-item top-nav-item"><a class="nav-link" href="#section-home">Home</a></li>
-					<li class="nav-item top-nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
+					<li class="nav-item top-nav-item"><a class="nav-link" href="#section-portfolio">Projects</a></li>
 					<li class="nav-item top-nav-item"><a class="nav-link" href="#section-skills">Skills</a></li>
 					<li class="nav-item top-nav-item"><a class="nav-link" href="#section-about">About</a></li>
 					<li class="nav-item top-nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>
@@ -39,319 +45,445 @@
 			</div>
 		</div>
 	</nav>
-
-	<section class="site-hero" style="background-image: url(images/night-traffic-4.jpg);" id="section-home"
-		data-stellar-background-ratio="0.5">
+	<section id="section-home" class="site-hero hero-img">
 		<div class="container">
 			<div class="row intro-text align-items-center justify-content-center">
-				<div class="col-md-10 text-center pt-5 banner-box">
-					<h2 class="font-weight-bold">Hello, I'm</h2>
+				<div class="col-md-10 text-center pt-5 pt-lg-2 banner-box">
 					<div class="neon-box">
-						<p id="error" style="text-transform: uppercase;">Jaime<span>&nbsp; Sandoval</span></p>
+						<p id="error">Jaime<span>&nbsp; Sandoval</span></p>
 						<p class="code">Full St<span></span><span>ack</span></p>
-						<p class="code-2">W<span>eb </span>&nbspDevel</span>o<span>per</span></p>
-
+						<p class="code-2">W<span>eb </span>&nbspDeveloper</p>
 					</div>
-					<h4>welcome to my portfolio</h4>
+					<p class="welcome-text">Welcome to my Portfolio</p>
 					<div class="button-box">
-						<a href="https://github.com/JaimeGSandoval" target="_blank"
-							class="btn bg-white mr-1 mr-md-2 banner-btn">GitHub</a>
-						<a href="https://www.linkedin.com/in/jaime-sandoval-dev/" target="_blank"
-							class="btn bg-white ml-1 ml-md-2 banner-btn">Linkedin</a>
-						<a href="	https://drive.google.com/file/d/1jU37SJuagmmVhYHQgWDwqpQfn8vpjtHd/view?usp=sharing"
-							target="_blank" class="btn bg-white ml-1 ml-md-2 banner-btn">Resume</a>
-
+						<a href="https://github.com/JaimeGSandoval" target="_blank" rel="noopener noreferrer"
+							class="mx-md-3 banner-btn p-2 rounded bg-white d-flex align-items-center justify-content-center">
+							<img class="contact-icons-hero" src="images/skills-icons/github-contact.png" alt="GitHub logo">
+						</a>
+						<a href="https://twitter.com/jskodes"
+							class="mx-md-3 banner-btn p-2 rounded bg-white d-flex align-items-center justify-content-center"
+							target="_blank" rel="noopener noreferrer">
+							<img class="contact-icons-hero rounded email-btn-icon" src="images/twitter.png" alt="Twitter logo">
+						</a>
+						<a href="https://www.linkedin.com/in/jaime-sandoval-dev/" target="_blank" rel="noopener noreferrer"
+							class="banner-btn p-2 bg-white rounded mx-md-3 d-flex align-items-center justify-content-center">
+							<img class="contact-icons-hero" src="images/linkedin-150.png" alt="Linkedin logo">
+						</a>
+						<a href="mailto:jaime.devs@gmail.com"
+							class="mx-md-3 banner-btn p-2 bg-white rounded d-flex align-items-center justify-content-center"
+							title="Email">
+							<img class="contact-icons-hero email-btn-icon" src="images/envelope.png" alt="Email logo">
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section> <!-- section -->
-
+	</section>
 	<section class="site-section" id="section-portfolio">
 		<div class="container">
 			<div class="row">
 				<div class="section-heading text-center col-md-12 portfolio-heading-padding">
-					<h2>Featured <strong class="strong-text">Portfolio</strong></h2>
+					<h2 class="feature-headline"
+						style="font-family: 'Monoton'; text-shadow: 0 0 100px #ffffff, 0 0 50px #ffffff, 0 0 26px #ffffff;">
+						Featured <span class="strong-text"
+							style="text-shadow: 0 0 100px red, 0 0 50px firebrick, 0 0 26px darkred; font-family: 'Monoton'; color: red;">&nbsp;
+							Projects</span></h2>
 				</div>
 			</div>
-
 			<div class="filters-content">
 				<div class="row">
-					<div class="single-portfolio col-md-4 all mockup">
+					<div class="single-portfolio col-sm-12 col-md-10 col-lg-4 col-xl-4 align-items-center mt-lg-0">
 						<div class="relative">
 							<div class="thumb hover-shadow">
-								<a href="https://bonsaidepot.jaimesandoval.net/" target="_blank">
-									<img class="image img-fluid" src="images/bonsai-mobile.gif" alt="">
+								<a href="https://bonsaidepot.jaimesandoval.net/" target="_blank"
+									aria-label="Discover what Bonsai Depot has to offer by following this link" rel="noopener noreferrer">
+									<picture>
+										<source srcset="images/bonsai/bonsai.static.min.webp" class="profile-img" type="image/webp">
+										<img class="image img-fluid" src="images/bonsai/bonsai.static.min.png"
+											alt="Demonstration gif of Bonsai Depot" data-object-fit="cover">
+									</picture>
 								</a>
 							</div>
 						</div>
 						<div class="p-inner mt-4">
-							<h3>Bonsai Depot</h3>
-							<p>Role: Full Stack Developer</p>
+							<h3 class="mb-4">Bonsai Depot</h3>
+							<p class="custom-margin">Full Stack Developer</p>
+							<p>React.js | JavaScript | Node.js | Express.js | SQL | PostgreSQL | Fetch API | Bootstrap</p>
 							<div class="portfolio-btn-box my-3">
-								<a href="https://bonsaidepot.jaimesandoval.net/" target="_blank" class="btn portfolio-btn mr-2">Live
+								<a href="https://bonsaidepot.jaimesandoval.net/" target="_blank" class="btn portfolio-btn mr-2"
+									rel="noopener noreferrer">Live
 									Demo</a>
-								<a href="https://github.com/JaimeGSandoval/wicked-sales-js" target="_blank"
-									class="btn portfolio-btn">GitHub</a>
+								<a href="https://github.com/JaimeGSandoval/wicked-sales-js" target="_blank" class="btn portfolio-btn"
+									rel="noopener noreferrer">GitHub</a>
 							</div>
-
-							<div class="cat">A full stack mobile responsive React.js and Node.js shopping cart application focused on
+							<div class="cat mb-5 mb-md-5">A full stack e-commerce shopping cart application
+								that specializes
+								in selling
 								bonsai trees and tools.</div>
 						</div>
 					</div>
-					<div class="single-portfolio col-md-4 all mockup">
+					<div class="single-portfolio col-sm-12 col-md-10 col-lg-4 col-xl-4 align-items-center">
 						<div class="relative">
 							<div class="thumb hover-shadow">
-								<a href="https://borkfrens.jaimesandoval.net/" target="_blank">
-									<img class="image img-fluid" src="images/bork-frens.gif" alt="">
+								<a href="https://borkfrens.jaimesandoval.net/" target="_blank"
+									aria-label="Discover what BorkFrens has to offer by following this link" rel="noopener noreferrer">
+									<picture>
+										<source srcset="images/bork/bork.static.min.webp" class="profile-img" type="image/webp">
+										<img class="image img-fluid" src="images/bork/bork.static.min.png"
+											alt="Demonstration gif of Bonsai Depot" data-object-fit="cover">
+									</picture>
 								</a>
 							</div>
 						</div>
 						<div class="p-inner mt-4">
-							<h3>Bork Frens</h3>
-							<p>Role: Full Stack Developer</p>
+							<h3 class="mb-4">Bork Frens</h3>
+							<p class="custom-margin">Full Stack Developer | Team Project</p>
+							<p>React.js | JavaScript | Node.js | Express.js | SQL | PostgreSQL | Google Maps | Fetch API</p>
 							<div class="portfolio-btn-box my-3">
-								<a href="https://borkfrens.jaimesandoval.net/" target="_blank" class="btn portfolio-btn mr-2">Live
+								<a href="https://borkfrens.jaimesandoval.net/" target="_blank" class="btn portfolio-btn mr-2"
+									rel="noopener noreferrer">Live
 									Demo</a>
-								<a href="https://github.com/JaimeGSandoval/bork-frens" target="_blank"
-									class="btn portfolio-btn">GitHub</a>
+								<a href="https://github.com/JaimeGSandoval/bork-frens" target="_blank" class="btn portfolio-btn"
+									rel="noopener noreferrer">GitHub</a>
 							</div>
-							<div class="cat">A full stack React.js and Node.js mobile application for dog owners who want a community
+							<div class="cat mb-5 mb-md-5">A full stack mobile application for dog owners who want a community
 								to find
-								doggy play pals for their four
+								dog play pals for their four
 								legged best friends.</div>
 						</div>
 					</div>
-					<div class="single-portfolio col-md-4 all packaging">
+					<div
+						class="single-portfolio col-sm-4 packaging col-sm-12 col-md-10 col-lg-4 col-xl-4 align-items-center  mt-xl-0">
 						<div class="relative">
 							<div class="thumb hover-shadow">
-								<a href="https://jaimegsandoval.github.io/today-in-science/" target="_blank">
-									<img class="image img-fluid" src="images/today.gif" alt="">
+								<a href="https://jaimegsandoval.github.io/today-in-science/" target="_blank" rel="noopener noreferrer"
+									aria-label="Discover what Today in Science has to offer by following this link">
+									<picture>
+										<source srcset="images/today/today.static.min.webp" class="profile-img" type="image/webp">
+										<img class="image img-fluid" src="images/today/today.static.min.png"
+											alt="Demonstration gif of Bonsai Depot" data-object-fit="cover">
+									</picture>
 								</a>
 							</div>
 						</div>
 						<div class="p-inner mt-4">
-							<h3>Today In Science</h3>
-							<p>Role: Front End Developer</p>
+							<h3 class="mb-4">Today In Science</h3>
+							<p class="custom-margin">Frontend Developer</p>
+							<p class="custom-today-text-margin">JavaScript | jQuery | Ajax | Contextual Web Search API | Pixabay API |
+								Bootstrap</p>
 							<div class="portfolio-btn-box my-3">
 								<a href="https://jaimegsandoval.github.io/today-in-science/" target="_blank"
-									class="btn portfolio-btn mr-2">Live Demo</a>
-								<a href="https://github.com/JaimeGSandoval/today-in-science" target="_blank"
-									class="btn portfolio-btn">GitHub</a>
+									class="btn portfolio-btn mr-2" rel="noopener noreferrer">Live Demo</a>
+								<a href="https://github.com/JaimeGSandoval/today-in-science" target="_blank" class="btn portfolio-btn"
+									rel="noopener noreferrer">GitHub</a>
 							</div>
-							<div class="cat">A mobile responsive app that utilizes two APIs to bring the user recent articles focused
+							<div class="cat mb-5 mb-md-5">A mobile responsive website that utilizes two APIs to bring the user recent
+								articles
+								focused
 								on popular fields of Science.</div>
 						</div>
 					</div>
+					<div class="m-auto">
+						<h2 class="mt-5 pt-3 text-center mb-4 current-work"
+							style="font-family: 'Monoton'; text-shadow: 0 0 100px #ffffff, 0 0 50px #ffffff, 0 0 26px #ffffff; color: #fff;">
+							Currently <span
+								style="text-shadow: 0 0 100px red, 0 0 50px firebrick, 0 0 26px darkred; font-family: 'Monoton'; color:red;">Working
+								on</span></h2>
+						<div class="current-text-box">
+							<p class="date text-center"></p>
+							<ul>
+								<li>Refactoring Today in Science with TypeScript</li>
+								<li>Setting up a Twitter API to retrieve Tweets focused on Science</li>
+								<li>Diving deep into the world of Optimization and Performance</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- .section -->
-
-
 	<section class="skills-section" id="section-skills">
 		<div class="container">
 			<div class="row">
+				<div class="col-md-12 mb-5 mt-5">
+					<div class="section-heading text-center section-heading-padding">
+						<h2 style="font-family: 'Monoton'; text-shadow: 0 0 100px #ffffff, 0 0 50px #ffffff, 0 0 26px #ffffff;">Ski
+							<span class="strong-text"
+								style="text-shadow: 0 0 100px red, 0 0 50px firebrick, 0 0 26px darkred; color: red;">
+								lls</span>
+						</h2>
+					</div>
+					<div class="row align-items-center pt-3 pb-5 justify-content-center">
+						<h3 class="skills-header">Frontend</h3>
+						<div class="row align-items-center justify-content-between mt-4 mt-md-5 skills-box frontend-skills">
+							<div class="col skills-text custom-js">
+								<div class="skills-img bg-javascript_sm m-auto"></div>
+								<p>JavaScript</p>
+							</div>
+							<div class="col skills-text custom-react">
+								<div class="skills-img bg-react_sm m-auto"></div>
+								<p>React.js</p>
+							</div>
+							<div class="col skills-text custom-ajax">
+								<div class="skills-img bg-ajax_sm m-auto"></div>
+								<p>Ajax</p>
+							</div>
+							<div class="col skills-text custom-padding custom-babel">
+								<div class="skills-img bg-babel_sm m-auto"></div>
+								<p>Babel</p>
+							</div>
+							<div class="col skills-text custom-padding">
+								<div class="skills-img bg-webpack_sm m-auto"></div>
+								<p class="custom-webpack-text">Webpack</p>
+							</div>
+						</div>
+						<div class="row align-items-center justify-content-between mt-4 mt-md-5 skills-box frontend-skills">
+							<div class="col skills-text custom-css">
+								<div class="skills-img bg-jquery_sm m-auto"></div>
+								<p>jQuery</p>
+							</div>
+							<div class="col skills-text custom-css">
+								<div class="skills-img bg-bootstrap_sm m-auto"></div>
+								<p>Bootstrap</p>
+							</div>
+							<div class="col skills-text custom-css">
+								<div class="skills-img bg-css_sm m-auto"></div>
+								<p>CSS3</p>
+							</div>
+							<div class="col skills-text custom-padding">
+								<div class="skills-img bg-html_sm m-auto"></div>
+								<p>HTML5</p>
+							</div>
+							<div class="col skills-text custom-padding">
+								<div class="skills-img bg-parcel_sm m-auto"></div>
+								<p>Parcel</p>
+							</div>
+						</div>
+						<h3 class="skills-header mt-5">Backend</h3>
+						<div class="row align-items-center justify-content-between mt-4 mt-md-5 backend-skills">
+							<div class="col skills-text">
+								<div class="skills-img bg-nodejs_sm m-auto"></div>
+								<p class="custom-node-text">Node.js</p>
+							</div>
+							<div class="col skills-text">
+								<div class="skills-img bg-express_logo_sm m-auto"></div>
+								<p class="custom-express-text">Express.js</p>
+							</div>
+							<div class="col skills-text custom-padding custom-sql">
+								<div class="skills-img bg-sql_sm m-auto"></div>
+								<p>SQL</p>
+							</div>
+							<div class="col skills-text custom-postgre">
+								<div class="skills-img bg-postgresql_sm m-auto"></div>
+								<p class="custom-postgre-text">PostgreSQL</p>
+							</div>
+							<div class="col skills-text custom-padding custom-padding-aws">
+								<div class="skills-img bg-aws_sm m-auto"></div>
+								<p>AWS EC2</p>
+							</div>
+							<div class="col skills-text custom-padding">
+								<div class="skills-img bg-http_sm m-auto bg-white"></div>
+								<p>HTTP</p>
+							</div>
+						</div>
+						<h3 class="skills-header mt-5">Tools</h3>
+						<div class="row align-items-center justify-content-between mt-4 mt-md-5 skills-box tools-skills-1">
+							<div class="col skills-text">
+								<div class="skills-img bg-git_sm m-auto"></div>
+								<p class="custom-git-text">Git</p>
+							</div>
+							<div class="col skills-text">
+								<div class="skills-img bg-github_sm m-auto"></div>
+								<p>GitHub</p>
+							</div>
+							<div class="col skills-text chrome">
+								<div class="skills-img bg-chrome_sm m-auto"></div>
+								<p class="custom-devTools-text">DevTools</p>
+							</div>
+							<div class="col skills-text">
+								<div class="skills-img bg-npm_sm m-auto"></div>
+								<p>npm</p>
+							</div>
+							<div class="col skills-text">
+								<div class="skills-img bg-vscode_sm m-auto"></div>
+								<p>VScode</p>
+							</div>
+						</div>
+						<div class="row align-items-center justify-content-between mt-4 mt-md-5 skills-box tools-skills-2">
+							<div class="col skills-text">
+								<div class="skills-img bg-httpie_sm m-auto"></div>
+								<p class="custom-httpie-text">HTTPie</p>
+							</div>
+							<div class="col skills-text custom-pgweb">
+								<div class="skills-img bg-pgweb_sm m-auto"></div>
+								<p>Pgweb</p>
+							</div>
+							<div class="col skills-text custom-figma">
+								<div class="skills-img bg-figma_sm m-auto"></div>
+								<p class="custom-figma-text">Figma</p>
+							</div>
+							<div class="col skills-text react-dev custom-padding custom-react-dev">
+								<div class="skills-img bg-react_sm m-auto"></div>
+								<p>React DevTools</p>
+							</div>
+							<div class="col skills-text custom-padding custom-meister">
+								<div class="skills-img bg-meister_sm m-auto"></div>
+								<p>Meistertask</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<section id="IE-styles-skills-section">
+		<div class="conatiner">
+			<div class="row">
 				<div class="col-md-12 mb-5">
 					<div class="section-heading text-center section-heading-padding">
-						<h2>My <strong class="strong-text">Skills</strong></h2>
+						<h4>My <strong class="strong-text">&nbsp; Skills</strong></h4>
 					</div>
-					<div class="row align-items-center pt-3 pb-5">
-						<div class="col skills-text">
-							<img class="skills-img" src="images/javascript.png" alt="JavaScript logo">
-							<p>JavaScript</p>
+					<div class="row justify-content-around">
+						<div>
+							<h5 class="text-right IE-skills-header">Frontend</h5>
+							<ul>
+								<li>JavaScript</li>
+								<li>React.js</li>
+								<li>jQuery</li>
+								<li>Ajax</li>
+								<li>HTTP</li>
+								<li>Bootstrap</li>
+								<li>CSS3</li>
+								<li>HTML5</li>
+								<li>Webpack</li>
+								<li>Babel</li>
+								<li>PARCEL</li>
+							</ul>
 						</div>
-						<div class="col skills-text">
-							<img class="skills-img" src="images/react.png" alt="React logo">
-							<p>React.js</p>
+						<div>
+							<h5 class="text-center IE-skills-header">Back End</h5>
+							<ul>
+								<li>Node.js</li>
+								<li>Express.js</li>
+								<li>SQL</li>
+								<li>PostgreSQL</li>
+								<li>AWS EC2</li>
+							</ul>
 						</div>
-						<div class="col skills-text">
-							<img class="skills-img" src="images/nodejs.png" alt="Node.js logo">
-							<p>Node.js</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img" src="images/postgresql.png" alt="Postgresql logo">
-							<p>PostgreSQL</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img express" src="images/express-logo.png" alt="Express.js logo">
-							<p class="relative-text">Express.js</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img" src="images/git.png" alt="Git logo">
-							<p>Git</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img" src="images/github.png" alt="GitHub logo">
-							<p>GitHub</p>
-						</div>
-						<div class="col skills-text chrome">
-							<img class="skills-img" src="images/chrome.png" alt="chrome logo">
-							<p>Dev Tools</p>
-						</div>
-					</div>
-
-					<div class="row align-items-center py-5">
-						<div class="col skills-text">
-							<img class="skills-img ajax" src="images/ajax.jpg" alt="Ajax logo">
-							<p>Ajax</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img" src="images/jquery.png" alt="jQuery logo">
-							<p>jQuery</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img" src="images/bootstrap.png" alt="Bootstrap logo">
-							<p>Bootstrap</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img" src="images/css.png" alt="css logo">
-							<p>CSS3</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img" src="images/html.png" alt="html logo">
-							<p>HTML5</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img" src="images/npm.png" alt="npm logo">
-							<p>npm</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img" src="images/aws.png" alt="aws logo">
-							<p>AWS EC2</p>
-						</div>
-						<div class="col skills-text react-dev">
-							<img class="skills-img" src="images/react.png" alt="React logo">
-							<p>React Dev Tools</p>
-						</div>
-					</div>
-
-					<div class="row align-items-center py-5">
-						<div class="col skills-text">
-							<img class="skills-img meister" src="images/meister.png" alt="meistertask logo">
-							<p>Meistertask</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img httpie" src="images/httpie.jpg" alt="HTTPie logo">
-							<p>HTTPie</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img pgweb" src="images/pgweb.jpg" alt="pgweb logo">
-							<p>Pgweb</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img vscode" src="images/vscode.png" alt="vscode logo">
-							<p>VScode</p>
-						</div>
-						<div class="col skills-text">
-							<img class="skills-img figma" src="images/figma.png" alt="figma logo">
-							<p>Figma</p>
-						</div>
-						<div class="col skills-text">
-							<img class="http" src="images/http.png" alt="HTTP logo">
-							<p>HTTP</p>
+						<div>
+							<h5 class="text-center IE-skills-header">Tools</h5>
+							<ul>
+								<li>Git</li>
+								<li>Github</li>
+								<li>npm</li>
+								<li>Chrome Dev Tools</li>
+								<li>React Dev Tools</li>
+								<li>VScode</li>
+								<li>HTTPie</li>
+								<li>Pgweb</li>
+								<li>Figma</li>
+								<li>Meistertask</li>
+								<li>Babel</li>
+								<li>Webpack</li>
+								<li>PARCEL</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section> <!-- .section -->
-
-	<section class="site-section about-section" id="section-about">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0 profile-img-box">
-					<img src="images/profile-6.png" alt="Image placeholder" class="img-fluid profile-img">
-				</div>
-				<div class="col-lg-5 pl-lg-5">
-					<div class="about-heading">
-						<h2>About <strong class="strong-text">Me</strong></h2>
-					</div>
-					<p class="lead">Coding has become my life. If I go a day without coding it feels odd, and that's mainly
-						because it's such a big part of me.</p>
-					<p>I truly enjoy using the combination of my imagination and logic to create something new and useful for
-						people, or to use the skills I've acquired to find a solution to a problem, whether it's debugging or
-						solving an algorithm. I wasn't
-						always involved with tech, but I took the plunge at the suggestion of a softball teammate, to whom I'm
-						forever grateful towards for introducing me to this field. Ever since I took his suggestion, I've never
-						looked back.
-					</p>
-					<p>When I'm not coding like the wind, I like to spend my time doing outdoor activities such as snowboarding,
-						surfing, hiking or just a playing pick up game of basketball with friends. I always try to stay active and
-						have fun in the sun.</p>
-					<p>I'd love to bring my skills to a company and look forward to being part of a dev team. Let's collaborate
-						and make something incredible.</p>
-				</div>
-			</div>
-
-
 		</div>
 	</section>
-
-	<section class="site-section" id="section-contact">
+	<section class="site-section about-section" id="section-about">
+		<div class="container">
+			<div class="row mb-5 profile-img-parent justify-content-lg-between">
+				<div class="col-lg-5 pr-lg-5 mb-5 mb-lg-0 profile-img-box align-items-center d-flex justify-content-center">
+					<picture>
+						<source srcset="images/profile-6.webp" class="profile-img" type="image/webp">
+						<img src="images/profile-6.png" alt="Profile image" class="profile-img">
+					</picture>
+				</div>
+				<div class="col-lg-6 pl-lg-4 about-section-text">
+					<div class="about-heading">
+						<h2 style="font-family: 'Monoton'; text-shadow: 0 0 100px #ffffff, 0 0 50px #ffffff, 0 0 26px #ffffff;">
+							About <span class="strong-text"
+								style="text-shadow: 0 0 100px red, 0 0 50px firebrick, 0 0 26px darkred; font-family: 'Monoton'; color: red;">&nbsp;
+								Me</span></h2>
+					</div>
+					<p class="lead" lang="en">Hello There! Thank you for visiting! My Name is Jaime Sandoval and I'm a Full Stack
+						Web Developer based in Orange County, California.</p>
+					<p class="about-section-text" lang="en">I truly enjoy using the combination of imagination and logic to
+						create applications
+						for people to interact with. Whether the coding involves implementing an API, debugging, or
+						solving an
+						algorithm, I'm all
+						for it.
+					</p>
+					<p class="about-section-text" lang="en">
+						While attending Learning Fuze I was immersed in technologies used for building
+						Full Stack Applications (900+ hours coding). I used those very technologies to build the projects featured
+						in
+						this portfolio!
+						Learning Fuze gave me a solid foundation from which to work with, and I've been busy using that foundation
+						ever since.
+					</p>
+					<p class="about-section-text" lang="en">Staying up to date with current dev trends is another passion of mine.
+						I do that in a variety of ways, such
+						as attending tech meetups, listening to dev podcasts and finding interesting Software Engineers to follow on
+						Twitter.</p>
+					<p class="about-section-text" lang="en">I'd love to bring my skills to a company and I look forward to being
+						part of a Dev Team. If you'd like to contact me please feel free to do so, so that we can make something
+						incredible with code.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="site-section" id="section-contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 mb-5">
 					<div class="section-heading text-center contact-heading">
-						<h2>Get <strong class="strong-text">In Touch</strong></h2>
+						<h2 class="my-xl-5"
+							style="font-family: 'Monoton'; text-shadow: 0 0 100px #ffffff, 0 0 50px #ffffff, 0 0 26px #ffffff;">Get
+							<span class="strong-text"
+								style="text-shadow: 0 0 100px red, 0 0 50px firebrick, 0 0 26px darkred; font-family: 'Monoton'; color:red;">&nbsp;
+								In &nbsp; Touch</span>
+						</h2>
 					</div>
-					<div class="row justify-content-around footer-box">
-						<div class="skills-text contact-hover">
-							<a href="https://github.com/JaimeGSandoval" target="_blank">
-								<img class="skills-img" src="images/github.png" alt="GitHub logo">
-								<p>GitHub</p>
-							</a>
-						</div>
-						<div class="skills-text contact-hover">
-							<a href="https://www.linkedin.com/in/jaime-sandoval-dev/" target="_blank">
-								<img class="bg-color skills-img linkedin" src="images/linkedin.png" alt="Linkedin logo">
-								<p>Linkedin</p>
-							</a>
-						</div>
-						<div class="skills-text contact-hover">
-							<a href="	https://drive.google.com/file/d/1jU37SJuagmmVhYHQgWDwqpQfn8vpjtHd/view?usp=sharing"
-								target="_blank">
-								<img class="skills-img linkedin bg-white" src="images/resume.png" alt="Resume logo">
-								<p>Resume</p>
-							</a>
-						</div>
+					<div class="row justify-content-center footer-box">
+						<a class="contact-footer mx-3 mx-md-4" href="https://github.com/JaimeGSandoval" target="_blank"
+							rel="noopener noreferrer">
+							<div class="skills-text contact-hover bg-white p-2 rounded">
+								<img class="contact-icons-footer" src="images/skills-icons/github-contact.png" alt="GitHub logo">
+							</div>
+						</a>
+						<a class="contact-footer mx-3 mx-md-4 rounded" href="https://www.linkedin.com/in/jaime-sandoval-dev/"
+							target="_blank" rel="noopener noreferrer">
+							<div class="skills-text contact-hover bg-white p-2 rounded">
+								<img class="contact-icons-footer" src="images/linkedin-150.png" alt="Linkedin logo">
+							</div>
+						</a>
+						<a class="contact-footer mx-3 mx-md-4 rounded" href="https://twitter.com/jskodes" target="_blank"
+							rel="noopener noreferrer">
+							<div class="skills-text contact-hover bg-white p-2 rounded">
+								<img class="contact-icons-footer" src="images/twitter.png" alt="Twitter logo">
+							</div>
+						</a>
+						<a class="contact-footer mx-3 mx-md-4 rounded" href="mailto:jaime.devs@gmail.com" target="_blank"
+							rel="noopener noreferrer">
+							<div class="skills-text contact-hover bg-white p-2 rounded">
+								<img class="contact-icons-footer" src="images/envelope.png" alt="Email logo">
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-
-
-	<footer class="site-footer">
-		<div class="container">
-
-			<div class="row mb-5">
-				<p class="col-12 text-center copy">
-					Copyright &copy;
-					<script>document.write(new Date().getFullYear());</script> All rights reserved | Template by <a
-						href="https://colorlib.com" class="copy" target="_blank">Colorlib</a>
-				</p>
-			</div>
-		</div>
+		<p class="text-center copyright">Copyright&copy; 2021 Jaime Sandoval</p>
 	</footer>
-
-
-
-
-	<script src="js/vendor/jquery.min.js"></script>
-	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/vendor/popper.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-
-	<script src="js/vendor/jquery.easing.1.3.js"></script>
-
-	<script src="js/vendor/jquery.stellar.min.js"></script>
-	<script src="js/vendor/jquery.waypoints.min.js"></script>
-
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="js/modernizr-custom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="./js/object-fit-polyfill.js"></script>
+	<script id="main-script" src="./js/main.min.js"></script>
 </body>
 
 </html>

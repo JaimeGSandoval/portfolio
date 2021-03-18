@@ -3,7 +3,7 @@ body {
 }
 .neon-box {
   font-size: 1.8rem;
-  font-family: "Monoton", cursive;
+  font-family: 'Monoton', sans-serif;
   text-align: center;
   text-shadow: 0 0 100px red, 0 0 50px FireBrick, 0 0 26px DarkRed;
   color: red;
