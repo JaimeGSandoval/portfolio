@@ -544,14 +544,22 @@ footer {
   color: #fff;
 }
 
+.IE-scroll {
+  display: none;
+}
+
 @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
   #IE-styles-skills-section {
     display: block;
   }
-}
+  .skills-scroll {
+    display: none;
+  }
 
-@media all and (max-width: 768px) and (-ms-high-contrast: none),
-  (-ms-high-contrast: active) {
+  .IE-scroll {
+    display: block;
+  }
+
   .skills-section {
     display: none;
   }
@@ -559,15 +567,23 @@ footer {
 
 @media all and (min-width: 768px) and (-ms-high-contrast: none),
   (-ms-high-contrast: active) {
+  .skills-section {
+    display: block;
+  }
+
   #IE-styles-skills-section {
     display: none;
   }
 }
 
-@media all and (max-width: 500px) and (-ms-high-contrast: none),
+@media all and (min-width: 992px) and (-ms-high-contrast: none),
   (-ms-high-contrast: active) {
-  .profile-img {
-    width: 60%;
+  .skills-scroll {
+    display: block;
+  }
+
+  .IE-scroll {
+    display: none;
   }
 }
 
