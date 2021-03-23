@@ -20,6 +20,7 @@
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "browser-sync": "^2.26.14",
+    "clean-css": "^5.1.2",
     "postcss": "^8.2.8",
     "postcss-cli": "^8.3.1"
   },
