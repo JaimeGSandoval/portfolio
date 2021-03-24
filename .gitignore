@@ -3,3 +3,5 @@ prepros-6.conf
 node_modules
 budget.json
 commands.txt
+sharp.js
+imagemin.js
