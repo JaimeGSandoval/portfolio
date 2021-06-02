@@ -254,7 +254,7 @@ h5 {
 }
 
 .thumb {
-  height: 18.75rem;
+  height: 25rem;
   width: auto;
   background: #262629;
 }
@@ -1233,6 +1233,18 @@ footer {
   .no-webp .site-hero {
     background-image: url('../images/hero/lg/night-traffic-4-lg.min.jpg');
   }
+
+  .single-portfolio {
+    margin: initial;
+  }
+
+  .tech-text {
+    margin-bottom: 2.6rem;
+  }
+
+  .tech-text-1 {
+    margin-bottom: 2.78rem;
+  }
 }
 
 @media screen and (min-width: 1024px) and (min-height: 1366px) {
@@ -1351,5 +1363,13 @@ footer {
 
   .no-webp .site-hero {
     background-image: url('../images/hero/xxl/night-traffic-4-xxl.min.jpg');
+  }
+
+  .tech-text {
+    margin-bottom: 3.66rem;
+  }
+
+  .tech-text-1 {
+    margin-bottom: 3.75rem;
   }
 }
