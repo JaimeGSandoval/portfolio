@@ -254,8 +254,7 @@ h5 {
 }
 
 .thumb {
-  /* height: 18.75rem; */
-  height: 30rem;
+  height: 25rem;
   width: auto;
   background: #262629;
 }
@@ -1175,12 +1174,6 @@ footer {
     margin: auto;
   }
 
-  /* @media screen and (min-width: 1200px) {
-    .single-portfolio {
-      margin: initial;
-    }
-  } */
-
   .webp .site-hero {
     background-image: url('../images/hero/md/night-traffic-4-md.min.webp');
   }
@@ -1243,6 +1236,14 @@ footer {
 
   .single-portfolio {
     margin: initial;
+  }
+
+  .tech-text {
+    margin-bottom: 2.6rem;
+  }
+
+  .tech-text-1 {
+    margin-bottom: 2.78rem;
   }
 }
 
@@ -1362,5 +1363,13 @@ footer {
 
   .no-webp .site-hero {
     background-image: url('../images/hero/xxl/night-traffic-4-xxl.min.jpg');
+  }
+
+  .tech-text {
+    margin-bottom: 3.66rem;
+  }
+
+  .tech-text-1 {
+    margin-bottom: 3.75rem;
   }
 }
