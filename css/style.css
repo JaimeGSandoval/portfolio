@@ -59,11 +59,6 @@ h5 {
   font-weight: 200;
 }
 
-.FE-mobile-styles-skills {
-  width: 100%;
-  margin: 20px;
-}
-
 .custom-ajax {
   position: relative;
   top: 11px;
@@ -83,8 +78,23 @@ h5 {
   top: 4px;
 }
 
+.FE-mobile-styles-skills {
+  width: 100%;
+  margin: 20px;
+}
+
 .FE-desktop-styles-skills {
   display: none;
+}
+
+.BE-mobile-styles-skills {
+  width: 100%;
+  margin: 10px;
+}
+
+.BE-desktop-styles-skills {
+  display: none;
+  width: 100%;
 }
 
 .tools-mobile-styles-skills {
@@ -426,9 +436,9 @@ h5 {
   width: 6.3rem;
 }
 
-.http {
+/* .http {
   border-radius: 50%;
-}
+} */
 
 .parcel {
   width: 4rem;
@@ -454,9 +464,9 @@ h5 {
   width: 4.3rem;
 }
 
+/* .http, */
 .figma,
 .pgweb,
-.http,
 .ajax {
   border-radius: 50%;
 }
@@ -1181,6 +1191,14 @@ footer {
     display: none;
   }
 
+  .BE-desktop-styles-skills {
+    display: flex;
+  }
+
+  .BE-mobile-styles-skills {
+    display: none;
+  }
+
   .tools-desktop-styles-skills {
     display: flex;
   }
@@ -1287,7 +1305,6 @@ footer {
   }
 
   .custom-today-text-margin {
-    /* margin-bottom: 0; */
     margin-bottom: 1rem;
   }
 
