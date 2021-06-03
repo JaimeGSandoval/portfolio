@@ -36,6 +36,10 @@ h2 {
   font-size: 25px;
 }
 
+.fe-desktop-styles-skills {
+  display: none;
+}
+
 .welcome-text {
   font-size: 1.5rem;
   color: #fff;
@@ -53,6 +57,59 @@ h4,
 h5 {
   color: #ccc;
   font-weight: 200;
+}
+
+.custom-ajax {
+  position: relative;
+  top: 11px;
+}
+
+.custom-webpack {
+  position: relative;
+  top: 4px;
+}
+
+.custom-html {
+  padding-top: 1rem;
+}
+
+.custom-babel {
+  position: relative;
+  top: 4px;
+}
+
+.FE-mobile-styles-skills {
+  width: 100%;
+  margin: 20px;
+}
+
+.FE-desktop-styles-skills {
+  display: none;
+}
+
+.BE-mobile-styles-skills {
+  width: 100%;
+  margin: 10px;
+}
+
+.BE-desktop-styles-skills {
+  display: none;
+  width: 100%;
+}
+
+.tools-mobile-styles-skills {
+  width: 100%;
+  margin: 10px;
+}
+
+.tools-relative {
+  position: relative;
+  left: 7px;
+  top: 6px;
+}
+
+.tools-desktop-styles-skills {
+  display: none;
 }
 
 .site-navbar {
@@ -379,9 +436,9 @@ h5 {
   width: 6.3rem;
 }
 
-.http {
+/* .http {
   border-radius: 50%;
-}
+} */
 
 .parcel {
   width: 4rem;
@@ -407,9 +464,9 @@ h5 {
   width: 4.3rem;
 }
 
+/* .http, */
 .figma,
 .pgweb,
-.http,
 .ajax {
   border-radius: 50%;
 }
@@ -791,12 +848,6 @@ footer {
   background: url('../images/css_sprites.png') -420px -10px;
 }
 
-.bg-parcel_sm {
-  width: 61px;
-  height: 50px;
-  background: url('../images/css_sprites.png') -201px -10px;
-}
-
 .bg-linkedin_sm {
   width: 38px;
   height: 38px;
@@ -869,6 +920,18 @@ footer {
   background: url('../images/css_sprites.png') -78px -224px;
 }
 
+.webp .bg-sass_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/skills-icons/sass.webp');
+}
+
+.no-webp .bg-sass_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/skills-icons/sass.png');
+}
+
 .bg-css_sm {
   width: 48px;
   height: 48px;
@@ -891,6 +954,16 @@ footer {
   width: 48px;
   height: 48px;
   background: url('../images/css_sprites.png') -352px -10px;
+}
+
+.webp .bg-typescript_sm {
+  width: 48px;
+  height: 48px;
+  background: url('../images/skills-icons/typescript.webp');
+}
+
+.no-webp .bg-typescript_sm {
+  background-image: url('../images/skills-icons/typescript.png');
 }
 
 .bg-nodejs_sm {
@@ -941,11 +1014,21 @@ footer {
 }
 
 .skills-box {
-  width: 90%;
+  width: 100%;
 }
 
-.front-end-skills {
+.skills-box-2 {
   width: 100%;
+}
+
+@media (min-width: 375px) {
+  .skills-box-2 {
+    width: 89%;
+  }
+
+  .tools-relative {
+    left: 0;
+  }
 }
 
 .backend-skills {
@@ -1011,9 +1094,15 @@ footer {
   padding-right: 0;
 }
 
+.frontend-skills,
+.backend-skills {
+  /* width: 90%; */
+  /* max-width: 335px; */
+}
+
 @media screen and (min-width: 375px) {
   .frontend-skills {
-    width: 90%;
+    /* width: 90%; */
   }
 
   .tools-skills-1 {
@@ -1052,9 +1141,9 @@ footer {
     width: 97%;
   }
 
-  .frontend-skills {
+  /* .frontend-skills {
     width: 82%;
-  }
+  } */
 
   .backend-skills {
     width: 90%;
@@ -1094,6 +1183,29 @@ footer {
     width: 100%;
   }
 
+  .FE-desktop-styles-skills {
+    display: flex;
+  }
+
+  .FE-mobile-styles-skills {
+    display: none;
+  }
+
+  .BE-desktop-styles-skills {
+    display: flex;
+  }
+
+  .BE-mobile-styles-skills {
+    display: none;
+  }
+
+  .tools-desktop-styles-skills {
+    display: flex;
+  }
+
+  .tools-mobile-styles-skills {
+    display: none;
+  }
   .current-text-box {
     width: 100%;
   }
@@ -1121,13 +1233,13 @@ footer {
   }
 
   .custom-css {
-    position: relative;
-    top: 9px;
+    /* position: relative;
+    top: 9px; */
   }
 
   .custom-babel {
-    position: relative;
-    top: 2px;
+    /* position: relative;
+    top: 2px; */
   }
 
   .custom-meister {
@@ -1181,6 +1293,10 @@ footer {
   .no-webp .site-hero {
     background-image: url('../images/hero/md/night-traffic-4-md.min.jpg');
   }
+
+  .custom-typescript {
+    padding-top: 1rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1189,7 +1305,7 @@ footer {
   }
 
   .custom-today-text-margin {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
   }
 
   .contact-icons-hero {
@@ -1371,5 +1487,9 @@ footer {
 
   .tech-text-1 {
     margin-bottom: 3.75rem;
+  }
+
+  .custom-today-text-margin {
+    margin-bottom: 1.2rem;
   }
 }
