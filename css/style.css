@@ -1,3 +1,27 @@
+.mobile-styles-skills {
+  width: 100%;
+  margin: 20px;
+}
+
+.custom-ajax {
+  position: relative;
+  top: 11px;
+}
+
+.custom-webpack {
+  position: relative;
+  top: 4px;
+}
+
+.custom-html {
+  padding-top: 1rem;
+}
+
+.custom-babel {
+  position: relative;
+  top: 4px;
+}
+
 @font-face {
   font-family: 'Monoton';
   font-style: normal;
@@ -37,7 +61,7 @@ h2 {
 }
 
 .desktop-styles-skills {
-  /* display: none; */
+  display: none;
 }
 
 .welcome-text {
@@ -795,12 +819,6 @@ footer {
   background: url('../images/css_sprites.png') -420px -10px;
 }
 
-/* .bg-parcel_sm {
-  width: 61px;
-  height: 50px;
-  background: url('../images/css_sprites.png') -201px -10px;
-} */
-
 .bg-linkedin_sm {
   width: 38px;
   height: 38px;
@@ -1139,11 +1157,11 @@ footer {
   }
 
   .desktop-styles-skills {
-    /* display: block; */
+    display: flex;
   }
 
   .mobile-styles-skills {
-    /* display: none; */
+    display: none;
   }
 
   .current-text-box {
@@ -1173,13 +1191,13 @@ footer {
   }
 
   .custom-css {
-    position: relative;
-    top: 9px;
+    /* position: relative;
+    top: 9px; */
   }
 
   .custom-babel {
-    position: relative;
-    top: 2px;
+    /* position: relative;
+    top: 2px; */
   }
 
   .custom-meister {
