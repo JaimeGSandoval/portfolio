@@ -21,19 +21,40 @@
 
 <body>
 
+  <div class="hero-container">
+    <picture>
+      <source srcset="images/hero/xxl/night-traffic-4-xxl.min.webp 2400w, images/xxl/night-traffic-4-xxl.min.jpg 2400w" media="(min-width: 2400px)">
+
+      <source srcset="images/hero/xl/night-traffic-4-xl.min.webp 1440w, images/xl/night-traffic-4-xl.min.jpg 1440w" media="(min-width: 1440px)">
+
+      <source srcset="images/hero/lg/night-traffic-4-lg.min.webp 1000w, images/lg/night-traffic-4-lg.min.jpg 1000w" media="(min-width: 1000px)">
+
+      <source srcset="images/hero/md/night-traffic-4-md.min.webp 768w, images/md/night-traffic-4-md.min.jpg 768w" media="(min-width: 768px)">
+
+      <source srcset="images/hero/xsm/night-traffic-4-xsm.min.webp 500w" media="(min-width: 500px)">
+
+      <img class="hero-img" src="images/hero/xsm/night-traffic-4-xsm.min.jpg" alt="">
+    </picture>
+
+  </div>
+
+
   <header class="header">
     <nav class="navbar">
       <div class="navbar-inner-container">
-        <button class="navbar-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
-          <img class="hamburger-icon" src="images/hamburger.svg" alt="toggle navbar icon">
-        </button>
+        <div class="toggle-box">
+          <button class="navbar-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="hamburger-icon" src="images/hamburger.svg" alt="toggle navbar icon">
+          </button>
+
+        </div>
         <div class="navbar-dropdown">
           <ul class="navbar-list">
             <li class="nav-item">
               <a class="nav-link" href="#section-home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section-portfolio">Projects</a>
+              <a class="nav-link" href="#section-projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#section-skills">Skills</a>
@@ -48,8 +69,44 @@
         </div>
       </div>
     </nav>
-
   </header>
+
+  <section id="section-home" class="hero-info-container">
+
+
+    <div class="hero-info-box">
+      <div class="align-items-center justify-content-center">
+        <div class="col-md-10 text-center pt-5 pt-lg-2 banner-box">
+          <div class="neon-box">
+            <p id="name">Jaime<span>&nbsp; Sandoval</span></p>
+            <p class="software-text">Soft<span></span><span>ware</span></p>
+            <p class="developer-text">Dev<span>el</span>oper</p>
+          </div>
+          <p class="welcome-text">Welcome to my Portfolio</p>
+
+
+          <!-- <div class="button-box">
+            <a href="https://github.com/JaimeGSandoval" target="_blank" rel="noopener noreferrer" class="mx-md-3 banner-btn p-2 rounded bg-white d-flex align-items-center justify-content-center">
+              <img class="contact-icons-hero" src="images/skills-icons/github-contact.png" alt="GitHub logo">
+            </a>
+            <a href="https://twitter.com/jskodes" class="mx-md-3 banner-btn p-2 rounded bg-white d-flex align-items-center justify-content-center" target="_blank" rel="noopener noreferrer">
+              <img class="contact-icons-hero rounded email-btn-icon" src="images/twitter.png" alt="Twitter logo">
+            </a>
+            <a href="https://www.linkedin.com/in/jaime-sandoval-dev/" target="_blank" rel="noopener noreferrer"
+              class="banner-btn p-2 bg-white rounded mx-md-3 d-flex align-items-center justify-content-center">
+              <img class="contact-icons-hero" src="images/linkedin-150.png" alt="Linkedin logo">
+            </a>
+            <a href="mailto:jaime.devs@gmail.com" class="mx-md-3 banner-btn p-2 bg-white rounded d-flex align-items-center justify-content-center" title="Email">
+              <img class="contact-icons-hero email-btn-icon" src="images/envelope.png" alt="Email logo">
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
 
 </body>
 

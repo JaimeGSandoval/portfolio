@@ -25,6 +25,10 @@ const header = document.querySelector('.header');
 const navbar = document.querySelector('.navbar');
 const navbarLinks = document.querySelectorAll('.nav-link');
 
+// set top value to position absolute dropdown
+navbarDropdown.style.top = navbar.getBoundingClientRect().height;
+// console.log(navbar.getBoundingClientRect().height);
+
 const fixedNav = function (entries) {
   const [entry] = entries;
   const isNotMobile = window.matchMedia('(min-width: 992px)');
