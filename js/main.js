@@ -1,113 +1,20 @@
-if (!window.jQuery) {
-  const jqueryFallback = document.createElement('script');
-  jqueryFallback.src = './js/jquery/jquery.min.js';
-  document.head.appendChild(jqueryFallback);
+const navbarToggleButton = document.querySelector('.navbar-toggle');
+const navbarDropdown = document.querySelector('.navbar-dropdown');
 
-  setTimeout(function () {
-    bootstrapJsFallback();
-    bootStrapCdnTest();
-    scrollEffect();
-    navToggleBtn();
-    stickyNav();
-    dateMaker();
-}, 500);
-} else {
-  bootstrapJsFallback();
-  bootStrapCdnTest();
-  scrollEffect();
-  navToggleBtn();
-  stickyNav();
-  dateMaker();
-}
+navbarToggleButton.addEventListener('click', function (e) {
+  navbarDropdown.classList.toggle('showDropdown');
+});
 
-function bootstrapJsFallback() {
-  if (!$.fn.modal) {
-    const mainScript = document.getElementById('main-script');
-    const bootJsScript = document.createElement('script');
-    bootJsScript.src = './js/bootstrap/bootstrap.min.js';
-    mainScript.parentNode.insertBefore(bootJsScript, mainScript);
+window.onclick = (event) => {
+  if (
+    event.target.matches('.navbar-toggle') ||
+    event.target.matches('.hamburger-icon')
+  ) {
+    return;
   }
-}
 
-function bootStrapCdnTest() {
-  const bootCdnTest = document.createElement('div');
-  bootCdnTest.className = 'hidden d-none';
-  document.head.appendChild(bootCdnTest);
-
-  const bootStrapLoaded = window.getComputedStyle(bootCdnTest).display === 'none';
-  document.head.removeChild(bootCdnTest);
-
-  if (!bootStrapLoaded) {
-    const mainStylesLink = document.getElementById('main-styles');
-    const bootLink = document.createElement('link');
-    bootLink.type = 'text/css';
-    bootLink.rel = 'stylesheet';
-    bootLink.href = './css/bootstrap/bootstrap.min.css';
-    mainStylesLink.parentNode.insertBefore(bootLink, mainStylesLink);
+  const dropDown = document.querySelector('.navbar-dropdown');
+  if (dropDown.classList.contains('showDropdown')) {
+    dropDown.classList.remove('showDropdown');
   }
-}
-
-function scrollEffect() {
-  $(document).ready(function () {
-    $('a').on('click', function (event) {
-      if (this.hash !== '') {
-        event.preventDefault();
-        const hash = this.hash;
-        $('html, body').animate(
-          {
-            scrollTop: $(hash).offset().top,
-          },
-          'slow',
-          'swing',
-          function () {
-            window.location.hash = hash;
-          }
-        );
-      }
-    });
-  });
-}
-
-function navToggleBtn() {
-  const navToggler = $('.navbar-toggler');
-  $("#pb-navbar ul li a[href^='#']").on('click', function () {
-    if (navToggler.is(':visible')) {
-      navToggler.click();
-    }
-  });
-}
-
-function stickyNav() {
-  $(document).ready(function () {
-    const stickyNav = function () {
-      if (
-        document.body.scrollTop > 300 ||
-        document.documentElement.scrollTop > 300
-      ) {
-        $('.navbar').addClass('sticky');
-        $('.site-navbar').addClass('white');
-        $('.nav-link').css('color', 'firebrick');
-        $('.nav-link').css('font-weight', '600');
-      } else {
-        $('.navbar').removeClass('sticky');
-        $('.site-navbar').removeClass('white');
-        $('.nav-link').css('color', 'white');
-        $('.nav-link').css('font-weight', '500');
-      }
-    };
-    stickyNav();
-    $(window).scroll(function () {
-      stickyNav();
-    });
-  });
-}
-
-function dateMaker(){
-  const date = new Date();
-  const monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-  ];
-  const today = monthNames[date.getMonth()] + " " + date.getDate() + ", " + date.getFullYear();
-  const dateText = document.querySelector('.date');
-  dateText.textContent = today;
-}
+};

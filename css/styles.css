@@ -1,6 +1,33 @@
-/* body {
-  background-color: #111111;
-} */
+@import './vars.css';
+
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url('../fonts/monoton-latin/monoton-v10-latin-regular.woff2')
+      format('woff2'),
+    url('../fonts/monoton-latin/monoton-v10-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url('../fonts/nunito-sans-latin/nunito-sans-v6-latin-regular.woff2')
+      format('woff2'),
+    url('../fonts/nunito-sans-latin/nunito-sans-v6-latin-regular.woff')
+      format('woff');
+}
+
+body {
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+  background: black;
+  height: 200vh;
+}
+
+/* neon text styles */
 .neon-box {
   font-size: 1.8rem;
   font-family: 'Monoton', sans-serif;
@@ -130,4 +157,58 @@
     position: relative;
     bottom: 4rem;
   }
+}
+
+/* neon text styles end */
+
+/* navbar styles*/
+.navbar {
+  padding: 0.4rem 0;
+  background-color: var(--white);
+}
+
+.navbar-inner-container {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.navbar-toggle {
+  background-color: var(--white);
+  border: 1px solid #e7e7e7;
+  padding: 0.5rem 0.9rem;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.hamburger-icon {
+  width: 1.8rem;
+}
+
+.navbar-dropdown {
+  margin-left: auto;
+  width: 94%;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.nav-item {
+  padding: 1.6rem 0;
+}
+
+.nav-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.2em;
+  padding: 1.4rem 0;
+  font-weight: 500;
+}
+
+.showDropdown {
+  opacity: 1;
+  max-height: 600px;
+  padding: 1rem 0;
 }
