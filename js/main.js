@@ -23,13 +23,27 @@ window.onclick = (event) => {
 // fixed nav on scroll
 const header = document.querySelector('.header');
 const navbar = document.querySelector('.navbar');
+const navbarLinks = document.querySelectorAll('.nav-link');
 
 const fixedNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
-  console.log(window.scrollY);
-  if (!entry.isIntersecting) navbar.classList.add('fixedNav');
-  else navbar.classList.remove('fixedNav');
+  const isNotMobile = window.matchMedia('(min-width: 992px)');
+
+  if (!entry.isIntersecting && isNotMobile.matches) {
+    navbar.style.position = 'fixed';
+    navbar.style.backgroundColor = '#fff';
+    navbarLinks.forEach((link) => (link.style.color = 'firebrick'));
+  } else if (entry.isIntersecting && isNotMobile.matches) {
+    navbar.style.position = 'static';
+    navbar.style.backgroundColor = 'transparent';
+    navbarLinks.forEach((link) => (link.style.color = 'white'));
+  }
+
+  if (!entry.isIntersecting) {
+    navbar.style.position = 'fixed';
+  } else {
+    navbar.style.position = 'static';
+  }
 };
 
 const headerObserver = new IntersectionObserver(fixedNav, {
