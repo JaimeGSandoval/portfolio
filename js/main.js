@@ -31,15 +31,17 @@ navbarDropdown.style.top = navbar.getBoundingClientRect().height;
 
 const fixedNav = function (entries) {
   const [entry] = entries;
-  const isNotMobile = window.matchMedia('(min-width: 992px)');
+  const isNotMobile = window.matchMedia('(min-width: 768px)');
 
   if (!entry.isIntersecting && isNotMobile.matches) {
+    navbarDropdown.style.backgroundColor = '#fff';
     navbar.style.position = 'fixed';
-    navbar.style.backgroundColor = '#fff';
+    // navbar.style.backgroundColor = '#fff';
     navbarLinks.forEach((link) => (link.style.color = 'firebrick'));
   } else if (entry.isIntersecting && isNotMobile.matches) {
     navbar.style.position = 'static';
-    navbar.style.backgroundColor = 'transparent';
+    // navbar.style.backgroundColor = 'transparent';
+    navbarDropdown.style.backgroundColor = 'transparent';
     navbarLinks.forEach((link) => (link.style.color = 'white'));
   }
 
@@ -53,7 +55,7 @@ const fixedNav = function (entries) {
 const headerObserver = new IntersectionObserver(fixedNav, {
   root: null,
   threshold: 0,
-  rootMargin: `250px`, // function fires when header is 250px outside the viewport, or 250px within the viewport. The value of true means that yes, the header/observed target is outside the viewport by 250px. A value of false means that no, the header/observed element is is not 250px outside the viewport i.e., it's still within the viewport or outside the viewport by less than 250px
+  rootMargin: `350px`, // function fires when header is 250px outside the viewport, or 250px within the viewport. The value of true means that yes, the header/observed target is outside the viewport by 250px. A value of false means that no, the header/observed element is is not 250px outside the viewport i.e., it's still within the viewport or outside the viewport by less than 250px
 });
 
 headerObserver.observe(header);
