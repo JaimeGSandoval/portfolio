@@ -15,6 +15,7 @@
   <link rel="preload" as="font" href="/fonts/nunito-sans-latin/nunito-sans-v6-latin-regular.woff2" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/reset.min.css">
   <link id="main-styles" rel="stylesheet" href="css/styles.css">
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   <script defer src="js/main.js"></script>
   <title>Jaime Sandoval | Software Developer</title>
 </head>
@@ -51,10 +52,10 @@
         <div class="navbar-dropdown">
           <ul class="navbar-list">
             <li class="nav-item">
-              <a class="nav-link" href="#section-home">Home</a>
+              <a class="nav-link" href="section-home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section-projects">Projects</a>
+              <a class="nav-link" href="section-projects" data-target="section-projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#section-skills">Skills</a>
@@ -100,13 +101,116 @@
     </div>
 
   </section>
-  <div style="height: 900px; border: 1px solid red; margin-top: 500px;"></div>
+
+
+  <!-- Projects Section -->
+
+  <section class="projects-container">
+
+    <div class="projects-inner-container">
+
+      <h2 id="section-projects" class="projects-header">
+        Featured <span class="projects-header-span">&nbsp;
+          Projects</span>
+      </h2>
+
+      <div class="projects-row">
+
+        <!-- bonsai depot -->
+        <div class="project-box">
+          <div class="project-img-container">
+            <a href="https://bonsaidepot.jaimesandoval.net/" target="_blank" aria-label="Discover what Bonsai Depot has to offer by following this link" rel="noopener noreferrer">
+              <picture>
+                <source srcset="images/bonsai/bonsai.static.min.webp" type="image/webp">
+                <img class="project-img" src="images/bonsai/bonsai.static.min.png" alt="Mobile image of Bonsai Depot">
+              </picture>
+            </a>
+          </div>
+
+          <div class="project-info-box">
+            <h2 class="project-title">Bonsai Depot</h2>
+
+            <p class="project-tech-text">React.js | JavaScript | Node.js | Express.js | SQL | PostgreSQL | Fetch API | AWS EC2 | Bootstrap</p>
+
+            <div class="project-btn-box">
+              <a href="https://bonsaidepot.jaimesandoval.net/" target="_blank" class="project-btn" rel="noopener noreferrer">Live
+                Demo</a>
+              <a href="https://github.com/JaimeGSandoval/wicked-sales-js" target="_blank" class="btn project-btn" rel="noopener noreferrer">GitHub</a>
+            </div>
+
+            <div class="project-description">A full stack, e-commerce application
+              that specializes in selling bonsai trees and tools</div>
+          </div>
+        </div>
+
+
+        <!-- today in science -->
+        <div class="project-box">
+
+          <div class="project-img-container">
+            <a href="https://todayinscience.jaimesandoval.net/" target="_blank" rel="noopener noreferrer" aria-label="Discover what Today in Science has to offer by following this link">
+              <picture>
+                <source srcset="images/today/today.min.webp" type="image/webp">
+                <img class="project-img" src="images/today/today.min.png" alt="Mobile image of Today in Science">
+              </picture>
+            </a>
+          </div>
+
+
+          <div class="project-info-box">
+            <h2 class="project-title">Today In Science</h2>
+
+            <p class="project-tech-text">TypeScript | JavaScript | Google Search API | Twitter API | Webpack | Fetch API | AWS EC2 | Sass | HTML5</p>
+
+            <div class="project-btn-box">
+              <a href="https://todayinscience.jaimesandoval.net/" target="_blank" class="project-btn" rel="noopener noreferrer">Live Demo</a>
+
+              <a href="https://github.com/JaimeGSandoval/today-in-science_v2" target="_blank" class="project-btn" rel="noopener noreferrer">GitHub</a>
+            </div>
+
+            <div class="project-description">A single page application that utilizes two APIs to retrieve the most recent news in science</div>
+          </div>
+        </div>
+
+
+        <!-- Bork Frens -->
+        <div class="project-box">
+
+          <div class="project-img-container">
+            <a href="https://borkfrens.jaimesandoval.net/" target="_blank" aria-label="Discover what BorkFrens has to offer by following this link" rel="noopener noreferrer">
+
+              <picture>
+                <source srcset="images/bork/bork.static.min.webp" type="image/webp">
+                <img class="project-img" src="images/bork/bork.static.min.png" alt="Mobile image of BorkFrens">
+              </picture>
+            </a>
+          </div>
+
+
+          <div class="project-info-box">
+
+            <h2 class="project-title">Bork Frens</h2>
+
+            <p class="project-team-text">Team Project</p>
+
+            <p class="project-tech-text">React.js | JavaScript | Node.js | Express.js | SQL | PostgreSQL | Google Maps | Fetch API</p>
+
+            <div class="project-btn-box">
+
+              <a href="https://borkfrens.jaimesandoval.net/" target="_blank" class="project-btn" rel="noopener noreferrer">Live
+                Demo</a>
+
+              <a href="https://github.com/JaimeGSandoval/bork-frens" target="_blank" class="project-btn" rel="noopener noreferrer">GitHub</a>
+            </div>
+
+            <div class="project-description">A full stack mobile application for dog owners who want a community to find doggy play pals for their four legged best friends</div>
+          </div>
+        </div>
+
+
+
 
 
 </body>
 
 </html>
-
-<!-- <a href="https://twitter.com/jskodes" class="mx-md-3 banner-btn p-2 rounded bg-white d-flex align-items-center justify-content-center" target="_blank" rel="noopener noreferrer">
-              <img class="contact-icons-hero rounded email-btn-icon" src="images/twitter.png" alt="Twitter logo">
-            </a> -->

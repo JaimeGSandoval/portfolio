@@ -1,6 +1,9 @@
-// mobile navbar toggle functionality
+const header = document.querySelector('.header');
+const navbar = document.querySelector('.navbar');
 const navbarToggleButton = document.querySelector('.navbar-toggle');
 const navbarDropdown = document.querySelector('.navbar-dropdown');
+const navbarLinks = document.querySelectorAll('.nav-link');
+const navList = document.querySelector('.navbar-list');
 
 navbarToggleButton.addEventListener('click', function (e) {
   navbarDropdown.classList.toggle('showDropdown');
@@ -20,27 +23,37 @@ window.onclick = (event) => {
   }
 };
 
-// fixed nav on scroll
-const header = document.querySelector('.header');
-const navbar = document.querySelector('.navbar');
-const navbarLinks = document.querySelectorAll('.nav-link');
+// event delegation for scrollTo functionality of nav links on click
+navList.addEventListener('click', function (e) {
+  e.preventDefault();
 
-// set top value to position absolute dropdown
+  if (e.target.classList.contains('nav-link')) {
+    const id = e.target.getAttribute('href');
+    document.getElementById(id).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+});
+
+// set top value for dropdown
 navbarDropdown.style.top = navbar.getBoundingClientRect().height;
-// console.log(navbar.getBoundingClientRect().height);
+
+// set height of header to avoid content jump when navbar is fixed
+header.style.height = `${navbar.getBoundingClientRect().height}px`;
 
 const fixedNav = function (entries) {
   const [entry] = entries;
   const isNotMobile = window.matchMedia('(min-width: 768px)');
 
   if (!entry.isIntersecting && isNotMobile.matches) {
-    navbarDropdown.style.backgroundColor = '#fff';
     navbar.style.position = 'fixed';
-    // navbar.style.backgroundColor = '#fff';
+    navbarDropdown.style.backgroundColor = '#fff';
     navbarLinks.forEach((link) => (link.style.color = 'firebrick'));
-  } else if (entry.isIntersecting && isNotMobile.matches) {
+  }
+
+  if (entry.isIntersecting && isNotMobile.matches) {
     navbar.style.position = 'static';
-    // navbar.style.backgroundColor = 'transparent';
     navbarDropdown.style.backgroundColor = 'transparent';
     navbarLinks.forEach((link) => (link.style.color = 'white'));
   }
