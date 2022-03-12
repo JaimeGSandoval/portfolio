@@ -1,13 +1,12 @@
 @import './vars.css';
 
 @font-face {
-  font-family: 'Monoton';
+  font-family: Monoton;
   font-style: normal;
   font-weight: 400;
   font-display: fallback;
   src: url('../fonts/monoton-latin/monoton-v10-latin-regular.woff2')
-      format('woff2'),
-    url('../fonts/monoton-latin/monoton-v10-latin-regular.woff') format('woff');
+    format('woff2');
 }
 
 @font-face {
@@ -16,9 +15,7 @@
   font-weight: 400;
   font-display: fallback;
   src: url('../fonts/nunito-sans-latin/nunito-sans-v6-latin-regular.woff2')
-      format('woff2'),
-    url('../fonts/nunito-sans-latin/nunito-sans-v6-latin-regular.woff')
-      format('woff');
+    format('woff2');
 }
 
 @keyframes upper {
@@ -167,14 +164,6 @@ body {
   color: red;
 }
 
-#name:hover {
-  text-shadow: 0 0 200px #ffffff, 0 0 80px #ffffff, 0 0 26px #ffffff;
-}
-
-.software-text:hover {
-  text-shadow: 0 0 100px red, 0 0 40px FireBrick, 0 0 8px DarkRed;
-}
-
 #name {
   color: #fff;
   text-shadow: 0 0 100px #ffffff, 0 0 50px #ffffff, 0 0 26px #ffffff;
@@ -269,7 +258,7 @@ body {
   object-fit: cover;
   background-repeat: no-repeat;
   overflow: hidden;
-  max-height: 700px;
+  max-height: 550px;
 }
 
 .hero-info-container {
@@ -294,18 +283,21 @@ body {
 /* Projects section */
 .projects-container {
   margin-top: 8.5rem;
+  max-width: 1500px;
 }
 
 .projects-header {
   text-align: center;
-  font-family: 'Monoton';
-  text-shadow: 0 0 50px #ffffff, 0 0 50px #ffffff, 0 0 26px #ffffff;
+  font-family: Monoton, sans-serif;
+  text-shadow: 0 0 100px #ffffff, 0 0 50px #ffffff, 0 0 26px #ffffff;
   color: var(--white);
+  font-size: 1.3rem;
+  font-weight: 200;
 }
 
 .projects-header-span {
   text-shadow: 0 0 100px red, 0 0 50px firebrick, 0 0 26px darkred;
-  font-family: 'Monoton';
+  font-family: 'Monoton', sans-serif;
   color: firebrick;
 }
 
@@ -347,6 +339,7 @@ body {
 .project-team-text {
   font-size: 1.25rem;
   padding-top: 0;
+  padding-left: 0.5rem;
 }
 
 .project-tech-text {
@@ -414,7 +407,7 @@ body {
   }
 }
 
-@media screen and (min-width: 414px) and (orientation: portrait) {
+@media (min-width: 414px) and (orientation: portrait) {
   .name,
   .software-text,
   .developer-text {
@@ -502,6 +495,15 @@ body {
   .welcome-text {
     padding-bottom: 2.4rem;
   }
+
+  .hero-img {
+    max-height: 650px;
+  }
+
+  .projects-container {
+    max-width: 500px;
+    margin: 12.25rem auto 0 auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -536,6 +538,10 @@ body {
     font-size: 0.8rem;
   }
 
+  .hero-img {
+    max-height: 700px;
+  }
+
   .hero-info-box {
     margin-top: 11rem;
   }
@@ -553,6 +559,7 @@ body {
 
   .welcome-text {
     font-size: 1.9rem;
+    padding-bottom: 3rem;
   }
 
   .contact-icons-hero {
@@ -564,8 +571,8 @@ body {
     padding-bottom: 2.3rem;
   }
 
-  .welcome-text {
-    padding-bottom: 3rem;
+  .projects-container {
+    margin: 15rem auto 0 auto;
   }
 }
 
@@ -580,21 +587,55 @@ body {
     padding: 1.6rem 0;
   }
 
+  .hero-info-box {
+    margin-top: 11rem;
+  }
+
   .name,
   .software-text,
   .developer-text {
     font-size: 2.7rem;
     letter-spacing: 1px;
   }
+
+  .projects-container {
+    margin-top: 15rem;
+  }
+
+  .projects-header {
+    font-size: 1.7rem;
+  }
+
+  .projects-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    /* grid-auto-rows: 1fr; */
+  }
 }
 
 /* ipad pro styles */
-@media (min-width: 1024px) and (orientation: portrait) {
+@media (min-width: 1024px) and (orientation: portrait) and (hover: none) and (pointer: coarse) {
+  .hero-info-box {
+    margin-top: 10rem;
+  }
+
   .name,
   .software-text,
   .developer-text {
     font-size: 3.2rem;
     letter-spacing: 1px;
+  }
+
+  .projects-container {
+    margin-top: 16rem;
+  }
+
+  .projects-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    /* grid-auto-rows: 1fr; */
   }
 }
 
@@ -623,17 +664,51 @@ body {
   }
 
   .hero-img {
-    max-height: 900px;
+    max-height: 800px;
+  }
+
+  .projects-container {
+    margin-top: 19rem;
+  }
+
+  .projects-row {
+    margin-top: 6.5rem;
+  }
+
+  .projects-header {
+    font-size: 2.2rem;
   }
 }
 
 @media (min-width: 1680px) and (orientation: landscape) {
+  .nav-link {
+    padding: 1.8rem 0;
+  }
+
   .hero-info-box {
     margin-top: 16rem;
   }
 
-  .nav-link {
-    padding: 1.8rem 0;
+  .hero-img {
+    max-height: 900px;
+  }
+
+  .name,
+  .software-text,
+  .developer-text {
+    font-size: 3.6rem;
+  }
+
+  .welcome-text {
+    font-size: 1.9rem;
+  }
+
+  .projects-container {
+    margin-top: 22rem;
+  }
+
+  .projects-header {
+    font-size: 2.4rem;
   }
 }
 
@@ -652,7 +727,7 @@ body {
 
 @media (min-width: 2000px) and (orientation: landscape) {
   .hero-img {
-    max-height: 1100px;
+    max-height: 950px;
   }
 
   .name,
@@ -668,25 +743,50 @@ body {
   .hero-info-box {
     margin-top: 18rem;
   }
+
+  .projects-header {
+    font-size: 2.6rem;
+  }
 }
 
 /* landscape styles */
-@media (max-width: 926px) and (orientation: landscape) {
-  .projects-inner-container {
-    margin-top: 13rem;
+
+@media (max-width: 736px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  .hero-info-box {
+    margin-top: 6.5rem;
   }
 
-  .hero-img {
-    max-height: 700px;
+  .name,
+  .software-text,
+  .developer-text {
+    font-size: 1.9rem;
   }
-}
 
-@media (max-width: 736px) and (orientation: landscape) {
-  .projects-inner-container {
-    margin-top: 13rem;
+  .projects-container {
+    max-width: 400px;
+    margin: 9.5rem auto 0;
   }
 
   .hero-img {
     max-height: 469px;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 926px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  .hero-img {
+    max-height: 700px;
+  }
+
+  .hero-info-box {
+    margin-top: 9rem;
+  }
+
+  .welcome-text {
+    font-size: 1.5rem;
+  }
+
+  .projects-container {
+    max-width: 400px;
+    margin: 13.5rem auto 0;
   }
 }
