@@ -1,6 +1,6 @@
-body {
+/* body {
   background-color: #111111;
-}
+} */
 .neon-box {
   font-size: 1.8rem;
   font-family: 'Monoton', sans-serif;
@@ -98,6 +98,11 @@ body {
   }
 }
 
+.code-2 {
+  position: relative;
+  bottom: 0.6rem;
+}
+
 @media screen and (min-width: 375px) {
   .neon-box {
     font-size: 2rem;
@@ -113,6 +118,10 @@ body {
 @media screen and (min-width: 768px) {
   .neon-box {
     font-size: 3.5rem;
+  }
+
+  .code-2 {
+    bottom: 1.4rem;
   }
 }
 
