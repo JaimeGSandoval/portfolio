@@ -654,6 +654,7 @@ body {
 
   .projects-container {
     margin-top: 16rem;
+    max-width: initial;
   }
 
   .projects-row {
@@ -701,8 +702,8 @@ body {
   }
 
   .project-box {
-    height: 44.7rem;
-    max-height: 44.7rem;
+    height: 45rem;
+    max-height: 45rem;
   }
 
   .project-title,
