@@ -419,9 +419,14 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.typescript {
+.position-left-meister-container {
   position: relative;
-  left: 0.1rem;
+  right: 0.4rem;
+}
+
+.position-left-meister {
+  position: relative;
+  left: 0.4rem;
 }
 
 /* Currently working on section */
@@ -700,6 +705,11 @@ body {
     width: 3.4rem;
     height: 3.4rem;
   }
+
+  .position-left {
+    position: relative;
+    left: 0.1rem;
+  }
 }
 
 @media (min-width: 1000px) and (orientation: landscape) {
@@ -767,8 +777,17 @@ body {
     margin-top: 3rem;
   }
 
+  .skills-container {
+    margin: 5rem 0;
+  }
+
+  .skill-container {
+    width: 5.6rem;
+  }
+
   .skill-images-container {
     max-width: 37.7rem;
+    max-width: 44.7rem;
   }
 
   .skill-img-title {
@@ -839,6 +858,11 @@ body {
     height: 48rem;
     max-height: 48rem;
   }
+
+  .section-header,
+  .section-header-span {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1304px) and (orientation: landscape) {
@@ -888,6 +912,15 @@ body {
   .current-work-container {
     margin-top: 5rem;
   }
+
+  .skill-images-container {
+    max-width: 58.7rem;
+    margin-top: 3rem;
+  }
+
+  .skill-container {
+    width: 7.6rem;
+  }
 }
 
 @media (min-width: 1680px) and (orientation: landscape) {
@@ -920,6 +953,15 @@ body {
   .section-header,
   .section-header-span {
     font-size: 2.4rem;
+  }
+
+  .current-text-box {
+    width: 75%;
+  }
+
+  .current-work-list-item {
+    font-size: 1.1rem;
+    line-height: 2rem;
   }
 }
 
