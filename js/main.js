@@ -29,10 +29,14 @@ navList.addEventListener('click', function (e) {
 
   if (e.target.classList.contains('nav-link')) {
     const id = e.target.getAttribute('href');
-    document.getElementById(id).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
+
+    // offset scrollTo value because of fixed nav
+    const yOffSet = -100;
+    const targetElement = document.getElementById(id);
+    const yPosition =
+      targetElement.getBoundingClientRect().top + window.scrollY + yOffSet;
+
+    window.scrollTo({ top: yPosition, behavior: 'smooth' });
   }
 });
 

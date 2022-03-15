@@ -376,7 +376,11 @@ body {
 /* Skills section */
 .skills-container {
   width: 100%;
-  margin: 4rem 0;
+  margin: 9rem auto 4rem;
+}
+
+.tools-container {
+  margin-top: 4rem;
 }
 
 .skills-inner-container {
@@ -432,7 +436,7 @@ body {
 /* Currently working on section */
 .current-work-container {
   width: 90%;
-  margin: 0 auto;
+  margin: 5rem auto 0;
 }
 
 .current-work-header {
@@ -462,6 +466,48 @@ body {
   padding-top: 0;
 }
 
+/* About me section */
+.about-container {
+  width: 100%;
+  margin: 8rem 0 0;
+}
+
+.about-inner-container {
+  width: 90%;
+  margin: auto;
+}
+
+.about-info-container {
+  margin-top: 2rem;
+}
+
+.profile-img-box {
+  width: 100%;
+}
+
+.profile-img {
+  margin: auto;
+  width: 57%;
+  max-width: 13.1rem;
+  border-radius: 50%;
+}
+
+.about-description-box {
+  width: 86%;
+  margin: 2rem auto 0;
+}
+
+.about-description-text {
+  color: var(--white);
+  margin-bottom: 1rem;
+  line-height: 1.7rem;
+}
+
+.about-description-box p:nth-of-type(1) {
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
 @media (min-width: 360px) and (orientation: portrait) {
   .name,
   .software-text,
@@ -477,9 +523,9 @@ body {
     margin-top: 10.5rem;
   }
 
-  .current-work-container {
+  /* .current-work-container {
     margin-top: 9rem;
-  }
+  } */
 }
 
 @media (min-width: 375px) and (orientation: portrait) {
@@ -502,6 +548,26 @@ body {
   .project-btn {
     font-size: 1rem;
     padding: 0.5rem 1rem;
+  }
+
+  .about-description-box p:nth-of-type(1) {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  .about-description-text {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
+
+  .section-header,
+  .section-header-span {
+    font-size: 1.7rem;
+  }
+
+  .current-work-header,
+  .working-text-header {
+    line-height: 2.2rem;
   }
 }
 
@@ -555,7 +621,12 @@ body {
 
   .current-work-header,
   .working-text-header {
-    line-height: 2.2rem;
+    line-height: 2.4rem;
+  }
+
+  .section-header,
+  .section-header-span {
+    font-size: 1.9rem;
   }
 }
 
@@ -617,6 +688,10 @@ body {
 
   .skill-images-container {
     max-width: 32.1rem;
+  }
+
+  .profile-img {
+    width: 40%;
   }
 }
 
@@ -710,6 +785,14 @@ body {
     position: relative;
     left: 0.1rem;
   }
+
+  .current-work-list-item {
+    line-height: 2.2rem;
+  }
+
+  .about-description-text {
+    line-height: 2.2rem;
+  }
 }
 
 @media (min-width: 1000px) and (orientation: landscape) {
@@ -754,7 +837,7 @@ body {
   }
 
   .project-box {
-    height: 48rem;
+    height: 49rem;
   }
 
   .project-img-container:hover {
@@ -767,6 +850,14 @@ body {
     bottom: 0;
   }
 
+  .project-tech-text {
+    line-height: 2rem;
+  }
+
+  .project-description {
+    line-height: 1.9rem;
+  }
+
   .project-btn:hover {
     border-color: #fff;
     color: #fff;
@@ -775,6 +866,7 @@ body {
   .current-work-container {
     width: 40%;
     margin-top: 3rem;
+    margin-top: 8rem;
   }
 
   .skills-container {
@@ -792,6 +884,24 @@ body {
 
   .skill-img-title {
     font-size: 1.2rem;
+  }
+
+  .profile-img-box {
+    margin: 3rem 0;
+  }
+
+  .profile-img {
+    width: 23%;
+    max-width: 14.6rem;
+  }
+
+  .about-container {
+    margin: 11rem 0 0;
+  }
+
+  .about-description-box {
+    width: 60%;
+    max-width: 38.3rem;
   }
 }
 
@@ -833,8 +943,20 @@ body {
     margin-top: 5rem;
   }
 
+  .skills-container {
+    margin-top: 5rem;
+  }
+
   .skill-img-title {
     font-size: 1.1rem;
+  }
+
+  .profile-img-box {
+    margin: 3rem 0;
+  }
+
+  .about-description-box {
+    width: 69%;
   }
 }
 
@@ -854,11 +976,6 @@ body {
     max-width: 1080px;
   }
 
-  .project-box {
-    height: 48rem;
-    max-height: 48rem;
-  }
-
   .section-header,
   .section-header-span {
     font-size: 2rem;
@@ -871,13 +988,17 @@ body {
   }
 
   .project-box {
-    height: 45rem;
-    max-height: 45rem;
+    height: 47rem;
+    max-height: 47rem;
   }
 
   .project-title,
   .project-team-text {
     padding-bottom: 1.5rem;
+  }
+
+  .profile-img {
+    max-width: 19.3rem;
   }
 }
 
@@ -904,13 +1025,14 @@ body {
     margin-top: 6.5rem;
   }
 
+  .project-box {
+    height: 46rem;
+    max-height: 46rem;
+  }
+
   .section-header,
   .section-header-span {
     font-size: 2.2rem;
-  }
-
-  .current-work-container {
-    margin-top: 5rem;
   }
 
   .skill-images-container {
@@ -950,6 +1072,21 @@ body {
     margin-top: 22rem;
   }
 
+  .project-box {
+    height: 49rem;
+    max-height: 49rem;
+  }
+
+  .project-tech-text {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+
+  .project-description {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
+
   .section-header,
   .section-header-span {
     font-size: 2.4rem;
@@ -962,6 +1099,21 @@ body {
   .current-work-list-item {
     font-size: 1.1rem;
     line-height: 2rem;
+  }
+
+  .about-description-box p:nth-of-type(1) {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+
+  .about-description-box {
+    width: 47%;
+    max-width: 48.8rem;
+  }
+
+  .about-description-text {
+    line-height: 1.9rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -977,8 +1129,53 @@ body {
     margin-top: 16rem;
   }
 
+  .project-box {
+    height: 52rem;
+    max-height: 52rem;
+  }
+
+  .project-tech-text {
+    font-size: 1.2rem;
+    line-height: 2.3rem;
+  }
+
+  .project-description {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 2.8rem;
+  }
+
+  .project-btn {
+    font-size: 1.1rem;
+  }
+
   .current-work-container {
     margin-top: 7rem;
+  }
+
+  .date {
+    padding: 3rem 0;
+    font-size: 1.6rem;
+  }
+
+  .current-text-box {
+    width: 85%;
+    max-width: 38.6rem;
+  }
+
+  .current-work-list-item {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+  }
+
+  .about-description-box p:nth-of-type(1) {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .about-description-text {
+    line-height: 2.3rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -1026,6 +1223,11 @@ body {
 
   .hero-img {
     max-height: 469px;
+  }
+
+  .profile-img {
+    width: 37%;
+    max-width: 13.1rem;
   }
 }
 
