@@ -1002,6 +1002,13 @@ body {
   }
 }
 
+@media (min-width: 1332px) and (orientation: landscape) {
+  .project-box {
+    height: 45.5rem;
+    max-height: 45.5rem;
+  }
+}
+
 @media (min-width: 1440px) and (orientation: landscape) {
   .name,
   .software-text,
