@@ -8,6 +8,7 @@ const isNotMobile = window.matchMedia('(min-width: 768px)');
 
 navbarToggleButton.addEventListener('click', function (e) {
   navbarDropdown.classList.toggle('showDropdown');
+  document.body.classList.toggle('noScroll');
 });
 
 window.onclick = (event) => {
@@ -19,8 +20,10 @@ window.onclick = (event) => {
   }
 
   const dropDown = document.querySelector('.navbar-dropdown');
+
   if (dropDown.classList.contains('showDropdown')) {
     dropDown.classList.remove('showDropdown');
+    document.body.classList.remove('noScroll');
   }
 };
 
@@ -48,12 +51,20 @@ navbarDropdown.style.top = navbar.getBoundingClientRect().height;
 header.style.height = `${navbar.getBoundingClientRect().height}px`;
 
 window.addEventListener('resize', function () {
+  // mobile portrait view
   if (window.innerWidth < window.innerHeight && !isNotMobile.matches) {
     navbarDropdown.style.backgroundColor = '#fff';
     navbarLinks.forEach((link) => (link.style.color = 'rgba(0, 0, 0, 0.5)'));
-  } else {
+  } else if (window.scrollY < 300) {
+    // large mobile landscape view
     navbarDropdown.style.backgroundColor = 'transparent';
     navbarLinks.forEach((link) => (link.style.color = 'white'));
+  }
+
+  // small mobile landscape
+  if (window.innerWidth > window.innerHeight && !isNotMobile.matches) {
+    navbarDropdown.style.backgroundColor = '#fff';
+    navbarLinks.forEach((link) => (link.style.color = 'rgba(0, 0, 0, 0.5)'));
   }
 });
 
@@ -82,7 +93,7 @@ const fixedNav = function (entries) {
 const headerObserver = new IntersectionObserver(fixedNav, {
   root: null,
   threshold: 0,
-  rootMargin: `350px`, // function fires when header is 250px outside the viewport, or 250px within the viewport. The value of true means that yes, the header/observed target is outside the viewport by 250px. A value of false means that no, the header/observed element is is not 250px outside the viewport i.e., it's still within the viewport or outside the viewport by less than 250px
+  rootMargin: `300px`, // function fires when header is 250px outside the viewport, or 250px within the viewport. The value of true means that yes, the header/observed target is outside the viewport by 250px. A value of false means that no, the header/observed element is is not 250px outside the viewport i.e., it's still within the viewport or outside the viewport by less than 250px
 });
 
 headerObserver.observe(header);
