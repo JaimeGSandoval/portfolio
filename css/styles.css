@@ -991,6 +991,21 @@ body {
     width: 60%;
     max-width: 38.3rem;
   }
+
+  .contact-info-container {
+    width: 77%;
+    margin: 2.2rem auto 0;
+
+    max-width: 38.3rem;
+  }
+
+  .contact-btn {
+    padding: 0.5rem;
+  }
+
+  .contact-icons {
+    width: 2.2rem;
+  }
 }
 
 /* ipad pro styles */
@@ -1046,6 +1061,23 @@ body {
   .about-description-box {
     width: 69%;
   }
+
+  .contact-info-container {
+    width: 77%;
+    margin: 2.2rem auto 0;
+  }
+
+  .contact-links-container {
+    margin-top: 3rem;
+  }
+
+  .contact-btn {
+    padding: 0.5rem;
+  }
+
+  .contact-icons {
+    width: 2.2rem;
+  }
 }
 
 @media (min-width: 1200px) and (orientation: landscape) {
@@ -1067,6 +1099,10 @@ body {
   .section-header,
   .section-header-span {
     font-size: 2rem;
+  }
+
+  .contact-links-container {
+    margin-top: 3.4rem;
   }
 }
 
@@ -1094,6 +1130,26 @@ body {
   .project-box {
     height: 45.5rem;
     max-height: 45.5rem;
+  }
+
+  .skills-container {
+    width: 100%;
+    margin: 9rem auto 4rem;
+  }
+
+  .tools-container,
+  .current-work-container {
+    margin-top: 9rem;
+  }
+
+  .about-container,
+  .contact-container {
+    margin: 13rem 0 0;
+  }
+
+  .contact-container {
+    width: 100%;
+    margin: 13rem 0 6rem;
   }
 }
 
@@ -1211,6 +1267,15 @@ body {
     line-height: 1.9rem;
     font-size: 1.1rem;
   }
+
+  .contact-info-container {
+    max-width: 49.3rem;
+  }
+
+  .contact-links-container {
+    position: relative;
+    bottom: 1rem;
+  }
 }
 
 @media (min-width: 1820px) and (orientation: landscape) {
@@ -1264,9 +1329,15 @@ body {
     line-height: 2.2rem;
   }
 
-  .about-description-box {
+  .about-description-box,
+  .contact-info-container {
     width: 50%;
     max-width: 56.8rem;
+  }
+
+  .contact-info-container {
+    width: 55%;
+    max-width: 56.25rem;
   }
 
   .about-description-box p:nth-of-type(1) {
