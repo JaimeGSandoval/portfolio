@@ -506,11 +506,64 @@ body {
   color: var(--white);
   margin-bottom: 1rem;
   line-height: 1.7rem;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .about-description-box p:nth-of-type(1) {
   font-size: 1.2rem;
   line-height: 1.9rem;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+/* Contact section */
+.contact-container {
+  width: 100%;
+  margin: 8rem 0 6rem;
+}
+
+.contact-inner-container {
+  width: 90%;
+  margin: auto;
+}
+
+.contact-info-container {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.contact-links-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact-text {
+  color: var(--white);
+  line-height: 1.7rem;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.contact-btn {
+  background-color: var(--white);
+  padding: 0.5rem;
+  border-radius: 3px;
+  width: 3rem;
+  transition: 0.2s all ease;
+}
+
+.contact-icons {
+  object-fit: contain;
+  background-size: contain;
+  width: 1.8rem;
+  margin: auto;
+  height: 100%;
 }
 
 @media (min-width: 360px) and (orientation: portrait) {
@@ -528,9 +581,10 @@ body {
     margin-top: 10.5rem;
   }
 
-  /* .current-work-container {
-    margin-top: 9rem;
-  } */
+  .about-description-text,
+  .contact-text {
+    line-height: 1.9rem;
+  }
 }
 
 @media (min-width: 375px) and (orientation: portrait) {
@@ -560,7 +614,8 @@ body {
     line-height: 2.2rem;
   }
 
-  .about-description-text {
+  .about-description-text,
+  .contact-text {
     font-size: 1.2rem;
     line-height: 2.1rem;
   }
@@ -573,6 +628,18 @@ body {
   .current-work-header,
   .working-text-header {
     line-height: 2.2rem;
+  }
+
+  .contact-info-container {
+    margin-top: 1.5rem;
+  }
+
+  .contact-links-container {
+    margin-top: 2.5rem;
+  }
+
+  .contact-icons {
+    width: 2.5rem;
   }
 }
 
@@ -632,6 +699,22 @@ body {
   .section-header,
   .section-header-span {
     font-size: 1.9rem;
+  }
+
+  .contact-info-container {
+    margin-top: 1.7rem;
+  }
+
+  .contact-links-container {
+    margin-top: 2.7rem;
+  }
+
+  .contact-btn {
+    padding: 0.7rem 0.8rem;
+  }
+
+  .contact-icons {
+    width: 2.6rem;
   }
 }
 
@@ -795,7 +878,8 @@ body {
     line-height: 2.2rem;
   }
 
-  .about-description-text {
+  .about-description-text,
+  .contact-text {
     line-height: 2.2rem;
   }
 }
@@ -907,6 +991,21 @@ body {
     width: 60%;
     max-width: 38.3rem;
   }
+
+  .contact-info-container {
+    width: 77%;
+    margin: 2.2rem auto 0;
+
+    max-width: 38.3rem;
+  }
+
+  .contact-btn {
+    padding: 0.5rem;
+  }
+
+  .contact-icons {
+    width: 2.2rem;
+  }
 }
 
 /* ipad pro styles */
@@ -962,6 +1061,23 @@ body {
   .about-description-box {
     width: 69%;
   }
+
+  .contact-info-container {
+    width: 77%;
+    margin: 2.2rem auto 0;
+  }
+
+  .contact-links-container {
+    margin-top: 3rem;
+  }
+
+  .contact-btn {
+    padding: 0.5rem;
+  }
+
+  .contact-icons {
+    width: 2.2rem;
+  }
 }
 
 @media (min-width: 1200px) and (orientation: landscape) {
@@ -983,6 +1099,10 @@ body {
   .section-header,
   .section-header-span {
     font-size: 2rem;
+  }
+
+  .contact-links-container {
+    margin-top: 3.4rem;
   }
 }
 
@@ -1010,6 +1130,26 @@ body {
   .project-box {
     height: 45.5rem;
     max-height: 45.5rem;
+  }
+
+  .skills-container {
+    width: 100%;
+    margin: 9rem auto 4rem;
+  }
+
+  .tools-container,
+  .current-work-container {
+    margin-top: 9rem;
+  }
+
+  .about-container,
+  .contact-container {
+    margin: 13rem 0 0;
+  }
+
+  .contact-container {
+    width: 100%;
+    margin: 13rem 0 6rem;
   }
 }
 
@@ -1122,9 +1262,19 @@ body {
     max-width: 48.8rem;
   }
 
-  .about-description-text {
+  .about-description-text,
+  .contact-text {
     line-height: 1.9rem;
     font-size: 1.1rem;
+  }
+
+  .contact-info-container {
+    max-width: 49.3rem;
+  }
+
+  .contact-links-container {
+    position: relative;
+    bottom: 1rem;
   }
 }
 
@@ -1179,9 +1329,15 @@ body {
     line-height: 2.2rem;
   }
 
-  .about-description-box {
+  .about-description-box,
+  .contact-info-container {
     width: 50%;
     max-width: 56.8rem;
+  }
+
+  .contact-info-container {
+    width: 55%;
+    max-width: 56.25rem;
   }
 
   .about-description-box p:nth-of-type(1) {
@@ -1189,7 +1345,8 @@ body {
     line-height: 2.6rem;
   }
 
-  .about-description-text {
+  .about-description-text,
+  .contact-text {
     line-height: 2.3rem;
     font-size: 1.3rem;
   }
