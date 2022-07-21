@@ -195,6 +195,7 @@ body {
   align-items: center;
   margin: auto;
   max-width: 300px;
+  padding-top: 0.7rem;
 }
 .neon-box-btn {
   background-color: var(--white);
@@ -503,7 +504,7 @@ body {
 }
 @media (min-width: 375px) and (orientation: portrait) {
   .hero-info-box {
-    margin-top: 5rem;
+    margin-top: 7rem;
   }
   .projects-container {
     margin-top: 11rem;
@@ -549,7 +550,7 @@ body {
   .developer-text,
   .name,
   .software-text {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .neon-box-btn {
     width: 2.7rem;
@@ -603,6 +604,10 @@ body {
   }
   .contact-icons {
     width: 2.6rem;
+  }
+
+  .button-box {
+    padding-top: 0.9rem;
   }
 }
 @media (min-width: 428px) and (orientation: portrait) {
