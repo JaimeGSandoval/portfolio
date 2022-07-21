@@ -136,6 +136,16 @@ body {
   font-weight: 500;
   display: block;
 }
+
+.resume-link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.2em;
+  padding: 1.4rem 0;
+  font-weight: 500;
+  display: block;
+}
 .showDropdown {
   opacity: 1;
   height: 23rem;
@@ -197,7 +207,8 @@ body {
   max-width: 300px;
   padding-top: 0.7rem;
 }
-.neon-box-btn {
+.neon-box-btn,
+.resume-box-btn {
   background-color: var(--white);
   padding: 0.3rem;
   border-radius: 3px;
@@ -446,11 +457,13 @@ body {
   -ms-hyphens: auto;
   hyphens: auto;
 }
-.contact-container {
+.contact-container,
+.resume-container {
   width: 100%;
   margin: 8rem 0 6rem;
 }
-.contact-inner-container {
+.contact-inner-container,
+.resume-inder-container {
   width: 90%;
   margin: auto;
 }
@@ -461,6 +474,13 @@ body {
 .contact-links-container {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.resume-link-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 2rem;
 }
@@ -542,6 +562,9 @@ body {
   .contact-links-container {
     margin-top: 2.5rem;
   }
+  .resume-link-container {
+    margin-top: 2.5rem;
+  }
   .contact-icons {
     width: 2.5rem;
   }
@@ -550,9 +573,10 @@ body {
   .developer-text,
   .name,
   .software-text {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
-  .neon-box-btn {
+  .neon-box-btn,
+  .resume-box-btn {
     width: 2.7rem;
     height: 2.4rem;
   }
@@ -599,6 +623,9 @@ body {
   .contact-links-container {
     margin-top: 2.7rem;
   }
+  .resume-link-container {
+    margin-top: 2.7rem;
+  }
   .contact-btn {
     padding: 0.7rem 0.8rem;
   }
@@ -634,7 +661,8 @@ body {
     font-size: 2.5rem;
     letter-spacing: 1px;
   }
-  .neon-box-btn {
+  .neon-box-btn,
+  .resume-box-btn {
     width: 3rem;
     height: 2.7rem;
   }
@@ -703,7 +731,8 @@ body {
     font-size: 3rem;
     letter-spacing: 1px;
   }
-  .neon-box-btn {
+  .neon-box-btn,
+  .resume-box-btn {
     width: 3rem;
     height: 2.7rem;
   }
@@ -847,7 +876,8 @@ body {
   .contact-btn {
     padding: 0.5rem;
   }
-  .contact-btn:hover {
+  .contact-btn:hover,
+  .resume-box-btn:hover {
     transform: scale(1.2);
   }
   .contact-icons {
@@ -906,6 +936,9 @@ body {
   .contact-links-container {
     margin-top: 3rem;
   }
+  .resume-link-container {
+    margin-top: 3rem;
+  }
   .contact-btn {
     padding: 0.5rem;
   }
@@ -932,6 +965,9 @@ body {
     font-size: 2rem;
   }
   .contact-links-container {
+    margin-top: 3.4rem;
+  }
+  .resume-link-container {
     margin-top: 3.4rem;
   }
 }
@@ -964,7 +1000,8 @@ body {
     margin-top: 9rem;
   }
   .about-container,
-  .contact-container {
+  .contact-container,
+  .resume-container {
     margin: 13rem 0 0;
   }
   .contact-container {
@@ -1072,6 +1109,10 @@ body {
     max-width: 39.9rem;
   }
   .contact-links-container {
+    position: relative;
+    bottom: 1rem;
+  }
+  .resume-link-container {
     position: relative;
     bottom: 1rem;
   }
