@@ -149,7 +149,7 @@ body {
 .showDropdown {
   opacity: 1;
   height: 23rem;
-  max-height: 20rem;
+  max-height: 23rem;
   padding: 1rem 0;
 }
 .noScroll {
