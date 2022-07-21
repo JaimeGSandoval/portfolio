@@ -707,8 +707,8 @@ body {
   }
   .navbar-list {
     display: flex;
-    width: 80%;
-    max-width: 720px;
+    width: 90%;
+    max-width: 1296px;
     margin: auto;
     justify-content: space-evenly;
     align-items: center;
