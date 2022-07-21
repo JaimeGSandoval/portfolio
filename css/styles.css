@@ -1197,9 +1197,25 @@ body {
     font-size: 2.6rem;
   }
 }
-@media (max-width: 736px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+
+@media (max-width: 640px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  .nav-link {
+    padding: 0.9rem 0;
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 640px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
   .nav-link {
     padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 667px) and (max-width: 736px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  .nav-link {
+    padding: 1rem 0;
+    font-size: 1rem;
   }
   .hero-info-box {
     margin-top: 6.5rem;
@@ -1219,6 +1235,13 @@ body {
   .profile-img {
     width: 37%;
     max-width: 13.1rem;
+  }
+}
+
+@media (min-width: 736px) and (max-width: 736px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  .nav-link {
+    padding: 1.2rem 0;
+    font-size: 1rem;
   }
 }
 @media (min-width: 737px) and (max-width: 926px) and (orientation: landscape) and (hover: none) and (pointer: coarse) {
