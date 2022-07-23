@@ -67,8 +67,8 @@ const fixedNav = function (entries) {
   !entry.isIntersecting &&
     isNotMobile.matches &&
     ((navbar.style.position = "fixed"),
-    (navbarDropdown.style.backgroundColor = "#fff"),
-    navbarLinks.forEach((link) => (link.style.color = "firebrick"))),
+    (navbarDropdown.style.backgroundColor = "#1f1f23"),
+    navbarLinks.forEach((link) => (link.style.color = "#fff"))),
     entry.isIntersecting &&
       isNotMobile.matches &&
       ((navbar.style.position = "static"),
