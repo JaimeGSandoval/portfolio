@@ -58,6 +58,7 @@ window.addEventListener("resize", function () {
     window.innerWidth > window.innerHeight &&
       !isNotMobile.matches &&
       ((navbarDropdown.style.backgroundColor = "#fff"),
+      // navbarLinks.forEach((link) => (link.style.color = "rgba(0, 0, 0, 0.5)")));
       navbarLinks.forEach((link) => (link.style.color = "rgba(0, 0, 0, 0.5)")));
 });
 
@@ -67,7 +68,7 @@ const fixedNav = function (entries) {
   !entry.isIntersecting &&
     isNotMobile.matches &&
     ((navbar.style.position = "fixed"),
-    (navbarDropdown.style.backgroundColor = "#1f1f23"),
+    (navbarDropdown.style.backgroundColor = "#000"),
     navbarLinks.forEach((link) => (link.style.color = "#fff"))),
     entry.isIntersecting &&
       isNotMobile.matches &&
