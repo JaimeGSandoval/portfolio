@@ -46,8 +46,6 @@ if (!navbar.getBoundingClientRect().height) {
   header.style.height = `${navbar.getBoundingClientRect().height}px`;
 }
 
-console.log(navbar.getBoundingClientRect().height);
-
 window.addEventListener("resize", function () {
   window.innerWidth < window.innerHeight && !isNotMobile.matches
     ? ((navbarDropdown.style.backgroundColor = "#fff"),
@@ -58,7 +56,6 @@ window.addEventListener("resize", function () {
     window.innerWidth > window.innerHeight &&
       !isNotMobile.matches &&
       ((navbarDropdown.style.backgroundColor = "#fff"),
-      // navbarLinks.forEach((link) => (link.style.color = "rgba(0, 0, 0, 0.5)")));
       navbarLinks.forEach((link) => (link.style.color = "rgba(0, 0, 0, 0.5)")));
 });
 
