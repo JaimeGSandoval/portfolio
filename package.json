@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server --watch",
-    "autoprefixer": "postcss css/styles.min.css --use autoprefixer -d css/prefix",
+    "autoprefixer": "postcss css/styles.css --use autoprefixer -d prefix",
     "minifyCss": "cleancss -o css/styles.min.css css/styles.css"
   },
   "browserslist": [

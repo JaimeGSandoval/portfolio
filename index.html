@@ -9,7 +9,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Jaime Sandoval | Frontend Developer" />
   <meta property="og:description" content="Portfolio | Jaime Sandoval | Frontend Developer" />
-  <meta property="og:image" content="https://jaimesandoval.net/images/portfolio-frontend-title.jpg" />
+  <meta property="og:image" content="https://jaimesandoval.net/images/hero-fe.png" />
   <meta name="description"
     content="A portfolio to showcase the projects and skills for Jaime Sandoval, a Frontend Developer. JavaScript, React, Node.js, SQL, PostgreSQL." />
   <link rel="preload" as="font" href="/fonts/monoton-latin/monoton-v10-latin-regular.woff2" type="font/woff2"
@@ -18,10 +18,8 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="css/reset.min.css" />
   <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-  <!-- <link id="main-styles" rel="stylesheet" href="css/styles.min.css"> -->
-  <link id="main-styles" rel="stylesheet" href="css/styles.css" />
-  <!-- <script defer src="js/main.min.js"></script> -->
-  <script defer src="js/main.js"></script>
+  <link id="main-styles" rel="stylesheet" href="css/styles.min.css">
+  <script defer src="js/main.min.js"></script>
   <title>Jaime Sandoval | Frontend Developer</title>
 </head>
 
@@ -34,50 +32,6 @@
       <source src="./videos/smoke.ogv" type="video/ogg">
     </video>
 
-    <!-- <picture>
-        <source
-          srcset="
-            images/hero/xxl/night-traffic-4-xxl.min.webp 1800w,
-            images/xxl/night-traffic-4-xxl.min.jpg       1800w
-          "
-          media="(min-width: 1800px)"
-        />
-
-        <source
-          srcset="
-            images/hero/xl/night-traffic-4-xl.min.webp 1440w,
-            images/xl/night-traffic-4-xl.min.jpg       1440w
-          "
-          media="(min-width: 1440px)"
-        />
-
-        <source
-          srcset="
-            images/hero/lg/night-traffic-4-lg.min.webp 1000w,
-            images/lg/night-traffic-4-lg.min.jpg       1000w
-          "
-          media="(min-width: 1000px)"
-        />
-
-        <source
-          srcset="
-            images/hero/md/night-traffic-4-md.min.webp 768w,
-            images/md/night-traffic-4-md.min.jpg       768w
-          "
-          media="(min-width: 768px)"
-        />
-
-        <source
-          srcset="images/hero/xsm/night-traffic-4-xsm.min.webp 500w"
-          media="(min-width: 500px)"
-        />
-
-        <img
-          class="hero-img"
-          src="images/hero/xsm/night-traffic-4-xsm.min.jpg"
-          alt=""
-        />
-      </picture> -->
   </div>
 
   <header id="section-home" class="header">
@@ -115,30 +69,32 @@
   </header>
 
   <!-- Hero section -->
-  <section class="hero-info-container">
-    <div class="hero-info-box">
-      <div class="neon-box">
-        <p id="name" class="name">Jaime<span>&nbsp; Sandoval</span></p>
-        <p class="software-text">Front<span></span><span>end</span></p>
-        <p class="developer-text">Dev<span>el</span>oper</p>
+
+    <section class="hero-info-container">
+      <div class="hero-info-box">
+        <div class="neon-box">
+          <p id="name" class="name">Jaime<span>&nbsp; Sandoval</span></p>
+          <p class="software-text">Front<span></span><span>end</span></p>
+          <p class="developer-text">Dev<span>el</span>oper</p>
+        </div>
+  
+        <div class="button-box">
+          <a href="https://www.linkedin.com/in/jaime-sandoval-dev/" target="_blank" rel="noopener noreferrer"
+            class="neon-box-btn">
+            <img class="contact-icons-hero" src="/images/linkedin.png" alt="Linkedin" />
+          </a>
+  
+          <a href="https://github.com/JaimeGSandoval" target="_blank" rel="noopener noreferrer" class="neon-box-btn">
+            <img class="contact-icons-hero" src="/images/skills-icons/github-contact.png" alt="GitHub" />
+          </a>
+  
+          <a href="mailto:jaime.devs@gmail.com" class="neon-box-btn" title="Email">
+            <img class="contact-icons-hero email-btn-icon" src="/images/envelope.png" alt="Email" />
+          </a>
+        </div>
       </div>
-
-      <div class="button-box">
-        <a href="https://www.linkedin.com/in/jaime-sandoval-dev/" target="_blank" rel="noopener noreferrer"
-          class="neon-box-btn">
-          <img class="contact-icons-hero" src="/images/linkedin.png" alt="Linkedin" />
-        </a>
-
-        <a href="https://github.com/JaimeGSandoval" target="_blank" rel="noopener noreferrer" class="neon-box-btn">
-          <img class="contact-icons-hero" src="/images/skills-icons/github-contact.png" alt="GitHub" />
-        </a>
-
-        <a href="mailto:jaime.devs@gmail.com" class="neon-box-btn" title="Email">
-          <img class="contact-icons-hero email-btn-icon" src="/images/envelope.png" alt="Email" />
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  
 
   <!-- Projects Section -->
   <section id="section-projects" class="projects-container">
@@ -175,7 +131,7 @@
                 <div class="project-description">
                   A single-page application that retrieves the most recent news
                   from the fields of quantum mechanics, astronomy, artificial
-                  intelligence, and other fields of science via Google Search API. In addition, it connects to a third-party Twitter API that returns tweets from SpaceX
+                  intelligence, and other fields of science via Google Search API. In addition, it connects to a third-party Twitter API and returns tweets from SpaceX
                 </div>
   
                 <div class="btns">
