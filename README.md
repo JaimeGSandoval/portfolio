@@ -1,5 +1,5 @@
 # Portfolio
 
-## Jaime Sandoval | Software Developer
+## Jaime Sandoval | Frontend Developer
 
-A portfolio to showcase projects and software development skills
+A portfolio to showcase projects I've developed

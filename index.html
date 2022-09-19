@@ -1,524 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta property="og:url" content="https://jaimesandoval.net/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jaime Sandoval | Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio | Jaime Sandoval | Frontend Developer"
+    />
+    <meta
+      property="og:image"
+      content="https://jaimesandoval.net/assets/img/og-img-url.png"
+    />
+    <meta
+      name="description"
+      content="A portfolio to showcase the projects and skills for Jaime Sandoval, a Frontend Developer. TypeScript, JavaScript, React.js, Node.js, SQL."
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <meta property="og:url" content="https://jaimesandoval.net/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Jaime Sandoval | Frontend Developer" />
-  <meta property="og:description" content="Portfolio | Jaime Sandoval | Frontend Developer" />
-  <meta property="og:image" content="https://jaimesandoval.net/images/hero-fe.png" />
-  <meta name="description"
-    content="A portfolio to showcase the projects and skills for Jaime Sandoval, a Frontend Developer. JavaScript, React, Node.js, SQL, PostgreSQL." />
-  <link rel="preload" as="font" href="/fonts/monoton-latin/monoton-v10-latin-regular.woff2" type="font/woff2"
-    crossorigin="anonymous" />
-  <link rel="preload" as="font" href="/fonts/nunito-sans-latin/nunito-sans-v6-latin-regular.woff2" type="font/woff2"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/reset.min.css" />
-  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-  <link id="main-styles" rel="stylesheet" href="css/styles.min.css">
-  <script defer src="js/main.min.js"></script>
-  <title>Jaime Sandoval | Frontend Developer</title>
-</head>
+    <title>Jaime Sandoval | Frontend Developer</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-<body>
-  <div class="hero-container">
+    <!-- Favicons -->
+    <link href="favicon.ico" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <video class="hero-img" autoplay="autoplay" playsinline loop muted preload="auto">
-      <source src="./videos/smoke.webm" type="video/webm">
-      <source src="./videos/smoke.min.mp4" type="video/mp4">
-      <source src="./videos/smoke.ogv" type="video/ogg">
-    </video>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  </div>
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <header id="section-home" class="header">
-    <nav class="navbar">
-      <div class="navbar-inner-container">
-        <div class="toggle-box">
-          <button class="navbar-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
-            <img class="hamburger-icon" src="images/hamburger.svg" alt="toggle navbar icon" />
-          </button>
-        </div>
-        <div class="navbar-dropdown">
-          <ul class="navbar-list">
-            <li class="nav-item">
-              <a class="nav-link" href="section-home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="section-projects" data-target="section-projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="section-skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="section-about">About</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="section-resume">Resume</a>
-              </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="section-contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Hero section -->
+    <!-- =======================================================
+  * Template Name: MyResume - v4.9.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
 
-    <section class="hero-info-container">
-      <div class="hero-info-box">
-        <div class="neon-box">
-          <p id="name" class="name">Jaime<span>&nbsp; Sandoval</span></p>
-          <p class="software-text">Front<span></span><span>end</span></p>
-          <p class="developer-text">Dev<span>el</span>oper</p>
-        </div>
-  
-        <div class="button-box">
-          <a href="https://www.linkedin.com/in/jaime-sandoval-dev/" target="_blank" rel="noopener noreferrer"
-            class="neon-box-btn">
-            <img class="contact-icons-hero" src="/images/linkedin.png" alt="Linkedin" />
-          </a>
-  
-          <a href="https://github.com/JaimeGSandoval" target="_blank" rel="noopener noreferrer" class="neon-box-btn">
-            <img class="contact-icons-hero" src="/images/skills-icons/github-contact.png" alt="GitHub" />
-          </a>
-  
-          <a href="mailto:jaime.devs@gmail.com" class="neon-box-btn" title="Email">
-            <img class="contact-icons-hero email-btn-icon" src="/images/envelope.png" alt="Email" />
-          </a>
+  <body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-center">
+      <nav id="navbar" class="navbar nav-menu">
+        <ul>
+          <li>
+            <a href="#hero" class="nav-link scrollto active"
+              ><i class="bx bx-home"></i> <span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#about" class="nav-link scrollto"
+              ><i class="bx bx-user"></i> <span>About</span></a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="nav-link scrollto"
+              ><i class="bx bx-book-content"></i> <span>Projects</span></a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="nav-link scrollto"
+              ><i class="bx bx-server"></i> <span>Skills</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link scrollto"
+              ><i class="bx bx-envelope"></i> <span>Contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- .nav-menu -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Jaime Sandoval</h1>
+        <p>
+          I'm a
+          <span
+            class="typed"
+            data-typed-items="Frontend Developer, Problem Solver, Collaborator"
+          ></span>
+        </p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/jaime-sandoval-dev/"
+            class="linkedin"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/JaimeGSandoval"
+            class="github"
+            target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://twitter.com/jskodes" class="twitter" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
         </div>
       </div>
     </section>
-  
+    <!-- End Hero -->
 
-  <!-- Projects Section -->
-  <section id="section-projects" class="projects-container">
-    <div class="projects-inner-container">
-      <h2 class="section-header">
-        Featured <span class="section-header-span">&nbsp; Projects</span>
-      </h2>
-
-      <div class="projects-row">
-
-        <!-- today in science -->
-        <div class="project-box today-box">
-
-          <div class="project-inner-box">
-            <div class="project-img-container">
-              <a href="https://todayinscience.jaimesandoval.net/" target="_blank" rel="noopener noreferrer"
-                aria-label="Discover what Today in Science has to offer by following this link">
-                <picture>
-                  <source srcset="images/today/today.min.webp" type="image/webp" />
-                  <img class="project-img" src="images/today/today.min.png" alt="Mobile image of Today in Science" />
-                </picture>
-              </a>
-            </div>
-
-            <div class="project-info-box">
-              <h2 class="project-title">Today In Science</h2>
-  
-              <p class="project-tech-text">
-                TypeScript | JavaScript | Google Search API | Twitter API |
-                Webpack | Fetch API | AWS Ec2 | Sass
-              </p>
-  
-              <div class="project-btn-box">
-                <div class="project-description">
-                  A single-page application that retrieves the most recent news
-                  from the fields of quantum mechanics, astronomy, artificial
-                  intelligence, and other fields of science via Google Search API. In addition, it connects to a third-party Twitter API and returns tweets from SpaceX
-                </div>
-  
-                <div class="btns">
-                  <a href="https://todayinscience.jaimesandoval.net/" target="_blank" class="project-btn"
-                    rel="noopener noreferrer">Live Demo</a>
-  
-                  <a href="https://github.com/JaimeGSandoval/today-in-science_v2" target="_blank" class="project-btn"
-                    rel="noopener noreferrer">GitHub</a>
-                </div>
-              </div>
-            </div>
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2 class="mt-5">About</h2>
+            <p class="py-4">
+              I build modern websites and applications using React.js,
+              TypeScript/JavaScript, CSS3, HTML5, Node.js, and SQL. Technology
+              is always on the move, so as I developer I make it a point to keep
+              up. I do that is a variety of ways such as listening to podcasts,
+              attending tech meet ups , and following interesting developers on
+              Twitter. When I'm not coding I spend time with family, friends,
+              and the great outdoors.
+            </p>
           </div>
 
-
-        </div>
-        
-        <!-- product feedback go -->
-        <div class="project-box feedback-box">
-
-          <div class="project-inner-box">
-            <div class="project-img-container">
-              <a href="https://productfeedbackgo.jaimesandoval.net/" target="_blank"
-                aria-label="Discover what Product Feddback Go has to offer by following this link"
-                rel="noopener noreferrer">
-                <picture>
-                  <source srcset="images/product-feedback/feedback.min.webp" type="image/webp" />
-                  <img class="project-img" src="images/product-feedback/feedback.min.png"
-                    alt="Mobile image of product feedback go" />
-                </picture>
-              </a>
-            </div>
-
-            <div class="project-info-box">
-              <h2 class="project-title">Product Feedback Go</h2>
-  
-              <p class="project-tech-text">
-                React.js | React Router | JavaScript | CRUD Functionality |
-                Local Storage | Session Storage | AWS Ec2 | Sass
-              </p>
-  
-              <div class="project-btn-box">
-                <div class="project-description">
-                  A single-page application for with CRUD functionality for product reviews. It allows users to submit product
-                  feedback, product requests, product enhancements, or request a
-                  bug fix, as well as comment on requests submitted by other users
-                </div>
-  
-                <div class="btns">
-                  <a href="https://productfeedbackgo.jaimesandoval.net/" target="_blank" class="project-btn"
-                    rel="noopener noreferrer">Live Demo</a>
-  
-                  <a href="https://github.com/JaimeGSandoval/product-feedback-app" target="_blank" class="project-btn"
-                    rel="noopener noreferrer">GitHub</a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- bonsai depot -->
-        <div class="project-box bonsai-box">
-
-          <div class="project-inner-box">
-            <div class="project-img-container">
-              <a href="https://bonsaidepot.jaimesandoval.net/" target="_blank"
-                aria-label="Discover what Bonsai Depot has to offer by following this link" rel="noopener noreferrer">
-                <picture>
-                  <source srcset="images/bonsai/bonsai.min.webp" type="image/webp" />
-                  <img class="project-img" src="images/bonsai/bonsai.min.png" alt="Mobile image of Bonsai Depot" />
-                </picture>
-              </a>
-            </div>
-
-            <div class="project-info-box">
-              <h2 class="project-title">Bonsai Depot</h2>
-  
-              <p class="project-tech-text">
-                React.js | JavaScript | Node.js | Express.js | SQL | PostgreSQL
-                | Fetch API | AWS Ec2 | Bootstrap
-              </p>
-  
-              <div class="project-btn-box">
-                <div class="project-description">
-                  A full stack application for bonsai tree enthusiasts that
-                  specializes in selling bonsai trees and tools. CRUD
-                  functionality is currently being implemented, as well as a styling make over
-                </div>
-  
-                <div class="btns">
-                  <a href="https://bonsaidepot.jaimesandoval.net/" target="_blank" class="project-btn"
-                    rel="noopener noreferrer">Live Demo</a>
-                  <a href="https://github.com/JaimeGSandoval/wicked-sales-js" target="_blank" class="btn project-btn"
-                    rel="noopener noreferrer">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills section -->
-  <section id="section-skills" class="skills-container">
-    <div class="skills-inner-container">
-      <h2 class="section-header">
-        Ski
-        <span class="section-header-span"> lls</span>
-      </h2>
-
-      <div class="skill-images-container">
-        <div class="skill-container">
-          <div class="skill-img-box">
-            <img class="skill-img position-left" src="./images/skills-icons/javascript.png" alt="" />
-          </div>
-          <p class="skill-img-title">JavaScript</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box">
-            <img class="skill-img" src="./images/skills-icons/react.png" alt="" />
-          </div>
-          <p class="skill-img-title">React.js</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box">
-            <img class="skill-img" src="./images/skills-icons/react-router.svg" alt="" />
-          </div>
-          <p class="skill-img-title">React Router</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box bg-typescript_sm m-auto">
-            <img class="skill-img position-left" src="./images/skills-icons/typescript.png" alt="" />
-          </div>
-          <p class="skill-img-title">TypeScript</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box">
-            <img class="skill-img" src="./images/skills-icons/ajax-150.png" alt="" />
-          </div>
-          <p class="skill-img-title">Ajax</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box bg-webpack_sm m-auto">
-            <img class="skill-img position-left" src="./images/skills-icons/webpack.png" alt="" />
-          </div>
-          <p class="skill-img-title" class="custom-webpack-text">Webpack</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box bg-aws_sm m-auto">
-            <img class="skill-img" src="./images/skills-icons/aws.png" alt="" />
-          </div>
-          <p class="skill-img-title">AWS Ec2</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box bg-bootstrap_sm m-auto">
-            <img class="skill-img position-left" src="./images/skills-icons/bootstrap.png" alt="" />
-          </div>
-          <p class="skill-img-title">Bootstrap</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box bg-sass_sm m-auto">
-            <img class="skill-img" src="./images/skills-icons/sass.png" alt="" />
-          </div>
-          <p class="skill-img-title">Sass</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box bg-css_sm m-auto">
-            <img class="skill-img" src="./images/skills-icons/css.png" alt="" />
-          </div>
-          <p class="skill-img-title">CSS3</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box">
-            <img class="skill-img" src="./images/skills-icons/html.png" alt="" />
-          </div>
-          <p class="skill-img-title">HTML5</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tools section -->
-  <section class="skills-container tools-container">
-    <div class="skills-inner-container">
-      <h2 class="section-header">
-        Too
-        <span class="section-header-span"> ls</span>
-      </h2>
-
-      <div class="skill-images-container">
-        <div class="skill-container">
-          <div class="skill-img-box">
-            <img class="skill-img" src="./images/skills-icons/git.png" alt="" />
-          </div>
-          <p class="skill-img-title">Git</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box">
-            <img class="skill-img" src="./images/skills-icons/github.png" alt="" />
-          </div>
-          <p class="skill-img-title">GitHub</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box">
-            <img class="skill-img" src="./images/skills-icons/chrome.png" alt="" />
-          </div>
-          <p class="skill-img-title">DevTools</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box">
-            <img class="skill-img" src="./images/skills-icons/npm.png" alt="" />
-          </div>
-          <p class="skill-img-title">npm</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box">
-            <img class="skill-img" src="./images/skills-icons/react.png" alt="" />
-          </div>
-          <p class="skill-img-title">DevTools</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box">
-            <img class="skill-img" src="./images/skills-icons/vscode-150.png" alt="" />
-          </div>
-          <p class="skill-img-title">VScode</p>
-        </div>
-
-        <div class="skill-container">
-          <div class="skill-img-box">
-            <img class="skill-img" src="./images/skills-icons/figma.png" alt="" />
-          </div>
-          <p class="skill-img-title">Figma</p>
-        </div>
-
-        <div class="skill-container position-left-meister-container">
-          <div class="skill-img-box">
-            <img class="skill-img position-left-meister" src="./images/skills-icons/meister.png" alt="" />
-          </div>
-          <p class="skill-img-title" class="custom-webpack-text">
-            Meistertask
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Currently working on section -->
-  <section class="current-work-container">
-    <h2 class="section-header current-work-header">
-      Currently
-      <span class="section-header-span"> &nbsp; Working &nbsp; on</span>
-    </h2>
-
-    <p class="date text-center"></p>
-
-    <div class="current-text-box">
-      <ul class="current-work-list">
-        <li class="current-work-list-item">
-          Converting Product Feedback Go into a full stack application by
-          using Node.js, Express.js, and PostgreSQL
-        </li>
-        <li class="current-work-list-item">
-          Working to allow users to read, update, and delete items from their
-          shopping cart in Bonsai Depot
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- About me section -->
-  <section id="section-about" class="about-container">
-    <div class="about-inner-container">
-      <h2 class="section-header">
-        About <span class="section-header-span">&nbsp; Me</span>
-      </h2>
-    </div>
-
-    <div class="about-info-container">
-      <div class="profile-img-box">
-        <picture>
-          <source srcset="images/profile-6.webp" class="profile-img" type="image/webp" />
-          <img src="images/profile-6.png" alt="Profile image" class="profile-img" />
-        </picture>
-      </div>
-
-      <div class="about-description-box">
-        <p class="about-description-text" lang="en">
-          Hello There! My name is Jaime Sandoval,
-          and I'm a Frontend Developer.
-        </p>
-
-        <p class="about-description-text" lang="en">
-          I truly enjoy using the combination of creativity and logic to
-          create applications. Whether the coding involves implementing an API
-          or debugging, I'm all for it. If it helps the team get closer to our
-          goals in any way, I'll do my best to get it done.
-        </p>
-
-        <p class="about-description-text" lang="en">
-          While attending LearningFuze coding boot camp, I was immersed in
-          technologies used for building Full Stack Applications. LearningFuze gave me a solid foundation from which to work,
-          and I've been busy using that foundation ever since.
-        </p>
-
-        <p class="about-description-text" lang="en">
-          Staying up to date with current dev trends is another passion of
-          mine. I do that in a variety of ways, such as attending tech
-          meetups, listening to dev podcasts, and finding interesting Software
-          Developers to follow on Twitter.
-        </p>
-
-        <p class="about-description-text" lang="en">
-          I'd love to bring my skills to a company, and I look forward to
-          being part of a Dev Team. If you'd like to contact me, please feel
-          free to do so. Let's help each other reach our goals with clean code
-          and teamwork.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section id="section-resume" class="contact-container">
-      <div class="resume-inner-container">
-        <h2 class="section-header">
-          Res
-          <span class="section-header-span">ume</span>
-        </h2>
-
-        <div class="contact-info-container">
-          <div class="resume-link-container">
-            <a
-              href="https://drive.google.com/file/d/190GZsHfc5FHT6iP-4m-1sv6c8KjSd55n/view?usp=sharing"
-              class="resume-box-btn"
-              target="_blank"
-            >
+          <div class="row">
+            <div class="col-lg-4 d-flex">
               <img
-                class="resume-icon-inner"
-                src="/images/resume.png"
-                alt="Resume"
+                src="assets/img/profile-img.png"
+                class="img-fluid mx-auto"
+                alt=""
               />
-            </a>
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+              <h3>Frontend Developer</h3>
+              <p class="fst-italic">
+                I strive to create performant applications that engage users and
+                make their experience as fluid as possible.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Email:</strong>
+                      <a href="mailto:jaime.devs@gmail.com"
+                        >jaime.devs@gmail.com</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>City:</strong>
+                      <span>Riverside, CA</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p>
+                I specialize in Frontend development, but I also have an equal
+                passion for Backend development. Both can be challenging, but I
+                enjoy those challenges. It's how I grow.
+              </p>
+              <p>
+                Whether the task requires a user interface feature or an API
+                endpoint, whatever it may be, I always do my best to deliver
+                excellent code and help the team or business reach its goals.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section> -->
+      </section>
+      <!-- End About Section -->
 
-  <!-- Contact section -->
-  <section id="section-contact" class="contact-container">
-    <div class="contact-inner-container">
-      <h2 class="section-header">
-        Cont
-        <span class="section-header-span">act</span>
-      </h2>
+      <!-- ======= Projects Section ======= -->
+      <section id="projects" class="project section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Projects</h2>
+            <p>Below is a display of recent applications I've completed</p>
+          </div>
 
-      <div class="contact-info-container">
-        <div class="contact-links-container">
-          <a href="mailto:jaime.devs@gmail.com" class="contact-btn" title="Email">
-            <img class="contact-icons email-contact-icon" src="images/envelope.png" alt="Email" />
-          </a>
+          <div
+            class="row project-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="col-lg-4 col-md-6 project-item filter-app">
+              <div class="project-wrap">
+                <img
+                  src="assets/img/projects/science.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="project-info">
+                  <h4>Today in Science</h4>
+                  <div class="project-links">
+                    <a
+                      href="science-details.html"
+                      class="project-details-lightbox"
+                      data-glightbox="type: external"
+                      title="project Details"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <a href="https://www.linkedin.com/in/jaime-sandoval-dev/" target="_blank" rel="noopener noreferrer"
-            class="contact-btn">
-            <img class="contact-icons" src="images/linkedin.png" alt="Linkedin" />
-          </a>
-          </a>
+            <div class="col-lg-4 col-md-6 project-item filter-web">
+              <div class="project-wrap">
+                <img
+                  src="assets/img/projects/go.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="project-info">
+                  <h4>Product Feedback Go</h4>
+                  <div class="project-links">
+                    <a
+                      href="go-details.html"
+                      class="project-details-lightbox"
+                      data-glightbox="type: external"
+                      title="project Details"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 project-item filter-app">
+              <div class="project-wrap">
+                <img
+                  src="assets/img/projects/depot.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="project-info">
+                  <h4>Bonsai Depot</h4>
+                  <div class="project-links">
+                    <a
+                      href="depot-details.html"
+                      class="project-details-lightbox"
+                      data-glightbox="type: external"
+                      title="Project Details"
+                      ><i class="bx bx-plus"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Projects Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Skills</h2>
+            <p>These are the technologies that I use on a day to day basis</p>
+            <a
+              href="https://drive.google.com/file/d/1fO9RyG8wntMd4bzqyYQVQJV2uGVX796w/view"
+              class="btn btn-link mt-2"
+              target="_blank"
+              >View My Resume</a
+            >
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="count-box">
+                <img
+                  src="assets/img//skills/react.png"
+                  alt=""
+                  class="skill-icons"
+                />
+                <h5>React.js</h5>
+                <p>
+                  I use this library to create user interfaces and reusable
+                  components. It's my go to for pleasant user experiences
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+              <div class="count-box">
+                <img
+                  src="assets/img//skills/javascript.png"
+                  alt=""
+                  class="skill-icons"
+                />
+                <h5>JavaScript</h5>
+                <p>
+                  JavaScript is incredibly versatile. I'm proficient with
+                  ES5/ES6 on both the client and server side
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+              <div class="count-box">
+                <img
+                  src="assets/img//skills/typescript.png"
+                  alt=""
+                  class="skill-icons"
+                />
+                <h5>TypeScript</h5>
+                <p>
+                  TypeScript reduces bugs and improves code comprehension, so
+                  it's a staple of all my projects
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+              <div class="count-box">
+                <img
+                  src="assets/img//skills/nodejs.png"
+                  alt=""
+                  class="skill-icons"
+                />
+                <h5>Node.js</h5>
+                <p>
+                  The JavaScript runtime is a technology I've become accustom to
+                  for building RESTFul APIs
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="count-box">
+                <img
+                  src="assets/img//skills/github.png"
+                  alt=""
+                  class="skill-icons"
+                />
+                <h5>Git/GitHub</h5>
+                <p>
+                  Version control is a powerful tool that makes teamwork
+                  efficient and I implement it with every project
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="count-box">
+                <img
+                  src="assets/img//skills/sql.png"
+                  alt=""
+                  class="skill-icons"
+                />
+                <h5>SQL</h5>
+                <p>
+                  Relational Database interaction is something I'm becoming more
+                  fluent in with every application I build
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="count-box">
+                <img
+                  src="assets/img//skills/css.png"
+                  alt=""
+                  class="skill-icons"
+                />
+                <h5>CSS3</h5>
+                <p>
+                  I can take a mock up from a designer and create their idea
+                  with accuracy while also making it mobile responsive and using
+                  Sass for cleaner stylesheets
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="count-box">
+                <img
+                  src="assets/img//skills/html.png"
+                  alt=""
+                  class="skill-icons"
+                />
+                <h5>HTML5</h5>
+                <p>
+                  I make sure to build with semantic HTML so that users of all
+                  kinds can enjoy the internet
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mx-auto">
+              <div class="count-box">
+                <img
+                  src="assets/img//skills/ajax-150.png"
+                  alt=""
+                  class="skill-icons"
+                />
+                <h5>APIs</h5>
+                <p>
+                  Implementing an API or retrieving data from an API, I'm
+                  proficient wth HTTP protocols and RESTful APIs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
+
+          <div class="contact-info-wrapper">
+            <div class="row mt-1 w-100 mx-auto test">
+              <div class="col-sm-12 col-lg-4 w-auto">
+                <div
+                  class="info info--contact d-flex justify-content-center mx-auto"
+                >
+                  <div class="address my-4">
+                    <i class="bi bi-geo-alt"></i>
+                    <h4>Location:</h4>
+                    <p>Riverside, CA</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-4 w-auto">
+                <div
+                  class="info info--contact d-flex justify-content-center mx-auto"
+                >
+                  <div class="email my-4">
+                    <a
+                      href="mailto:jaime.devs@gmail.com?subject=&cc=&bcc=&body="
+                    >
+                      <i class="bi bi-envelope"></i>
+                    </a>
+                    <h4>Email:</h4>
+                    <p>jaime.devs@gmail.com</p>
+                  </div>
+                </div>
+                <div class="info google-email">
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=jaime.devs@gmail.com&su=&cc=&bcc=&body"
+                    target="_blank"
+                  >
+                    <i class="bi bi-google"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-lg-4 w-auto">
+                <div
+                  class="info info--contact d-flex justify-content-center mx-auto"
+                >
+                  <div class="phone my-4">
+                    <i class="bi bi-phone"></i>
+                    <h4>Call:</h4>
+                    <p>(951) 314 - 8221</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <h3>Jaime Sandoval</h3>
+        <p>Always Be Learning</p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/jaime-sandoval-dev/"
+            class="linkedin"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/JaimeGSandoval"
+            class="github"
+            target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://twitter.com/jskodes" class="twitter" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
         </div>
       </div>
-    </div>
-  </section>
-</body>
+    </footer>
+    <!-- End Footer -->
 
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
